@@ -1,0 +1,48 @@
+.Navbar {
+  background: rgba(0, 19, 32, 0.5);
+  border: 1px solid rgba(8, 97, 81, 0.39);
+  backdrop-filter: blur(20px);
+
+  .Navbar_menu {
+    background: rgba(0, 19, 32, 0.5);
+    border: 1px solid rgba(8, 97, 81, 0.39);
+    backdrop-filter: blur(20px);
+  }
+}
+
+.NavMenu {
+  .NavMenu_item {
+    height: 44px;
+    line-height: 44px;
+
+    > span {
+      height: 100%;
+      font-family: Lexend Deca;
+      font-size: 18px;
+      color: #73818b;
+    }
+
+    &:hover {
+      > span {
+        color: #ffffff;
+      }
+    }
+  }
+
+  .NavMenu_iconQuiz-text {
+    top: 2px;
+  }
+
+  .NavMenu_btnLaunch {
+    width: 120px;
+    background: linear-gradient(85.5deg, #00d6af 6.31%, #1aa289 99.02%);
+    box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.25);
+    font-family: Heiti TC;
+  }
+}
+
+.MNavMenu {
+  .MNavMenu_iconMenu {
+    color: #7e8a93;
+  }
+}

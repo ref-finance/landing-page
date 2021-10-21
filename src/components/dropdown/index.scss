@@ -1,0 +1,21 @@
+.Dropdown {
+  background: #1d2932;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.15);
+
+  .Dropdown_item-inner {
+    &:hover {
+      .Dropdown_item-icon,
+      .Dropdown_item-title {
+        opacity: 1;
+      }
+    }
+  }
+
+  .Dropdown_item-icon {
+    font-size: 22px;
+  }
+
+  .Dropdown_item-title {
+    font-family: Poppins;
+  }
+}

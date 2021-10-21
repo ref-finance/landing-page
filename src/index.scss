@@ -1,0 +1,24 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer utilities {
+  .text-white-gray {
+    color: #c4c4c4;
+    opacity: 0.5;
+  }
+
+  .min-w-80 {
+    width: 20rem;
+  }
+
+  .min-w-96 {
+    width: 24rem;
+  }
+
+  .rounded-15 {
+    border-radius: 15px;
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "plugins": {
+    "tailwindcss": {},
+    "autoprefixer": {},
+    "postcss-pxtorem": {
+      "propList": ["*"]
+    }
+  }
+}

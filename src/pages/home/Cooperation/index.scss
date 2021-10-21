@@ -1,0 +1,21 @@
+.CooperateCard {
+  background: linear-gradient(92.76deg, #000000 9.7%, rgba(0, 0, 0, 0.21) 98.97%);
+
+  .CooperateCard_fake_arrow {
+    display: none;
+  }
+
+  .CooperateCard_fake_wrap:hover {
+    background: rgba(0, 0, 0, 0);
+
+    .CooperateCard_fake_arrow {
+      display: block;
+      float: right;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 30px 30px 0;
+      border-color: transparent #00c6a2 transparent transparent;
+    }
+  }
+}
