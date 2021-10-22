@@ -28,13 +28,13 @@ const menuItems: MenuItem[] = [
         href: 'https://twitter.com/finance_ref'
       },
       {
-        icon: <FaDiscord />,
-        title: 'Discord',
+        icon: <FaTelegramPlane />,
+        title: 'Telegram',
         href: 'https://t.me/ref_finance'
       },
       {
-        icon: <FaTelegramPlane />,
-        title: 'Telegram',
+        icon: <FaDiscord />,
+        title: 'Discord',
         href: 'https://discord.gg/SJBGcfMxJz'
       },
       {
