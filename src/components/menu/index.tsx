@@ -34,7 +34,10 @@ const Menu = ({ items, show }: Props) => {
               <ul className={`Menu_subMenu absolute top-0 z-40 py-5`}>
                 <MdArrowBackIosNew
                   className="absolute left-2 top-2 text-lg text-white opacity-50"
-                  onClick={() => setVisible(false)}
+                  onClick={(e) => { 
+                    e.stopPropagation(); 
+                    setVisible(false) 
+                  }}
                 />
                 {children?.map(({ icon, title, href }) => (
                   <li className="Menu_item flex items-center">
