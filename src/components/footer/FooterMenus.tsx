@@ -30,19 +30,19 @@ const Menu: FC<MenuProps> = ({ label, children }) => {
 const FooterMenus = () => {
   return (
     <>
-      <Menu label="PROJECT">
+      <Menu label="PRODUCT">
         <MenuItem label="Swap" href="https://app.ref.finance" />
         <MenuItem label="Farm" href="https://app.ref.finance/farms" />
       </Menu>
       <Menu label="ABOUT">
         <MenuItem label="DOC" href="https://guide.ref.finance" />
         <MenuItem label="Forum" href="https://gov.ref.finance" />
-        <MenuItem label="Medium" href=" https://ref-finance.medium.com" />
       </Menu>
       <Menu label="COMMUNITY">
         <MenuItem label="Twitter" href="https://twitter.com/finance_ref" />
-        <MenuItem label="Discord" href="https://discord.gg/SJBGcfMxJz" />
         <MenuItem label="Telegram" href="https://t.me/ref_finance" />
+        <MenuItem label="Discord" href="https://discord.gg/SJBGcfMxJz" />
+        <MenuItem label="Medium" href=" https://ref-finance.medium.com" />
       </Menu>
     </>
   );

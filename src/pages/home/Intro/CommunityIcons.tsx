@@ -13,7 +13,7 @@ const CommunityAnchor: FC<CommunityAnchorProps> = ({
   href = ''
 }) => {
   return (
-    <a className='text-white-gray hover:text-white' href={href} aria-label={label}>
+    <a className='text-white-gray hover:text-white' href={href} aria-label={label} target="_blank">
       {icon}
     </a>
   );
@@ -23,18 +23,18 @@ const Community = () => {
   return (
     <div className="s:order-first mb-16 s:mb-12 mt-9 max-w-sm grid grid-flow-col justify-items-center gap-12 s:gap-7">
       <CommunityAnchor
-        icon={<FaDiscord size={30} />}
-        label='Discord'
-        href='https://twitter.cosm/finance_ref'
-      />
-      <CommunityAnchor
         icon={<FaTwitter size={30} />}
         label='Twitter'
-        href='https://t.me/ref_finance'
+        href='https://twitter.com/finance_ref'
       />
       <CommunityAnchor
         icon={<FaTelegramPlane size={30} />}
         label='Telegram'
+        href='https://t.me/ref_finance'
+      />
+      <CommunityAnchor
+        icon={<FaDiscord size={30} />}
+        label='Discord'
         href='https://discord.gg/SJBGcfMxJz'
       />
       <CommunityAnchor

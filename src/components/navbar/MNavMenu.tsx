@@ -16,7 +16,7 @@ const dropdownItems: DropdownItem[] = [
   {
     icon: <FaTwitter />,
     title: 'Twitter',
-    href: 'https://twitter.cosm/finance_ref'
+    href: 'https://twitter.com/finance_ref'
   },
   {
     icon: <FaTelegramPlane />,
