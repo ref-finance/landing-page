@@ -41,8 +41,8 @@ const FooterMenus = () => {
       </Menu>
       <Menu label="COMMUNITY">
         <MenuItem label="Twitter" href="https://twitter.com/finance_ref" />
-        <MenuItem label="Discord" href="https://t.me/ref_finance" />
-        <MenuItem label="Telegram" href="https://discord.gg/SJBGcfMxJz" />
+        <MenuItem label="Discord" href="https://discord.gg/SJBGcfMxJz" />
+        <MenuItem label="Telegram" href="https://t.me/ref_finance" />
       </Menu>
     </>
   );
