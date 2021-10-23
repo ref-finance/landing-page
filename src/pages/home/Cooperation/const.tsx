@@ -4,7 +4,12 @@ export const cooperations = [
   {
     title: 'NEAR Protocol',
     icon: (
-      <svg className="mb-5" width="48" height="42" viewBox="0 0 48 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        className="l:mb-5 s:mb-2 w-12 s:w-8 h-11 s:h-7"
+        viewBox="0 0 48 42"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path
           fill-rule="evenodd"
           clip-rule="evenodd"
@@ -17,7 +22,14 @@ export const cooperations = [
   {
     title: 'Octopus network',
     icon: (
-      <svg className="mb-2" width="45" height="58" viewBox="0 0 45 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        className="l:mb-5 s:mb-2 w-11 s:w-8 h-14 s:h-9"
+        width="45"
+        height="58"
+        viewBox="0 0 45 58"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path
           fill-rule="evenodd"
           clip-rule="evenodd"
@@ -37,13 +49,19 @@ export const cooperations = [
   },
   {
     title: 'Burrow',
-    icon: <img className="mb-4 w-12 h-12" src="https://i.postimg.cc/4N91SfYW/burrow-avatar-1.png" alt="" />
+    icon: (
+      <img
+        className="mb-4 s:mb-2 s:w-8 s:h-8 w-12 h-12"
+        src="https://i.postimg.cc/4N91SfYW/burrow-avatar-1.png"
+        alt=""
+      />
+    )
   },
   {
     title: 'Skyward Finance',
     icon: (
       <img
-        className="mt-4 m-5 w-40 h-7"
+        className="mt-4 m-5 s:mb-2 w-40 h-7 s:w-28 s:h-5"
         src="//imagev2.xmcdn.com/storages/ff97-audiofreehighqps/32/8D/CKwRIasFRFLWAAAuOwDuJTed.png"
         alt=""
       />
@@ -53,9 +71,7 @@ export const cooperations = [
     title: 'Paras',
     icon: (
       <svg
-        className="mt-4 mb-5"
-        width="110"
-        height="26"
+        className="mt-4 mb-5 s:mb-2 s:w-14 s:h-6 w-28 h-7"
         viewBox="0 0 110 26"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -94,17 +110,25 @@ export const cooperations = [
   },
   {
     title: 'Flux',
-    icon: <img className="-mt-2" width="72" height="72" src="https://i.postimg.cc/rsmgZxvb/image-31-1.png" alt="" />
+    icon: (
+      <img className="-mt-2 s:mb-2 w-20 h-20 s:w-12 s:h-12" src="https://i.postimg.cc/rsmgZxvb/image-31-1.png" alt="" />
+    )
   },
   {
     title: 'Cheddar',
-    icon: <img className="-mt-3 -mb-1 w-20 h-20" src="https://i.postimg.cc/L53RvKFv/cheddy-cheezy-head-1.png" alt="" />
+    icon: (
+      <img
+        className="-mt-3 s:mb-2 -mb-1 s:w-12 s:h-12 w-20 h-20"
+        src="https://i.postimg.cc/L53RvKFv/cheddy-cheezy-head-1.png"
+        alt=""
+      />
+    )
   },
   {
     title: 'Pulse',
     icon: (
       <svg
-        className="mt-3 mb-6"
+        className="mt-3 mb-6 s:mb-2 w-28 h-6 s:w-20 s:h-5"
         width="112"
         height="28"
         viewBox="0 0 112 28"
