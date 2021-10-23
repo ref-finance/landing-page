@@ -1,4 +1,5 @@
 import React from 'react';
+import { IconCheck } from '~src/components/icon';
 import Goals from './Goals';
 import HeaderBackground from './HeaderBackground';
 
@@ -39,9 +40,18 @@ const Roadmap = () => {
         `}
       >
         <Goals title="Q3">
-          {'- AMM on mainnet'}
-          {'- Multi Reward Farm'}
-          {'- Instant Swap'}
+          <div className="flex items-center">
+            <span className="mr-2">- AMM on mainnet</span>
+            <IconCheck />
+          </div>
+          <div className="flex items-center">
+            <span className="mr-2">- Multi Reward Farm</span>
+            <IconCheck />
+          </div>
+          <div className="flex items-center">
+            <span className="mr-2">- Instant Swap</span>
+            <IconCheck />
+          </div>
         </Goals>
         <Goals title="Q4">
           {'- Stablecoin Swap'}

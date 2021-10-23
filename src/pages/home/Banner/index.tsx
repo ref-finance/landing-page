@@ -20,12 +20,6 @@ const Banner = () => {
             <IconMNear />
             <Content />
             <MContent />
-            <button
-              className="Banner_btnLaunch l:-mt-16 font-poppins mt-4 h-10 text-lg font-bold italic text-white rounded z-10"
-              onClick={() => window.open('https://app.ref.finance', '_blank')}
-            >
-              Launch APP
-            </button>
           </div>
         </div>
       </div>

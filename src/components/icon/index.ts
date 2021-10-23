@@ -1,5 +1,6 @@
 export { default as IconAirdrop } from './IconAirdrop';
 export { default as IconBubble } from './IconBubble';
+export { default as IconCheck } from './IconCheck';
 export { default as IconCircle } from './IconCircle';
 export { default as IconCoin1 } from './IconCoin1';
 export { default as IconCoin2 } from './IconCoin2';

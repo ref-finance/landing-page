@@ -2,6 +2,8 @@ import React from 'react';
 import FooterMenus from './FooterMenus';
 import FooterBrand from './FooterBrand';
 
+import './index.scss';
+
 const Footer = () => {
   return (
     <footer
