@@ -1,5 +1,6 @@
 import React, { ReactNode, useState } from 'react';
 import { MdArrowBackIosNew } from 'react-icons/md';
+import { menuItems } from '../navbar/const';
 
 import './index.scss';
 
@@ -13,42 +14,32 @@ export type MenuItem = {
 type Props = {
   items: MenuItem[];
   show?: boolean;
+  onClickMenuItem?: (items: MenuItem[]) => void;
 };
 
-const Menu = ({ items, show }: Props) => {
-  const [visible, setVisible] = useState(false);
+const Menu = ({ items, show, onClickMenuItem }: Props) => {
+  const hasSubMenu = items.some(({ children }) => !!children?.length);
 
-  console.log(visible);
+  console.log(items);
 
   return (
     <ul className={`Menu ${show ? 'flex' : 'hidden'} flex-col mx-4 py-5`}>
+      {!hasSubMenu && (
+        <MdArrowBackIosNew
+          className="absolute left-6 top-2 text-lg text-white opacity-50"
+          onClick={() => onClickMenuItem?.(menuItems)}
+        />
+      )}
       {items.map(({ title, href, children }) => {
         return (
           <li
             key={title}
             className="Menu_item flex justify-center items-center"
-            onClick={() => (!!children?.length ? setVisible(true) : window.open(href, '_blank'))}
+            onClick={() => {
+              !!children?.length ? onClickMenuItem?.(children) : window.open(href, '_blank');
+            }}
           >
             <a className="text-lg text-white opacity-50 w-full text-center">{title}</a>
-            {visible && (
-              <ul className={`Menu_subMenu absolute top-0 z-40 py-5`}>
-                <MdArrowBackIosNew
-                  className="absolute left-2 top-2 text-lg text-white opacity-50"
-                  onClick={(e) => { 
-                    e.stopPropagation(); 
-                    setVisible(false) 
-                  }}
-                />
-                {children?.map(({ icon, title, href }) => (
-                  <li className="Menu_item flex items-center">
-                    <span>{icon}</span>
-                    <a href={href} target="_blank" className="ml-12 text-lg text-white opacity-50">
-                      {title}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            )}
           </li>
         );
       })}
