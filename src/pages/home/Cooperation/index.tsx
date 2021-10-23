@@ -7,7 +7,7 @@ const Cooperation = () => {
   return (
     <div className="mt-24 w-full">
       <div className="flex flex-col items-center">
-        <div className="font-poppins font-bold text-6xl italic text-white">Who's with us</div>
+        <div className="font-poppins font-bold text-6xl italic text-white">Partnerships</div>
         <div className="mt-5 font-poppins font-bold text-2xl italic text-white">
           Many leading projects are already collaborating with Ref.finance,
           <br />

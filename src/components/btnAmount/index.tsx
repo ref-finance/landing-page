@@ -8,7 +8,7 @@ type Props = {
 
 const BtnAmount = ({ data }: Props) => {
   return (
-    <button className="relative ml-16 w-32 h-14 flex items-center">
+    <button className="relative ml-16 w-32 h-14 flex items-center cursor-auto">
       <svg width="135" height="58" viewBox="0 0 135 58" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_bd_453:218)">
           <rect
