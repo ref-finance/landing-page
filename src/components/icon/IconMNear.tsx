@@ -3,7 +3,7 @@ import React from 'react';
 const IconMNear = () => {
   return (
     <svg
-      className="l:hidden mt-4 ml-3 z-10"
+      className="l:hidden mt-6 ml-3 z-10"
       width="170"
       height="25"
       viewBox="0 0 170 25"

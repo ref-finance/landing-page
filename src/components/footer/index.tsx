@@ -8,7 +8,8 @@ const Footer = () => {
   return (
     <footer
       className={`
-        px-36 s:px-8 py-24
+        max-width
+        s:px-8 py-24
         l:flex l:justify-between
         s:grid s:grid-cols-3 s:justify-items-center s:text-center
       `}

@@ -19,7 +19,7 @@ const HomePage = () => {
         <Roadmap />
         <Cooperation />
       </section>
-      <footer className="Home_footer">
+      <footer className="Home_footer flex justify-center">
         <Footer />
       </footer>
     </div>
