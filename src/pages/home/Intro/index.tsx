@@ -6,8 +6,9 @@ import CommunityIcons from './CommunityIcons';
 const Intro = () => {
   return (
     <div className="w-full flex flex-col items-center">
-      <div className="l:hidden"><DataCards /></div>
-      <div className="s:hidden"><CommunityIcons /></div>
+      <div className="l:hidden">
+        <DataCards />
+      </div>
       <FeatureCards />
     </div>
   );

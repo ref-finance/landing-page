@@ -5,7 +5,7 @@ import './index.scss';
 
 const Cooperation = () => {
   return (
-    <div className="mt-24 w-full">
+    <div className="mt-24 w-full l:mt-44">
       <div className="flex flex-col items-center">
         <div className="font-poppins font-bold text-6xl italic text-white">Partnerships</div>
         <div className="mt-5 font-poppins font-bold text-2xl italic text-white">

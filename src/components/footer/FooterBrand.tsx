@@ -1,4 +1,5 @@
 import React from 'react';
+import CommunityIcons from '~src/pages/home/Intro/CommunityIcons';
 import { Logo } from '../pic';
 
 const FooterBrand = () => {
@@ -8,6 +9,9 @@ const FooterBrand = () => {
       <div className="FooterBrand_content mx-auto mt-6 font-poppins text-sm text-left text-white opacity-50 s:w-80">
         Ref Finance is one of the core projects in the DeFi ecosystem on NEAR Protocol. Ref aims to bring DeFi one step
         closer to the people. to {'>'} Multi-purpose DeFi platform built on NEAR Protocol
+      </div>
+      <div className="s:hidden">
+        <CommunityIcons />
       </div>
     </div>
   );

@@ -64,6 +64,7 @@ const FeatureCards = () => {
   return (
     <ul
       className={`
+        l:mt-48
         xl:px-32 lg:px-20 md:px-12 sm:px-8
         grid
           l:grid-cols-4 l:grid-rows-1 l:gap-5
@@ -93,7 +94,7 @@ const FeatureCards = () => {
           </>
         }
         description={
-          "Close to centralized service trading experience with less than 2 seconds network transaction finality."
+          'Close to centralized service trading experience with less than 2 seconds network transaction finality.'
         }
       />
       <FeatureCard

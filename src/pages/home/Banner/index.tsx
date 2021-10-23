@@ -15,7 +15,7 @@ const Banner = () => {
     <div className="Bg_Image mx-auto justify-center flex flex-col">
       <div className="flex justify-center  w-full">
         <div className="Index_Header flex s:relative">
-          <div className="inline-flex flex-col mt-10 items-center s:m-0 s:mb-40 s:w-full" >
+          <div className="inline-flex flex-col mt-10 items-center s:m-0 s:mb-40 s:w-full">
             <IconNear />
             <IconMNear />
             <Content />
@@ -33,9 +33,6 @@ const Banner = () => {
           <CommunityIcons />
         </div>
       </div>
-
-
-      {/* <MBlockChain /> */}
     </div>
   );
 };

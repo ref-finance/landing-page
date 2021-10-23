@@ -123,7 +123,7 @@ const withSuffix = (money: string, suffix: string) => {
 const DataCards = () => {
   return (
     <ul className="mt-16 mb-7 s:mt-8 s:mb-16 grid grid-flow-col s:grid-flow-row gap-6 s:gap-12">
-      <DataCard label="Lowest Fee" value={withPrefix('0.01', '$')} />
+      <DataCard label="Low Fee" value={withPrefix('0.01', '$')} />
       <DataCard label="Trade Finality" value={withSuffix('1-2', 's')} />
       <DataCard label="Users" value="22,359" />
     </ul>
