@@ -1,8 +1,10 @@
 import React, { FC, ReactNode } from 'react';
+import { HiOutlineTrendingUp } from 'react-icons/hi';
 
 interface DataCardProps {
   label: ReactNode;
   value: ReactNode;
+  icon?: ReactNode;
 }
 
 const GradientBackground = () => {
@@ -83,7 +85,7 @@ const GradientBackground = () => {
   );
 };
 
-const DataCard: FC<DataCardProps> = ({ label, value }) => {
+const DataCard: FC<DataCardProps> = ({ label, value, icon }) => {
   return (
     <div className="">
       <div className="hidden l:block absolute l:w-64 l:h-36">
@@ -96,7 +98,10 @@ const DataCard: FC<DataCardProps> = ({ label, value }) => {
       `}
       >
         <div className="pb-2 font-poppins font-bold italic text-5xl text-white">{value}</div>
-        <div className="font-poppins text-base text-white">{label}</div>
+        <div className="font-poppins text-base text-white">
+          {label}
+          {icon}
+        </div>
       </li>
     </div>
   );
@@ -125,7 +130,7 @@ const DataCards = () => {
     <ul className="mt-16 mb-7 s:mt-8 s:mb-16 grid grid-flow-col s:grid-flow-row gap-6 s:gap-12">
       <DataCard label="Low Fee" value={withPrefix('0.01', '$')} />
       <DataCard label="Trade Finality" value={withSuffix('1-2', 's')} />
-      <DataCard label="Users" value="22,359" />
+      <DataCard label="Users" value="35,878" icon={<HiOutlineTrendingUp className="inline-block ml-2" />}/>
     </ul>
   );
 };
