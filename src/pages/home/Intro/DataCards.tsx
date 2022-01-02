@@ -130,7 +130,7 @@ const DataCards = () => {
     <ul className="mt-16 mb-7 s:mt-8 s:mb-16 grid grid-flow-col s:grid-flow-row gap-6 s:gap-12">
       <DataCard label="Low Fee" value={withPrefix('0.01', '$')} />
       <DataCard label="Trade Finality" value={withSuffix('1-2', 's')} />
-      <DataCard label="Users" value="35,878" icon={<HiOutlineTrendingUp className="inline-block ml-2" />}/>
+      <DataCard label="Users" value="40,273" icon={<HiOutlineTrendingUp className="inline-block ml-2" />}/>
     </ul>
   );
 };
