@@ -6,20 +6,20 @@ const Logo = () => {
       <path d="M23.5449 37H36.9995L23.5449 23.5454V37Z" fill="white" />
       <path d="M37 2.67029e-05L29.1515 2.60167e-05L37 7.84851L37 2.67029e-05Z" fill="#00C6A2" />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M24.1053 23.5454C23.9174 23.5454 23.7305 23.5406 23.5449 23.5309V15.1088L32.7029 6.60492C33.9943 8.36735 34.7569 10.5416 34.7569 12.8939C34.7569 18.7766 29.988 23.5454 24.1053 23.5454ZM30.311 4.23586L23.5449 10.5186V2.25689C23.7305 2.24727 23.9174 2.2424 24.1053 2.2424C26.4207 2.2424 28.5636 2.98118 30.311 4.23586Z"
         fill="white"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M22.4249 2.24243H12.334V12.1975L16.8619 16.7254L22.4249 11.5598V2.24243ZM22.4249 16.1499L16.7754 21.3958L12.334 16.9544V37H22.4249V16.1499Z"
         fill="white"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M11.2121 2.24243H0V16.6826L8.40957 8.27307L11.2121 11.0756V2.24243ZM11.2121 15.8325L8.40957 13.03L0 21.4395V37H11.2121V15.8325Z"
         fill="white"
       />

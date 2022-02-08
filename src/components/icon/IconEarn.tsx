@@ -26,7 +26,7 @@ const IconEarn = () => {
           <stop stop-color="#1AA189" offset="100%"></stop>
         </linearGradient>
       </defs>
-      <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g id="页面-1" stroke="none" stroke-width="1" fill="none" fillRule="evenodd">
         <g id="编组-26" transform="translate(2.000000, 5.000000)">
           <circle id="椭圆形备份" fill="url(#linearGradient-1)" cx="29" cy="17.10445" r="17"></circle>
           <path
@@ -34,7 +34,7 @@ const IconEarn = () => {
             id="路径"
             stroke="url(#linearGradient-2)"
             stroke-width="2"
-            fill-opacity="0.2"
+            fillOpacity="0.2"
             fill="#FFFFFF"
           ></path>
           <circle id="椭圆形" fill="url(#linearGradient-3)" cx="22" cy="53.10445" r="22"></circle>

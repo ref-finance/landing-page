@@ -26,7 +26,7 @@ const IconTrade = () => {
           <stop stop-color="#1AA189" offset="100%"></stop>
         </linearGradient>
       </defs>
-      <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g id="页面-1" stroke="none" stroke-width="1" fill="none" fillRule="evenodd">
         <g id="编组-28" transform="translate(6.000000, 6.000000)">
           <g id="编组-7" transform="translate(0.000000, 31.000000)" fill="url(#linearGradient-1)">
             <path
@@ -39,7 +39,7 @@ const IconTrade = () => {
             id="椭圆形"
             stroke="url(#linearGradient-2)"
             stroke-width="2"
-            fill-opacity="0.2"
+            fillOpacity="0.2"
             fill="#FFFFFF"
             cx="37.2532895"
             cy="37.0065789"

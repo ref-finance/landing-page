@@ -24,7 +24,8 @@ module.exports = {
         'dark-border': 'rgba(8, 97, 81, 0.39)',
         'dark-border': 'rgba(8, 97, 81, 0.39)',
         'green-dark': '#1AA189',
-        'gray-text': '#73818B'
+        'gray-text': '#73818B',
+        globalBg: '#131419'
       }
     },
     fontFamily: {

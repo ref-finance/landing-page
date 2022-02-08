@@ -12,23 +12,21 @@ import CommunityIcons from '../Intro/CommunityIcons';
 
 const Banner = () => {
   return (
-    <div className="Bg_Image mx-auto justify-center flex flex-col">
+    <div className="mx-auto justify-center flex flex-col">
       <div className="flex justify-center  w-full">
         <div className="Index_Header flex s:relative">
-          <div className="inline-flex flex-col mt-10 items-center s:m-0 s:mb-40 s:w-full">
+          <div className="inline-flex flex-col my-10 items-center s:m-0 s:mb-40 s:w-full">
             <IconNear />
-            <IconMNear />
             <Content />
-            <MContent />
           </div>
         </div>
       </div>
-      <div className="flex justify-center  w-full s:hidden">
+      <div className="flex justify-center  w-full ">
         <div className="Index_Header flex">
           <DataCards />
         </div>
       </div>
-      <div className="flex justify-center  w-full l:hidden">
+      <div className="flex justify-center w-full l:hidden">
         <div className="Index_Header flex">
           <CommunityIcons />
         </div>

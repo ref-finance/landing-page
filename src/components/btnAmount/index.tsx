@@ -40,7 +40,7 @@ const BtnAmount = ({ data }: Props) => {
             filterUnits="userSpaceOnUse"
             color-interpolation-filters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feGaussianBlur in="BackgroundImage" stdDeviation="25" />
             <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_453:218" />
             <feColorMatrix
@@ -89,20 +89,20 @@ const BtnAmount = ({ data }: Props) => {
           <path d="M11.5293 17.7281H17.7007L11.5293 11.5566V17.7281Z" fill="white" />
           <path d="M17.7002 0.75669L14.1002 0.756689L17.7002 4.35669L17.7002 0.75669Z" fill="#00C6A2" />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M11.7871 11.5568C11.7003 11.5568 11.614 11.5546 11.5283 11.5501V7.68709L15.73 3.78549C16.3228 4.59406 16.6728 5.59171 16.6728 6.67111C16.6728 9.36942 14.4854 11.5568 11.7871 11.5568ZM14.6326 2.69909L11.5283 5.58164V1.79214C11.614 1.78766 11.7003 1.7854 11.7871 1.7854C12.8487 1.7854 13.8313 2.124 14.6326 2.69909Z"
             fill="white"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M11.0153 1.78516H6.38672V6.35081L8.46407 8.42815L11.0153 6.05916V1.78516ZM11.0153 8.16461L8.42441 10.5704L6.38672 8.53274V17.728H11.0153V8.16461Z"
             fill="white"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M5.87235 1.78516H0.729492V8.40878L4.58709 4.55118L5.87235 5.83644V1.78516ZM5.87235 8.01837L4.58709 6.73311L0.729492 10.5907V17.728H5.87235V8.01837Z"
             fill="white"
           />

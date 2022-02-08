@@ -5,8 +5,8 @@ const IconQuiz = () => {
     <svg width="59" height="33" viewBox="0 0 59 33" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g filter="url(#filter0_d_98:915)">
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M13.5 3C7.14873 3 2 8.14873 2 14.5C2 20.8513 7.14873 26 13.5 26H29.5H34C37.5 30 42 31.3333 44 31.5V26H45.5C51.8513 26 57 20.8513 57 14.5C57 8.14873 51.8513 3 45.5 3H13.5Z"
           fill="url(#paint0_linear_98:915)"
         />
@@ -21,7 +21,7 @@ const IconQuiz = () => {
           filterUnits="userSpaceOnUse"
           color-interpolation-filters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
