@@ -28,7 +28,7 @@ const FeatureCard: FC<FeatureCardProps> = ({ index, icon, title, description }) 
     >
       <span
         className={`
-          mx-auto h-24
+          mx-auto
           s:row-span-full s:col-start-${iconStartIndex} relative  l:right-12
         `}
       >

@@ -20,7 +20,7 @@ const Roadmap = () => {
       >
         <div
           className={`
-          font-poppins font-bold italic text-4xl l:text-6xl text-white s:text-center
+          font-poppins font-bold italic text-4xl l:text-6xl text-white s:text-center relative s:right-14
           l:mt-64 s:mt-8 xl:mr-36 l:mr-32 l:justify-self-end
         `}
         >
