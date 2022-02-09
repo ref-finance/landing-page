@@ -1,10 +1,31 @@
 import React from 'react';
 
+import { useTrail, animated } from '@react-spring/web';
+
+const Trail: React.FC<{ open: boolean }> = ({ open, children }) => {
+  const items = React.Children.toArray(children);
+  const trail = useTrail(items.length, {
+    config: { mass: 5, tension: 2000, friction: 600 },
+    opacity: open ? 1 : 0,
+    x: open ? 0 : 20,
+    from: { opacity: 0, x: 20, height: 0 }
+  });
+  return (
+    <div className="flex items-center flex-col l:mt-6 s:mt-4">
+      {trail.map(({ height, ...style }, index) => (
+        <animated.div key={index} style={style}>
+          {items[index]}
+        </animated.div>
+      ))}
+    </div>
+  );
+};
+
 const NearStarts = () => {
   return (
     <>
       <svg
-        className="l:hidden"
+        className="l:hidden "
         width="250"
         height="43"
         viewBox="0 0 250 43"
@@ -55,11 +76,11 @@ const NearStarts = () => {
 
 const Content = () => {
   return (
-    <div className="flex items-center flex-col l:mt-6 s:mt-4">
-      <div className="text-white s:text-4xl l:text-5xl">Where Your</div>
-      <div className="text-white s:text-4xl l:text-5xl l:my-3 s:my-1">DeFi journey on</div>
+    <Trail open>
+      <div className="text-white s:text-4xl l:text-5xl ">Where Your</div>
+      <div className="text-white s:text-4xl l:text-5xl l:my-3 s:my-1 ">DeFi journey on</div>
       <NearStarts />
-    </div>
+    </Trail>
   );
 };
 
