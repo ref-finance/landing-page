@@ -1,4 +1,8 @@
 import React from 'react';
+import './index.scss';
+function ShadowCircle() {
+  return <div className="shadowCircle s:hidden rounded-full z-30" />;
+}
 
 function Net() {
   return (
@@ -7,7 +11,7 @@ function Net() {
       height="100%"
       viewBox="350 150 740 562"
       fill="none"
-      className="absolute block l:-top-28 s:top-0 max-h-screen"
+      className="absolute block l:-top-28 s:top-0 max-h-screen opacity-60"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -156,6 +160,7 @@ function LinearLine() {
 export default function () {
   return (
     <>
+      <ShadowCircle />
       <Net />
       <LinearLine />
     </>

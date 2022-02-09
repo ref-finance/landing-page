@@ -37,7 +37,7 @@ const DefiJourneyOurline = () => {
 
 const DefiJourney = () => {
   return (
-    <div className="relative flex items-center justify-center l:my-3 s:my-1">
+    <div className="relative flex items-center justify-center l:my-3 s:my-1 select-none">
       <DefiJourneyOurline />
       <p
         className="text-white s:text-4xl l:text-5xl absolute"

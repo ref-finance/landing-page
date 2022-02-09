@@ -28,8 +28,8 @@ const FeatureCard: FC<FeatureCardProps> = ({ index, icon, title, description }) 
     >
       <span
         className={`
-          mx-auto l:h-32 s:h-24
-          s:row-span-full s:col-start-${iconStartIndex}
+          mx-auto h-24
+          s:row-span-full s:col-start-${iconStartIndex} relative  l:right-12
         `}
       >
         {icon}
@@ -67,7 +67,7 @@ const FeatureCards = () => {
         l:mt-48
         xl:px-32 lg:px-20 md:px-12 sm:px-8
         grid
-          l:grid-cols-4 l:grid-rows-1 l:gap-5
+          l:grid-cols-3 l:grid-rows-1 l:gap-8
           s:grid-cols-1 s:auto-rows-min s:gap-2
       `}
     >
@@ -76,21 +76,21 @@ const FeatureCards = () => {
         icon={<IconSwap />}
         title={
           <>
-            Swap with
+            <span className="whitespace-nowrap">Multiple pools in</span>
             <br />
-            low fee
+
+            <span className="whitespace-nowrap">a single contract</span>
           </>
         }
-        description="A swap or a typical transaction on NEAR only costs less than $0.01 for network transaction fee."
+        description="A swap or a typical transaction on NEAR only costs less than $0.01 for network transaction fee. "
       />
       <FeatureCard
         index={1}
         icon={<IconTrade />}
         title={
           <>
-            Trade faster
-            <br />
-            high efficacy
+            Customizable
+            <br /> LP fees
           </>
         }
         description={
@@ -102,24 +102,12 @@ const FeatureCards = () => {
         icon={<IconEarn />}
         title={
           <>
-            Earn more
+            Multi-Rewards
             <br />
-            multi-rewards
+            Farming
           </>
         }
-        description="Ref allows each liquidty pool to host up to 16 different farms at the same time to max token exposure to users."
-      />
-      <FeatureCard
-        index={3}
-        icon={<IconAirdrop />}
-        title={
-          <>
-            Airdrop
-            <br />
-            earn rewards
-          </>
-        }
-        description="..."
+        description="Ref allows each liquidty pool to host up to 16 different farms at the same time to max token exposure to users. "
       />
     </ul>
   );

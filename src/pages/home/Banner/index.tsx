@@ -26,11 +26,6 @@ const Banner = () => {
           <DataCards />
         </div>
       </div>
-      <div className="flex justify-center w-full l:hidden">
-        <div className="Index_Header flex">
-          <CommunityIcons />
-        </div>
-      </div>
     </div>
   );
 };

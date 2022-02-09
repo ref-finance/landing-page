@@ -3,7 +3,7 @@ import Navbar from '~src/components/navbar';
 import Footer from '~src/components/footer';
 import { Coins, MCoins } from '~src/components/conins';
 import Banner from './Banner';
-import Backgound from '~src/components/Backgound';
+import Backgound from '~src/components/background';
 import Intro from './Intro';
 import Roadmap from './Roadmap';
 import Cooperation from './Cooperation';
