@@ -67,7 +67,7 @@ const FeatureCards = () => {
         l:mt-48
         xl:px-32 lg:px-20 md:px-12 sm:px-8
         grid
-          l:grid-cols-3 l:grid-rows-1 l:gap-8
+          l:grid-cols-3 l:grid-rows-1 l:gap-32
           s:grid-cols-1 s:auto-rows-min s:gap-2
       `}
     >
