@@ -9,7 +9,7 @@ function Net() {
     <svg
       width="100%"
       height="100%"
-      viewBox="350 150 740 562"
+      viewBox="160 100 1120 662"
       fill="none"
       className="absolute block l:-top-28 s:top-0 max-h-screen opacity-60"
       xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ function LinearLine() {
       height="100%"
       viewBox="0 0 1421 687"
       fill="none"
-      className="absolute block  max-w-screen l:-top-20 s:-top-10 left-0 max-h-screen "
+      className="absolute block  max-w-screen l:-top-24 s:-top-16 left-0 max-h-screen "
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
