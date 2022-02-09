@@ -39,33 +39,39 @@ const Roadmap = () => {
             s:grid-flow-row s:auto-cols-auto s:gap-16
         `}
       >
-        <Goals title="Q3">
+        <Goals title="Q1 2022">
           <div className="flex items-center">
-            <span className="mr-2">- AMM on mainnet</span>
+            <span className="mr-2">Parallel Swap</span>
             <IconCheck />
           </div>
           <div className="flex items-center">
-            <span className="mr-2">- Multi Reward Farm</span>
+            <span className="mr-2">Single-sided Staking</span>
             <IconCheck />
           </div>
           <div className="flex items-center">
-            <span className="mr-2">- Instant Swap</span>
+            <span className="mr-2">Smart Routing</span>
             <IconCheck />
           </div>
+          {'Multi-Wallet Integration'}
+          <span>
+            'Liquidity aggregation'
+            <br />
+            '(NEAR x Aurora)'
+          </span>
         </Goals>
-        <Goals title="Q4">
-          {'- Stablecoin Swap'}
-          {'- Parallel Swap'}
-          {'- Smart Route Swap'}
-          {'- Data Analytics'}
+        <Goals title="Q2 2022">
+          {'Auto-compounding'}
+          {'Zap Function'}
+          {'Liquidity Management Dashboard'}
+          {'Referendum'}
+          {'Enhanced Ref Analytics'}
+          {'Enhanced UX'}
         </Goals>
-        <Goals title="2022">
-          {'- Metamask support'}
-          {'- Integrate with a fiat-on-ramp solution'}
-          {'- An active LP management feature or an Orderbook Dex'}
-          {'- Pool based stablecoin'}
-          {'- Lending feature on Ref'}
-          {'- New user interactive feature'}
+        <Goals title="H2 2022">
+          {'Central Limit Orderbook Integration'}
+          {'Concentrated Liquidity'}
+          {'Cross-chain smart contract calls'}
+          {'All-in-one DAO'}
         </Goals>
       </div>
     </div>

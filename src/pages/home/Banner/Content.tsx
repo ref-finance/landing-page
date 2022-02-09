@@ -1,56 +1,5 @@
 import React from 'react';
 
-const WhereYour = () => {
-  return <p className="text-white s:text-4xl l:text-5xl">Where Your</p>;
-};
-
-const DefiJourneyOurline = () => {
-  return (
-    <>
-      <svg
-        className="l:hidden"
-        width="333"
-        height="56"
-        viewBox="0 0 333 61"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect x="2.5" y="2.5" width="327" height="56" fill="black" fillOpacity="0.3" stroke="#00C6A2" />
-        <path d="M9.375 2H2V59H9.375" stroke="#00C6A2" stroke-width="4" />
-        <path d="M323 59L330.375 59L330.375 2L323 2" stroke="#00C6A2" stroke-width="4" />
-      </svg>
-      <svg
-        className="s:hidden"
-        width="603"
-        height="66"
-        viewBox="0 0 603 71"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect x="1.5" y="2.5" width="599" height="66" fill="black" fillOpacity="0.3" stroke="#00C6A2" />
-        <path d="M14.5 2H2V69H14.5" stroke="#00C6A2" stroke-width="4" />
-        <path d="M588 69L600.5 69L600.5 2L588 2" stroke="#00C6A2" stroke-width="4" />
-      </svg>
-    </>
-  );
-};
-
-const DefiJourney = () => {
-  return (
-    <div className="relative flex items-center justify-center l:my-3 s:my-1 select-none">
-      <DefiJourneyOurline />
-      <p
-        className="text-white s:text-4xl l:text-5xl absolute"
-        style={{
-          textShadow: '0px 0px 12px rgba(255, 255, 255, 0.8)'
-        }}
-      >
-        DeFi journey on
-      </p>
-    </div>
-  );
-};
-
 const NearStarts = () => {
   return (
     <>
@@ -107,8 +56,8 @@ const NearStarts = () => {
 const Content = () => {
   return (
     <div className="flex items-center flex-col l:mt-6 s:mt-4">
-      <WhereYour />
-      <DefiJourney />
+      <div className="text-white s:text-4xl l:text-5xl">Where Your</div>
+      <div className="text-white s:text-4xl l:text-5xl l:my-3 s:my-1">DeFi journey on</div>
       <NearStarts />
     </div>
   );
