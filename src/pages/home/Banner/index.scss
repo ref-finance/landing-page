@@ -25,17 +25,9 @@
   background: linear-gradient(289.57deg, rgba(255, 255, 255, 0.08) 8.01%, rgba(255, 255, 255, 0.03) 100%);
   width: 340px;
   height: 166px;
+  transition: all 0.15s linear;
 
   &:hover {
-    animation: cardTranslate 0.1s ease both;
-  }
-
-  @keyframes cardTranslate {
-    0% {
-      bottom: 0;
-    }
-    100% {
-      bottom: 6px;
-    }
+    transform: translateY(-6px);
   }
 }
