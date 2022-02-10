@@ -27,7 +27,9 @@ const Menu = ({ items, show, onClickMenuItem }: Props) => {
       {!hasSubMenu && (
         <MdArrowBackIosNew
           className="absolute left-6 top-2 text-lg text-white opacity-50"
-          onClick={() => onClickMenuItem?.(menuItems)}
+          onClick={e => {
+            onClickMenuItem?.(menuItems);
+          }}
         />
       )}
       {items.map(({ title, href, children }) => {
@@ -35,7 +37,9 @@ const Menu = ({ items, show, onClickMenuItem }: Props) => {
           <li
             key={title}
             className="Menu_item flex justify-center items-center"
-            onClick={() => {
+            onClick={e => {
+              e.stopPropagation();
+
               !!children?.length ? onClickMenuItem?.(children) : window.open(href, '_blank');
             }}
           >

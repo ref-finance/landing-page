@@ -39,7 +39,7 @@ const MNavMenu = ({ data, onOpenMenu }: Props) => {
   return (
     <div className="MNavMenu flex items-center l:hidden">
       <BtnAmount data={data} />
-      <HiMenu className="MNavMenu_iconMenu ml-3 text-2xl cursor-pointer" onClick={onOpenMenu} />
+      <HiMenu className="MNavMenu_iconMenu ml-3 z-30 text-2xl cursor-pointer" onClick={onOpenMenu} />
     </div>
   );
 };
