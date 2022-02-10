@@ -10,8 +10,7 @@ const FooterBrand = () => {
         <Logo />
       </div>
       <div className="FooterBrand_content mx-auto mt-6 font-poppins text-sm text-left text-white opacity-50 s:w-80">
-        Multi-purpose DeFi platform built on
-        {isMobile ? null : <br />}
+        Multi-purpose DeFi platform built on {isMobile ? null : <br />}
         NEAR Protocol
       </div>
       <div className="s:hidden">

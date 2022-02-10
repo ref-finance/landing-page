@@ -25,7 +25,7 @@ const Goals: FC<GoalsProps> = ({ title, children }) => {
         <div
           className="w-0 h-0 ml-1 border-solid -translate-y-2"
           style={{
-            borderWidth: '0 30px 30px 0',
+            borderWidth: '0 20px 20px 0',
             borderColor: 'transparent #00C6A2 transparent transparent'
           }}
         />
