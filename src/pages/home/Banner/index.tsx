@@ -15,7 +15,7 @@ const Banner = () => {
     <div className="mx-auto justify-center flex flex-col">
       <div className="flex justify-center  w-full">
         <div className="Index_Header flex s:relative">
-          <div className="inline-flex flex-col my-10 items-center s:m-0 s:mb-40 s:w-full">
+          <div className="inline-flex flex-col my-10 items-center s:m-0 s:mb-28 s:w-full">
             <IconNear />
             <Content />
           </div>

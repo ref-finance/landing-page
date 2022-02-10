@@ -5,13 +5,15 @@ function ShadowCircle() {
 }
 
 function Net() {
+  const isMobile = window.screen.width < 1024;
+
   return (
     <svg
       width="100%"
       height="100%"
-      viewBox="160 100 1120 662"
+      viewBox={`${isMobile ? '260 300 920 364' : '160 100 1120 662'}`}
       fill="none"
-      className="absolute block l:-top-28 s:top-0 max-h-screen opacity-60"
+      className="absolute block l:-top-28 s:top-0 max-h-screen l:opacity-60"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -42,10 +44,10 @@ function LinearLine() {
   return (
     <svg
       width="100%"
-      height="100%"
-      viewBox="0 0 1421 687"
+      height="687"
+      viewBox="100 0 1221 687"
       fill="none"
-      className="absolute block  max-w-screen l:-top-24 s:-top-16 left-0 max-h-screen "
+      className="absolute block left-0 LinearLine"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

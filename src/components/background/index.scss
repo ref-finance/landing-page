@@ -8,3 +8,15 @@
   left: 103px;
   top: -62px;
 }
+.LinearLine {
+  top: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .max-width {
+    width: 968px;
+  }
+  .LinearLine {
+    top: 50px;
+  }
+}

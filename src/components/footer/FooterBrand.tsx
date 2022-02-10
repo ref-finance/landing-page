@@ -5,7 +5,9 @@ import { Logo } from '../pic';
 const FooterBrand = () => {
   return (
     <div className="s:col-span-3 s:mb-12 s:w-full">
-      <Logo />
+      <div className="flex items-center justify-center">
+        <Logo />
+      </div>
       <div className="FooterBrand_content mx-auto mt-6 font-poppins text-sm text-left text-white opacity-50 s:w-80">
         Multi-purpose DeFi platform built on
         <br />

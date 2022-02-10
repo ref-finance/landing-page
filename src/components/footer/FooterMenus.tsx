@@ -8,7 +8,9 @@ interface MenuItemProps {
 const MenuItem: FC<MenuItemProps> = ({ label, href }) => {
   return (
     <li className="mb-5 text-white opacity-50 font-poppins text-base s:text-sm hover:opacity-100 s:col-span-1">
-      <a href={href} target="_blank">{label}</a>
+      <a href={href} target="_blank">
+        {label}
+      </a>
     </li>
   );
 };
@@ -21,7 +23,7 @@ interface MenuProps {
 const Menu: FC<MenuProps> = ({ label, children }) => {
   return (
     <ul className="flex flex-col">
-      <li className="mb-3 font-poppins text-lg s:text-sm text-white s:text-mobile">{label}</li>
+      <li className="mb-3 font-poppins text-lg s:text-sm text-white ">{label}</li>
       <>{children}</>
     </ul>
   );
@@ -35,7 +37,7 @@ const FooterMenus = () => {
         <MenuItem label="Farm" href="https://app.ref.finance/farms" />
       </Menu>
       <Menu label="ABOUT">
-        <MenuItem label="DOC" href="https://guide.ref.finance" />
+        <MenuItem label="Docs" href="https://guide.ref.finance" />
         <MenuItem label="Forum" href="https://gov.ref.finance" />
       </Menu>
       <Menu label="COMMUNITY">

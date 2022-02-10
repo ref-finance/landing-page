@@ -11,15 +11,7 @@ interface DataCardProps {
 const GradientBackground = () => {
   return (
     <svg width="362" height="188" viewBox="0 0 362 188" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g
-        filter="url(#filter0_bd_3_191)"
-        style={{
-          display: 'block',
-          background: 'linear-gradient(289.57deg, rgba(255, 255, 255, 0.08) 8.01%, rgba(255, 255, 255, 0.03) 100%)',
-          boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.15)',
-          backdropFilter: 'blur(50px)'
-        }}
-      >
+      <g filter="url(#filter0_bd_3_191)">
         <rect
           x="11"
           y="11"
@@ -77,6 +69,7 @@ const GradientBackground = () => {
           <stop offset="0.0641396" stop-color="white" stop-opacity="0.08" />
           <stop offset="1" stop-color="white" stop-opacity="0.03" />
         </linearGradient>
+
         <linearGradient
           id="paint1_linear_3_191"
           x1="343.55"

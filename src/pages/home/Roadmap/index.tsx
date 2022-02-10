@@ -7,29 +7,24 @@ const Roadmap = () => {
   return (
     <div
       className={`
-        w-full h-auto relative flex flex-col justify-center align-middle
+         h-auto relative flex flex-col justify-center align-middle CooperateCard_max_width mx-auto s:w-72 s:mt-24 l:mt-36
+
       `}
     >
-      <HeaderBackground />
       {/* Title */}
-      <div
-        className={`
-          w-full l:mb-20
-          l:grid l:grid-flow-col l:auto-cols-fr
-        `}
-      >
+      <div className="font-poppins flex font-bold text-6xl s:text-4xl italic text-white l:mb-16 s:mb-0">
+        What we’re
+        <br />
+        working on
         <div
-          className={`
-          font-poppins font-bold italic text-4xl l:text-6xl text-white s:text-center relative s:right-14
-          l:mt-64 s:mt-8 xl:mr-36 l:mr-32 l:justify-self-end
-        `}
-        >
-          What we’re
-          <br />
-          working on
-        </div>
-        <div className="hidden l:block l:w-1/2 l:h-1" />
+          className="w-0 h-0 ml-1 -mt-3 border-solid -translate-y-10 inline-block s:hidden"
+          style={{
+            borderWidth: '0 30px 30px 0',
+            borderColor: 'transparent #00C6A2 transparent transparent'
+          }}
+        />
       </div>
+
       {/* Content */}
       <div
         className={`
@@ -54,9 +49,9 @@ const Roadmap = () => {
           </div>
           {'Multi-Wallet Integration'}
           <span>
-            'Liquidity aggregation'
+            {'Liquidity aggregation'}
             <br />
-            '(NEAR x Aurora)'
+            {'(NEAR x Aurora)'}
           </span>
         </Goals>
         <Goals title="Q2 2022">
