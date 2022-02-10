@@ -8,8 +8,8 @@ type Props = {
 
 const BtnAmount = ({ data }: Props) => {
   return (
-    <button className="relative ml-16 w-32 h-14 flex items-center cursor-auto left-8">
-      <svg width="135" height="58" viewBox="0 0 120 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <button className="relative ml-16 w-32 h-14 flex items-center cursor-auto s:left-8">
+      <svg width="135" height="60" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_bd_453:218)">
           <rect
             x="10.9727"
@@ -82,7 +82,7 @@ const BtnAmount = ({ data }: Props) => {
         </defs>
       </svg>
       <span
-        className="absolute flex justify-center items-center w-8 h-8 rounded-full border border-solid border-primary box-content"
+        className="absolute flex justify-center items-center bg-dark  l:w-9 l:h-9 s:w-8 s:h-8 rounded-full border border-solid border-primary box-content"
         style={{ left: 10 }}
       >
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,7 +108,7 @@ const BtnAmount = ({ data }: Props) => {
           />
         </svg>
       </span>
-      <span className="absolute font-lexend text-lg text-center text-white" style={{ left: 50 }}>
+      <span className="absolute font-poppins text-lg text-center text-white" style={{ left: 50 }}>
         ${data?.price.slice(0, 4)}
       </span>
     </button>
