@@ -1,6 +1,6 @@
 import React, { FC, ReactNode } from 'react';
 import { HiOutlineTrendingUp } from 'react-icons/hi';
-
+import { usersCount } from '../../../config';
 interface DataCardProps {
   value: ReactNode;
   icon?: ReactNode;
@@ -142,7 +142,7 @@ const DataCards = () => {
       <DataCard title="LIGHTING FAST" value={withSuffix('1-2', 'S')} description="TRANSACTION FINALITY" />
       <DataCard
         title="GROWING FAST"
-        value="40,273"
+        value={usersCount}
         icon={<HiOutlineTrendingUp className="inline-block ml-2" />}
         description="INCREASING USERS"
       />

@@ -4,6 +4,7 @@ import Cards from './Cards';
 import './index.scss';
 
 const Cooperation = () => {
+  const isMobile = window.screen.width < 1024;
   return (
     <div className="mt-24 w-full l:mt-44 flex justify-center">
       <div className="flex flex-col CooperateCard_max_width s:items-center">
@@ -21,7 +22,7 @@ const Cooperation = () => {
 
           <div className="mt-5 font-poppins text-2xl  text-white s:text-base s:italic">
             Many leading projects are already collaborating with Ref.finance, exploring
-            <br />
+            {isMobile ? null : <br />}
             the next steps for unlocking these exciting benefits!
           </div>
         </div>
