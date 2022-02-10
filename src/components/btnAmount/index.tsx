@@ -108,7 +108,7 @@ const BtnAmount = ({ data }: Props) => {
           />
         </svg>
       </span>
-      <span className="absolute font-poppins ml-2 text-lg text-center text-white" style={{ left: 50 }}>
+      <span className="absolute font-poppins l:ml-2 text-lg text-center text-white" style={{ left: 50 }}>
         ${data?.price.slice(0, 4)}
       </span>
     </button>
