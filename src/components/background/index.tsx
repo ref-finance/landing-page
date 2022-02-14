@@ -11,9 +11,9 @@ function Net() {
     <svg
       width="100%"
       height="100%"
-      viewBox={`${isMobile ? '260 300 920 364' : '160 100 1120 662'}`}
+      viewBox={`${isMobile ? '260 300 920 364' : '120 0 1200 862'}`}
       fill="none"
-      className="absolute block l:-top-28 s:top-0 max-h-screen l:opacity-60"
+      className="absolute block l:top-32 s:top-0 max-h-screen l:opacity-60"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

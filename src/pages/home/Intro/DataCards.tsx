@@ -90,15 +90,12 @@ const GradientBackground = () => {
 const DataCard: FC<DataCardProps> = ({ title, value, icon, description }) => {
   return (
     <div className="dataCard relative font-bold italic text-white flex flex-col justify-center items-center text-center mx-2 s:my-2 rounded-2xl border border-mobile">
-      {/* <div className="absolute">
-        <GradientBackground />
-      </div> */}
-
       <div
         style={{
           fontSize: '32px',
           lineHeight: '38px'
         }}
+        className="text-mobile"
       >
         {title}
       </div>
@@ -112,7 +109,7 @@ const DataCard: FC<DataCardProps> = ({ title, value, icon, description }) => {
         {value}
         {icon}
       </div>
-      <div className="font-poppins text-base">{description}</div>
+      <div className="font-poppins text-base not-italic  font-normal">{description}</div>
     </div>
   );
 };
@@ -138,13 +135,13 @@ const withSuffix = (money: string, suffix: string) => {
 const DataCards = () => {
   return (
     <ul className="mt-44 mb-7 s:mt-8 s:mb-16 flex s:flex-col">
-      <DataCard title="LOW FEES" value={withPrefix('0.01', '<$')} description="NEAR'S TRANSACTION FEES" />
-      <DataCard title="LIGHTING FAST" value={withSuffix('1-2', 'S')} description="TRANSACTION FINALITY" />
+      <DataCard title="LOW FEES" value={withPrefix('0.01', '<$')} description="Near’s Transaction Fees" />
+      <DataCard title="LIGHTING FAST" value={withSuffix('1-2', 'S')} description="Transaction Finality" />
       <DataCard
         title="GROWING FAST"
         value={usersCount}
         icon={<HiOutlineTrendingUp className="inline-block ml-2" />}
-        description="INCREASING USERS"
+        description="Increasing Users"
       />
     </ul>
   );
