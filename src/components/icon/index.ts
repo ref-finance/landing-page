@@ -13,7 +13,7 @@ export { default as IconMCoin2 } from './IconMCoin2';
 export { default as IconMCoin3 } from './IconMCoin3';
 export { default as IconMCoin4 } from './IconMCoin4';
 export { default as IconMNear } from './IconMNear';
-export { default as IconNear } from './IconNear';
+export { IconNear, IconNearNewGray, IconNearNewWhite } from './IconNear';
 export { default as IconRef } from './IconRef';
 export { default as IconSwap } from './IconSwap';
 export { default as IconTrade } from './IconTrade';

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const IconNear = () => {
+export const IconNear = () => {
   return (
     <svg
       className="s:mt-6 s:ml-3 s:z-10 s:mb-4"
@@ -26,4 +26,30 @@ const IconNear = () => {
   );
 };
 
-export default IconNear;
+export const IconNearNewGray = () => {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        opacity="0.6"
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M2.52632 3.3391V12.2464L6.73684 8.84329L7.15789 9.24272L3.62708 14.6224C2.3152 15.9243 0 15.0434 0 13.2424V2.24467C0 0.381853 2.45074 -0.466653 3.7156 0.958234L13.4737 11.9509V3.40903L9.68421 6.4467L9.26316 6.04727L12.2663 1.02554C13.5197 -0.425726 16 0.415095 16 2.29129V13.0453C16 14.9081 13.5493 15.7567 12.2844 14.3318L2.52632 3.3391Z"
+        fill="white"
+      />
+    </svg>
+  );
+};
+
+export const IconNearNewWhite = () => {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        opacity="1"
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M2.52632 3.3391V12.2464L6.73684 8.84329L7.15789 9.24272L3.62708 14.6224C2.3152 15.9243 0 15.0434 0 13.2424V2.24467C0 0.381853 2.45074 -0.466653 3.7156 0.958234L13.4737 11.9509V3.40903L9.68421 6.4467L9.26316 6.04727L12.2663 1.02554C13.5197 -0.425726 16 0.415095 16 2.29129V13.0453C16 14.9081 13.5493 15.7567 12.2844 14.3318L2.52632 3.3391Z"
+        fill="white"
+      />
+    </svg>
+  );
+};

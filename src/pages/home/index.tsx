@@ -7,10 +7,11 @@ import Backgound from '~src/components/background';
 import Intro from './Intro';
 import Roadmap from './Roadmap';
 import Cooperation from './Cooperation';
+import Investors from './Investors';
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-globalBg">
+    <div className="min-h-screen bg-black">
       <header className="h-20">
         <Navbar />
       </header>
@@ -19,6 +20,7 @@ const HomePage = () => {
         <Banner />
         <Intro />
         <Roadmap />
+        <Investors />
         <Cooperation />
       </section>
       <footer className="Home_footer flex justify-center">
