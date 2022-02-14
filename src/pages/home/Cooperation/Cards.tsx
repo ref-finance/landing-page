@@ -89,9 +89,9 @@ const Cards = () => {
             </defs>
           </svg>
 
-          <div className="absolute top-3 items-center flex flex-col w-40 left-1/2 -ml-20">
-            {icon}
-            <div className="font-lexend text-lg text-white">{title}</div>
+          <div className="absolute top-3 items-center flex flex-col w-40 left-1/2 -ml-20">{icon}</div>
+          <div className="absolute mx-auto w-full justify-center flex bottom-3 font-lexend text-lg text-white">
+            <span>{title}</span>
           </div>
           <div className="CooperateCard_fake_wrap block absolute top-0 left-0 bottom-0 right-0 z-10 bg-gradient-to-tr hover:bg-none from-black to-gray-900 opacity-70 hover:opacity-100">
             <div className="CooperateCard_fake_arrow "></div>
