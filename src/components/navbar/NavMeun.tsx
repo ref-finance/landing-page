@@ -59,7 +59,7 @@ const MNavMenu = ({ data }: Props) => {
         <Dropdown items={dropdownItems} show={isHover} />
       </a>
       <button
-        className="NavMenu_btnLaunch ml-8 h-10 text-base font-bold text-black rounded italic"
+        className="NavMenu_btnLaunch ml-8 h-10 text-base font-medium text-black rounded italic"
         onClick={() => window.open('https://app.ref.finance', '_blank')}
       >
         Launch APP
