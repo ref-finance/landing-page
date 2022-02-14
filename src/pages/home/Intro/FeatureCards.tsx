@@ -50,7 +50,7 @@ const FeatureCard: FC<FeatureCardProps> = ({ index, icon, title, description }) 
         </div>
         <span
           className={`
-          w-full l:mt-4 font-poppins text-sm text-white-gray
+          w-full l:mt-4 font-poppins text-base text-white-gray
         `}
         >
           {description}

@@ -20,7 +20,7 @@ const Cooperation = () => {
             />
           </div>
 
-          <div className="mt-5 font-poppins text-2xl  text-white s:text-base s:italic">
+          <div className="mt-5 font-poppins font-normal text-base  text-white  s:italic">
             Many leading projects are already collaborating with Ref.finance, exploring
             {isMobile ? null : <br />}
             the next steps for unlocking these exciting benefits!

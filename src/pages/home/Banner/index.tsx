@@ -19,13 +19,13 @@ const Banner = () => {
     <div className="mx-auto justify-center flex flex-col">
       <div className="flex justify-center  w-full">
         <div className="Index_Header flex s:relative">
-          <div className="inline-flex flex-col my-10 items-center s:mb-28 s:w-full z-30">
+          <div className="inline-flex flex-col font-semibold my-10 items-center s:mb-28 s:w-full z-30">
             <a
               target="_blank"
               href="https://near.org/"
               className={`flex text-white ${
                 hoverText ? 'text-opacity-100' : 'text-opacity-60'
-              }  font-lexend items-center`}
+              }  font-lexend items-center font-normal`}
               onMouseEnter={() => setHoverText(true)}
               onMouseLeave={() => setHoverText(false)}
             >

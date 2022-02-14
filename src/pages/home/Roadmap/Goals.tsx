@@ -39,11 +39,9 @@ const Goals: FC<GoalsProps> = ({ title, children }) => {
                 w-full p-4
                 font-poppins text-md text-white
                 backdrop-filter backdrop-blur-xl rounded-md
-                flex justify-start items-center
-              `}
+                flex justify-start items-center bg-roadmapBg hover:bg-mobile`}
               style={{
-                minHeight: 56,
-                background: '#192B36'
+                minHeight: 56
               }}
             >
               {block}
