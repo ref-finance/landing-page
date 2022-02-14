@@ -89,10 +89,10 @@ const GradientBackground = () => {
 
 const DataCard: FC<DataCardProps> = ({ title, value, icon, description }) => {
   return (
-    <div className="dataCard relative font-bold italic text-white flex flex-col justify-center items-center text-center mx-2 s:my-2 rounded-2xl">
-      <div className="absolute">
+    <div className="dataCard relative font-bold italic text-white flex flex-col justify-center items-center text-center mx-2 s:my-2 rounded-2xl border border-mobile">
+      {/* <div className="absolute">
         <GradientBackground />
-      </div>
+      </div> */}
 
       <div
         style={{
