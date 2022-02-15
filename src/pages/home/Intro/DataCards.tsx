@@ -92,7 +92,7 @@ const DataCard: FC<DataCardProps> = ({ title, value, icon, description }) => {
     <div className="dataCard relative font-bold italic text-white flex flex-col justify-center items-center text-center mx-2 s:my-2 rounded-2xl border border-mobile">
       <div
         style={{
-          fontSize: '32px',
+          fontSize: '26px',
           lineHeight: '38px'
         }}
         className="text-mobile"

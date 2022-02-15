@@ -39,10 +39,6 @@ const MNavMenu = ({ data }: Props) => {
 
   return (
     <div className="NavMenu flex items-center s:hidden justify-center">
-      {/* <span className="relative inline-flex">
-        <IconBubble />
-        <span className="NavMenu_iconQuiz-text absolute left-3">Quiz</span>
-      </span> */}
       <a href="https://guide.ref.finance" target="_blank" className="NavMenu_item relative ml-10">
         <span>Docs</span>
       </a>
