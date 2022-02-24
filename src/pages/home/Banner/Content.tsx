@@ -77,9 +77,9 @@ const NearStarts = () => {
 const Content = () => {
   return (
     <Trail open>
-      <div className="text-white s:text-4xl l:text-5xl ">Where Your</div>
-      <div className="text-white s:text-4xl l:text-5xl l:my-3 s:my-1 ">DeFi journey on</div>
-      <NearStarts />
+      <div className="text-white s:text-5xl l:text-6xl mr-36">мир та любов</div>
+      <div className="s:text-5xl l:text-6xl l:my-3 ml-36 s:my-1 text-green-400">мир и любовь</div>
+      <img src="https://i.postimg.cc/9FYQv8rv/peace-love.png" className="object-cover h-48" />
     </Trail>
   );
 };
