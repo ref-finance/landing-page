@@ -19,7 +19,7 @@ const IconQuiz = () => {
           width="59"
           height="32.5"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
@@ -43,8 +43,8 @@ const IconQuiz = () => {
           y2="-1.33616"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00D6AF" />
-          <stop offset="1" stop-color="#1AA289" />
+          <stop stopColor="#00D6AF" />
+          <stop offset="1" stopColor="#1AA289" />
         </linearGradient>
       </defs>
     </svg>

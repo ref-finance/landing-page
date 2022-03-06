@@ -20,7 +20,7 @@ const MBlcokChian = () => {
           cy="551.5"
           r="29.5"
           stroke="url(#paint1_linear_337:1624)"
-          stroke-width="3"
+          strokeWidth="3"
           shape-rendering="crispEdges"
         />
       </g>
@@ -31,7 +31,7 @@ const MBlcokChian = () => {
           cy="566.5"
           r="26.5"
           stroke="url(#paint3_linear_337:1624)"
-          stroke-width="3"
+          strokeWidth="3"
           shape-rendering="crispEdges"
         />
       </g>
@@ -83,7 +83,7 @@ const MBlcokChian = () => {
           cy="586.769"
           r="27.7685"
           stroke="url(#paint5_linear_337:1624)"
-          stroke-width="3"
+          strokeWidth="3"
           shape-rendering="crispEdges"
         />
       </g>
@@ -145,7 +145,7 @@ const MBlcokChian = () => {
           width="82"
           height="82"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImage" stdDeviation="5" />
@@ -170,7 +170,7 @@ const MBlcokChian = () => {
           width="76"
           height="76"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImage" stdDeviation="5" />
@@ -195,7 +195,7 @@ const MBlcokChian = () => {
           width="78.5371"
           height="78.5371"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImage" stdDeviation="5" />
@@ -221,8 +221,8 @@ const MBlcokChian = () => {
           y2="554.575"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0641396" stop-color="white" stop-opacity="0.15" />
-          <stop offset="1" stop-color="white" stop-opacity="0.22" />
+          <stop offset="0.0641396" stopColor="white" stopOpacity="0.15" />
+          <stop offset="1" stopColor="white" stopOpacity="0.22" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_337:1624"
@@ -232,9 +232,9 @@ const MBlcokChian = () => {
           y2="548.125"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C1FFF4" />
-          <stop offset="0.588542" stop-color="#73818B" stop-opacity="0.56" />
-          <stop offset="1" stop-color="#BFCDFF" />
+          <stop stopColor="#C1FFF4" />
+          <stop offset="0.588542" stopColor="#73818B" stopOpacity="0.56" />
+          <stop offset="1" stopColor="#BFCDFF" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_337:1624"
@@ -244,8 +244,8 @@ const MBlcokChian = () => {
           y2="569.262"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0641396" stop-color="white" stop-opacity="0.15" />
-          <stop offset="1" stop-color="white" stop-opacity="0.22" />
+          <stop offset="0.0641396" stopColor="white" stopOpacity="0.15" />
+          <stop offset="1" stopColor="white" stopOpacity="0.22" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_337:1624"
@@ -255,9 +255,9 @@ const MBlcokChian = () => {
           y2="563.468"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C1FFF4" />
-          <stop offset="0.588542" stop-color="#73818B" stop-opacity="0.56" />
-          <stop offset="1" stop-color="#BFCDFF" />
+          <stop stopColor="#C1FFF4" />
+          <stop offset="0.588542" stopColor="#73818B" stopOpacity="0.56" />
+          <stop offset="1" stopColor="#BFCDFF" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_337:1624"
@@ -267,8 +267,8 @@ const MBlcokChian = () => {
           y2="589.663"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0641396" stop-color="white" stop-opacity="0.15" />
-          <stop offset="1" stop-color="white" stop-opacity="0.22" />
+          <stop offset="0.0641396" stopColor="white" stopOpacity="0.15" />
+          <stop offset="1" stopColor="white" stopOpacity="0.22" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_337:1624"
@@ -278,9 +278,9 @@ const MBlcokChian = () => {
           y2="583.592"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C1FFF4" />
-          <stop offset="0.588542" stop-color="#73818B" stop-opacity="0.56" />
-          <stop offset="1" stop-color="#BFCDFF" />
+          <stop stopColor="#C1FFF4" />
+          <stop offset="0.588542" stopColor="#73818B" stopOpacity="0.56" />
+          <stop offset="1" stopColor="#BFCDFF" />
         </linearGradient>
       </defs>
     </svg>

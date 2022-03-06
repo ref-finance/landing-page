@@ -13,7 +13,13 @@ module.exports = {
     extend: {
       screens: {
         s: { min: '300px', max: '1024px' },
-        l: { min: '1024px' }
+        l: { min: '1024px' },
+        xs: { min: '300px', max: '600px' },
+        md: { min: '600px', max: '1024px' },
+        lg: { min: '1024px' },
+        xl: { min: '1280px' },
+        '2xl': { min: '1536px' },
+        '3xl': { min: '1792px' },
       },
       colors: {
         primary: '#00D6AF',
@@ -26,8 +32,16 @@ module.exports = {
         'green-dark': '#1AA189',
         'gray-text': '#73818B',
         globalBg: '#131419',
-        roadmapBg: '#161e22'
-      }
+        roadmapBg: '#161e22',
+        hiringTabBg: '#2F3D47',
+        hiringTabText: '#C4C4C4',
+        hiringTabActiveBg: '#1A2329',
+        hiringContentBg: '#1D2932',
+        hiringContentText:'#BEBEBE'
+      },
+      backgroundImage: (theme) => ({
+        firingButton: 'linear-gradient(180deg, #00C6A2 0%, #008B72 100%)',
+      }),
     },
     fontFamily: {
       lexend: ['"Lexend Deca"'],

@@ -9,7 +9,8 @@
     "clean": "rm dist/bundle.js",
     "start": "parcel src/index.html",
     "build-prod": "parcel build src/index.html",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "prettier:fix": "prettier --write src"
   },
   "husky": {
     "hooks": {
@@ -33,7 +34,8 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
-    "react-spring": "^9.4.2"
+    "react-spring": "^9.4.2",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
@@ -53,8 +55,10 @@
     "postcss-px-to-viewport": "^1.1.1",
     "postcss-pxtorem": "^6.0.0",
     "prettier": "^2.4.1",
+    "process": "^0.11.10",
     "pxtorem": "^1.0.0",
     "tailwindcss": "^2.2.17",
-    "typescript": "^4.4.4"
+    "typescript": "^4.4.4",
+    "@types/react-router-dom": "^5.1.7"
   }
 }

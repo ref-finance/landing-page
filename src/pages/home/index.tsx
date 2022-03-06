@@ -8,14 +8,20 @@ import Intro from './Intro';
 import Roadmap from './Roadmap';
 import Cooperation from './Cooperation';
 import Investors from './Investors';
+import { HiringIcon } from '~src/components/common';
+import { useLocation, useHistory } from 'react-router-dom';
 
 const HomePage = () => {
+  const history = useHistory();
   return (
-    <div className="min-h-screen bg-black">
-      <header className="h-20">
-        <Navbar />
-      </header>
+    <div>
       <Backgound />
+      <HiringIcon
+        className="fixed right-0 cursor-pointer top-20 z-50"
+        onClick={() => {
+          history.push('/hiring');
+        }}
+      ></HiringIcon>
       <section className="mx-auto">
         <Banner />
         <Intro />
@@ -23,9 +29,6 @@ const HomePage = () => {
         <Investors />
         <Cooperation />
       </section>
-      <footer className="Home_footer flex justify-center">
-        <Footer />
-      </footer>
     </div>
   );
 };

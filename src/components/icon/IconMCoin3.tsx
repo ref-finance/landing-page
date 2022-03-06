@@ -31,7 +31,7 @@ const IconMCoin3 = ({ className, style }: Props) => {
           r="28.2683"
           transform="rotate(-32.304 52 52)"
           stroke="url(#paint1_linear_238:651)"
-          stroke-width="3"
+          strokeWidth="3"
           shape-rendering="crispEdges"
         />
       </g>
@@ -79,7 +79,7 @@ const IconMCoin3 = ({ className, style }: Props) => {
           width="102.139"
           height="102.139"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImage" stdDeviation="5" />
@@ -105,8 +105,8 @@ const IconMCoin3 = ({ className, style }: Props) => {
           y2="54.9465"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0641396" stop-color="white" stop-opacity="0.15" />
-          <stop offset="1" stop-color="white" stop-opacity="0.22" />
+          <stop offset="0.0641396" stopColor="white" stopOpacity="0.15" />
+          <stop offset="1" stopColor="white" stopOpacity="0.22" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_238:651"
@@ -116,9 +116,9 @@ const IconMCoin3 = ({ className, style }: Props) => {
           y2="48.766"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C1FFF4" />
-          <stop offset="0.588542" stop-color="#73818B" stop-opacity="0.56" />
-          <stop offset="1" stop-color="#BFCDFF" />
+          <stop stopColor="#C1FFF4" />
+          <stop offset="0.588542" stopColor="#73818B" stopOpacity="0.56" />
+          <stop offset="1" stopColor="#BFCDFF" />
         </linearGradient>
       </defs>
     </svg>

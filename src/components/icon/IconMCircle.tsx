@@ -23,7 +23,7 @@ const IconMCircle = ({ className, style }: Props) => {
           cy="27"
           r="16"
           stroke="url(#paint1_linear_238:633)"
-          stroke-width="2"
+          strokeWidth="2"
           shape-rendering="crispEdges"
         />
       </g>
@@ -35,7 +35,7 @@ const IconMCircle = ({ className, style }: Props) => {
           width="54"
           height="54"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImage" stdDeviation="5" />
@@ -61,8 +61,8 @@ const IconMCircle = ({ className, style }: Props) => {
           y2="28.6677"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0641396" stop-color="white" stop-opacity="0.15" />
-          <stop offset="1" stop-color="white" stop-opacity="0.22" />
+          <stop offset="0.0641396" stopColor="white" stopOpacity="0.15" />
+          <stop offset="1" stopColor="white" stopOpacity="0.22" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_238:633"
@@ -72,9 +72,9 @@ const IconMCircle = ({ className, style }: Props) => {
           y2="25.1695"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C1FFF4" />
-          <stop offset="0.588542" stop-color="#73818B" stop-opacity="0.56" />
-          <stop offset="1" stop-color="#BFCDFF" />
+          <stop stopColor="#C1FFF4" />
+          <stop offset="0.588542" stopColor="#73818B" stopOpacity="0.56" />
+          <stop offset="1" stopColor="#BFCDFF" />
         </linearGradient>
       </defs>
     </svg>

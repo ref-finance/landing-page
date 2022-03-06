@@ -53,7 +53,7 @@ function LinearLine() {
       <path
         d="M168 685C228 583.5 323.375 509.819 497 468.5C705 419 895.491 439.171 1043 348.5C1152 281.5 1260 200.5 1321 85.5"
         stroke="url(#paint0_linear_6_116)"
-        stroke-width={isMobile ? '8' : '4'}
+        strokeWidth={isMobile ? '8' : '4'}
       />
       <path
         d="M497 468.5C323.375 509.819 228 583.5 168 685H1321V85.5C1260 200.5 1152 281.5 1043 348.5C895.491 439.171 705 419 497 468.5Z"
@@ -76,7 +76,7 @@ function LinearLine() {
           width="35"
           height="35"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
@@ -99,7 +99,7 @@ function LinearLine() {
           width="35"
           height="35"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
@@ -122,7 +122,7 @@ function LinearLine() {
           width="35"
           height="35"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
@@ -139,9 +139,9 @@ function LinearLine() {
           <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_6_116" result="shape" />
         </filter>
         <linearGradient id="paint0_linear_6_116" x1="1321" y1="85" x2="181.5" y2="646" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#00C6A2" stop-opacity="0" />
-          <stop offset="0.25" stop-color="#00C6A2" />
-          <stop offset="1" stop-color="#00C6A2" stop-opacity="0" />
+          <stop stopColor="#00C6A2" stopOpacity="0" />
+          <stop offset="0.25" stopColor="#00C6A2" />
+          <stop offset="1" stopColor="#00C6A2" stopOpacity="0" />
         </linearGradient>
         <radialGradient
           id="paint1_radial_6_116"
@@ -151,8 +151,8 @@ function LinearLine() {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(924 260) rotate(16.458) scale(307.082 590.601)"
         >
-          <stop stop-color="#00C6A2" stop-opacity="0.36" />
-          <stop offset="1" stop-color="#00C6A2" stop-opacity="0" />
+          <stop stopColor="#00C6A2" stopOpacity="0.36" />
+          <stop offset="1" stopColor="#00C6A2" stopOpacity="0" />
         </radialGradient>
       </defs>
     </svg>
