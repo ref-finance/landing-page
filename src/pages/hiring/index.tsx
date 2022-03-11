@@ -85,7 +85,9 @@ const TabOneContent = (props: any) => {
         <p className="text-hiringContentText text-sm">Good at team cowork.</p>
       </section>
       <div className="flex items-center justify-center rounded-md bg-firingButton cursor-pointer text-white text-base font-semibold py-2 mt-10">
-        Send Resume
+        <a href="mailto:hiring@ref.finance" className="text-center w-full h-full">
+          Send Resume
+        </a>
       </div>
     </div>
   );
