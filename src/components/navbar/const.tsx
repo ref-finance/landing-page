@@ -9,7 +9,7 @@ export const menuItems: MenuItem[] = [
   },
   {
     title: 'Analytics',
-    href: 'https://sodaki.com'
+    href: 'https://stats.ref.finance'
   },
   {
     title: 'Community',
