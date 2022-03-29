@@ -20,6 +20,19 @@ const Banner = () => {
       <div className="flex justify-center  w-full">
         <div className="Index_Header flex s:relative">
           <div className="inline-flex flex-col font-semibold my-10 items-center s:mb-28 s:w-full z-30">
+            <a
+              target="_blank"
+              href="https://near.org/"
+              className={`flex text-white ${
+                hoverText ? 'text-opacity-100' : 'text-opacity-60'
+              }  font-lexend items-center font-normal`}
+              onMouseEnter={() => setHoverText(true)}
+              onMouseLeave={() => setHoverText(false)}
+            >
+              <span>Built on</span>
+              <span className="ml-2 mr-1">{hoverText ? <IconNearNewWhite /> : <IconNearNewGray />}</span>
+              <span>NEAR</span>
+            </a>
             <Content />
           </div>
         </div>
