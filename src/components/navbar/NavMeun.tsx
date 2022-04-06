@@ -42,7 +42,7 @@ const MNavMenu = ({ data }: Props) => {
       <a href="https://guide.ref.finance" target="_blank" className="NavMenu_item relative ml-10">
         <span>Docs</span>
       </a>
-      <a href="https://sodaki.com/" target="_blank" className="NavMenu_item relative ml-10">
+      <a href="https://stats.ref.finance/" target="_blank" className="NavMenu_item relative ml-10">
         <span>Analytics</span>
       </a>
       <a
