@@ -47,12 +47,18 @@ const Roadmap = () => {
             <span className="mr-2">Smart Routing</span>
             <IconCheck />
           </div>
-          {'Multi-Wallet Integration'}
-          <span>
-            {'Liquidity aggregation'}
-            <br />
-            {'(NEAR x Aurora)'}
-          </span>
+          <div className="flex items-center">
+            <span className="mr-2">{'Multi-Wallet Integration'}</span>
+            <IconCheck />
+          </div>
+          <div className="flex items-center">
+            <span className="mr-2">
+              {'Liquidity aggregation'}
+              <br />
+              {'(NEAR x Aurora)'}
+            </span>
+            <IconCheck />
+          </div>
         </Goals>
         <Goals title="Q2 2022">
           {'Auto-compounding'}
