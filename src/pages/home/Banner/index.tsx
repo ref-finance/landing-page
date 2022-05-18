@@ -23,7 +23,7 @@ const Banner = () => {
         <div className="Index_Header flex s:relative">
           <div className="inline-flex flex-col font-semibold my-10 items-center s:mb-28 s:w-full z-30">
             <div
-              className="cursor-pointer pb-6 s:hidden"
+              className="cursor-pointer mb-6 s:hidden"
               onClick={() => {
                 window.open('https://immunefi.com/bounty/reffinance/', '_blank');
               }}
