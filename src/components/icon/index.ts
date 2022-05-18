@@ -17,3 +17,5 @@ export { IconNear, IconNearNewGray, IconNearNewWhite } from './IconNear';
 export { default as IconRef } from './IconRef';
 export { default as IconSwap } from './IconSwap';
 export { default as IconTrade } from './IconTrade';
+
+export { default as BugBountyBanners, BugBountyBannersMobile } from './Banners';

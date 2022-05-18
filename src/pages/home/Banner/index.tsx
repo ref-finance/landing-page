@@ -11,6 +11,8 @@ import DataCards from '../Intro/DataCards';
 import CommunityIcons from '../Intro/CommunityIcons';
 import { IconNearNewGray, IconNearNewWhite } from '../../../components/icon/IconNear';
 import { useState } from 'react';
+import BugBountyBanners from '../../../components/icon/Banners';
+import { BugBountyBannersMobile } from '../../../components/icon/Banners';
 
 const Banner = () => {
   const [hoverText, setHoverText] = useState<boolean>(false);
@@ -20,6 +22,14 @@ const Banner = () => {
       <div className="flex justify-center  w-full">
         <div className="Index_Header flex s:relative">
           <div className="inline-flex flex-col font-semibold my-10 items-center s:mb-28 s:w-full z-30">
+            <div
+              className="cursor-pointer pb-6 s:hidden"
+              onClick={() => {
+                window.open('https://immunefi.com/bounty/reffinance/', '_blank');
+              }}
+            >
+              <BugBountyBanners />
+            </div>
             <a
               target="_blank"
               href="https://near.org/"
@@ -37,6 +47,15 @@ const Banner = () => {
           </div>
         </div>
       </div>
+      <div
+        className="cursor-pointer l:hidden z-50 relative top-4 px-1 flex items-center justify-center"
+        onClick={() => {
+          window.open('https://immunefi.com/bounty/reffinance/', '_blank');
+        }}
+      >
+        <BugBountyBannersMobile />
+      </div>
+
       <div className="flex justify-center  w-full ">
         <div className="Index_Header flex">
           <DataCards />
