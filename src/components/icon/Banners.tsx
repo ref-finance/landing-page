@@ -179,9 +179,6 @@ export default function BugBountyBanners() {
             <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_811_270" />
             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_811_270" result="shape" />
           </filter>
-          <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-            <use xlinkHref="#image0_811_270" transform="scale(0.015625)" />
-          </pattern>
           <linearGradient
             id="paint0_linear_811_270"
             x1="228"
@@ -384,9 +381,7 @@ export function BugBountyBannersMobile() {
             <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_816_102" />
             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_816_102" result="shape" />
           </filter>
-          <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-            <use xlinkHref="#image0_816_102" transform="scale(0.015625)" />
-          </pattern>
+
           <filter
             id="filter1_d_816_102"
             x="15"
