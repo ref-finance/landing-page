@@ -74,7 +74,7 @@ jobs:
           # Source Path
           SOURCE: "mydist/"
           # Target Path
-          TARGET: "/data/web/ref_ui"
+          TARGET: "/data/web/landing-page"
           #  rsync
           ARGS: "-rltgoDzvO"
           # An array of folder to exclude
@@ -89,7 +89,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY_PROD_02 }}
           port: 60022
           script: |
-            cd /data/web/ref_ui
-            chown -R root:root /data/web/ref_ui
+            cd /data/web/landing-page
+            chown -R root:root /data/web/landing-page
             yarn install         
             npm run build-prod
