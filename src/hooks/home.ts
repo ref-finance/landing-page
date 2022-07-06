@@ -11,7 +11,7 @@ export const useRefPrice = () => {
 
   useEffect(() => {
     axios
-      .get<RefPrice>('https://indexer.ref-finance.net/get-token-price?token_id=token.v2.ref-finance.near')
+      .get<RefPrice>('https://indexer.ref.finance/get-token-price?token_id=token.v2.ref-finance.near')
       .then(res => {
         if (res.status === 200) {
           setData(res.data);
