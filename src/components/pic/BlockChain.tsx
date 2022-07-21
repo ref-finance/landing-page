@@ -11,7 +11,7 @@ const BlockChain = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <rect x="178.306" y="-349" width="29.1111" height="584.648" fill="#001320" />
-      <rect x="178.806" y="-348.5" width="28.1111" height="583.648" stroke="white" stroke-opacity="0.3" />
+      <rect x="178.806" y="-348.5" width="28.1111" height="583.648" stroke="white" strokeOpacity="0.3" />
       <g filter="url(#filter0_bd_337:1385)">
         <circle cx="148.47" cy="528.758" r="47.3499" fill="url(#paint0_linear_337:1385)" shape-rendering="crispEdges" />
         <circle
@@ -19,7 +19,7 @@ const BlockChain = () => {
           cy="528.758"
           r="47.3499"
           stroke="url(#paint1_linear_337:1385)"
-          stroke-width="3"
+          strokeWidth="3"
           shape-rendering="crispEdges"
         />
       </g>
@@ -36,7 +36,7 @@ const BlockChain = () => {
           cy="552.834"
           r="42.5346"
           stroke="url(#paint3_linear_337:1385)"
-          stroke-width="3"
+          strokeWidth="3"
           shape-rendering="crispEdges"
         />
       </g>
@@ -88,7 +88,7 @@ const BlockChain = () => {
           cy="585.367"
           r="44.5707"
           stroke="url(#paint5_linear_337:1385)"
-          stroke-width="4"
+          strokeWidth="4"
           shape-rendering="crispEdges"
         />
       </g>
@@ -150,7 +150,7 @@ const BlockChain = () => {
           width="117.7"
           height="117.7"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImage" stdDeviation="5" />
@@ -175,7 +175,7 @@ const BlockChain = () => {
           width="108.069"
           height="108.069"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImage" stdDeviation="5" />
@@ -200,7 +200,7 @@ const BlockChain = () => {
           width="113.142"
           height="113.141"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImage" stdDeviation="5" />
@@ -226,8 +226,8 @@ const BlockChain = () => {
           y2="533.693"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0641396" stop-color="white" stop-opacity="0.15" />
-          <stop offset="1" stop-color="white" stop-opacity="0.22" />
+          <stop offset="0.0641396" stopColor="white" stopOpacity="0.15" />
+          <stop offset="1" stopColor="white" stopOpacity="0.22" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_337:1385"
@@ -237,9 +237,9 @@ const BlockChain = () => {
           y2="523.341"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C1FFF4" />
-          <stop offset="0.588542" stop-color="#73818B" stop-opacity="0.56" />
-          <stop offset="1" stop-color="#BFCDFF" />
+          <stop stopColor="#C1FFF4" />
+          <stop offset="0.588542" stopColor="#73818B" stopOpacity="0.56" />
+          <stop offset="1" stopColor="#BFCDFF" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_337:1385"
@@ -249,8 +249,8 @@ const BlockChain = () => {
           y2="557.268"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0641396" stop-color="white" stop-opacity="0.15" />
-          <stop offset="1" stop-color="white" stop-opacity="0.22" />
+          <stop offset="0.0641396" stopColor="white" stopOpacity="0.15" />
+          <stop offset="1" stopColor="white" stopOpacity="0.22" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_337:1385"
@@ -260,9 +260,9 @@ const BlockChain = () => {
           y2="547.968"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C1FFF4" />
-          <stop offset="0.588542" stop-color="#73818B" stop-opacity="0.56" />
-          <stop offset="1" stop-color="#BFCDFF" />
+          <stop stopColor="#C1FFF4" />
+          <stop offset="0.588542" stopColor="#73818B" stopOpacity="0.56" />
+          <stop offset="1" stopColor="#BFCDFF" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_337:1385"
@@ -272,8 +272,8 @@ const BlockChain = () => {
           y2="590.012"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0641396" stop-color="white" stop-opacity="0.15" />
-          <stop offset="1" stop-color="white" stop-opacity="0.22" />
+          <stop offset="0.0641396" stopColor="white" stopOpacity="0.15" />
+          <stop offset="1" stopColor="white" stopOpacity="0.22" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_337:1385"
@@ -283,9 +283,9 @@ const BlockChain = () => {
           y2="580.268"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C1FFF4" />
-          <stop offset="0.588542" stop-color="#73818B" stop-opacity="0.56" />
-          <stop offset="1" stop-color="#BFCDFF" />
+          <stop stopColor="#C1FFF4" />
+          <stop offset="0.588542" stopColor="#73818B" stopOpacity="0.56" />
+          <stop offset="1" stopColor="#BFCDFF" />
         </linearGradient>
       </defs>
     </svg>

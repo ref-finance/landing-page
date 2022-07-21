@@ -80,7 +80,7 @@ export const Coins = () => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path d="M0 1L975 0.999915" stroke="url(#paint0_linear_497:798)" stroke-width="2" />
+        <path d="M0 1L975 0.999915" stroke="url(#paint0_linear_497:798)" strokeWidth="2" />
         <defs>
           <linearGradient
             id="paint0_linear_497:798"
@@ -90,9 +90,9 @@ export const Coins = () => {
             y2="1.98141"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-opacity="0" />
-            <stop offset="0.8125" stop-color="#00C6A2" />
-            <stop offset="1" stop-opacity="0" />
+            <stop stopOpacity="0" />
+            <stop offset="0.8125" stopColor="#00C6A2" />
+            <stop offset="1" stopOpacity="0" />
           </linearGradient>
         </defs>
       </svg>

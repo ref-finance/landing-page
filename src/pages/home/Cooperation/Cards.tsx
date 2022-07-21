@@ -31,8 +31,8 @@ const Cards = () => {
                 y2="-11.6396"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop offset="0.0641396" stop-color="white" stop-opacity="0.08" />
-                <stop offset="1" stop-color="white" stop-opacity="0.03" />
+                <stop offset="0.0641396" stopColor="white" stopOpacity="0.08" />
+                <stop offset="1" stopColor="white" stopOpacity="0.03" />
               </linearGradient>
               <linearGradient
                 id="paint1_linear_618:136"
@@ -42,8 +42,8 @@ const Cards = () => {
                 y2="32.4268"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#00C6A2" />
-                <stop offset="1" stop-color="#00BA98" stop-opacity="0" />
+                <stop stopColor="#00C6A2" />
+                <stop offset="1" stopColor="#00BA98" stopOpacity="0" />
               </linearGradient>
             </defs>
           </svg>
@@ -72,8 +72,8 @@ const Cards = () => {
                 y2="-18.3546"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop offset="0.0641396" stop-color="white" stop-opacity="0.08" />
-                <stop offset="1" stop-color="white" stop-opacity="0.03" />
+                <stop offset="0.0641396" stopColor="white" stopOpacity="0.08" />
+                <stop offset="1" stopColor="white" stopOpacity="0.03" />
               </linearGradient>
               <linearGradient
                 id="paint1_linear_595:4057"
@@ -83,8 +83,8 @@ const Cards = () => {
                 y2="47.1501"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#00C6A2" />
-                <stop offset="1" stop-color="#00BA98" stop-opacity="0" />
+                <stop stopColor="#00C6A2" />
+                <stop offset="1" stopColor="#00BA98" stopOpacity="0" />
               </linearGradient>
             </defs>
           </svg>

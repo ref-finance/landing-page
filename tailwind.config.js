@@ -26,7 +26,12 @@ module.exports = {
         'green-dark': '#1AA189',
         'gray-text': '#73818B',
         globalBg: '#131419',
-        roadmapBg: '#161e22'
+        roadmapBg: '#161e22',
+        greenColor: '#3AFFF2',
+        brightGreenColor:'#00FFD1',
+        darkBorderColor:'#2e3f4d',
+        warningColor: '#D73F75',
+        growingColor: '#3BB73B',
       }
     },
     fontFamily: {

@@ -28,7 +28,7 @@ const GradientBackground = () => {
           height="166"
           rx="15"
           stroke="url(#paint1_linear_3_191)"
-          stroke-width="2"
+          strokeWidth="2"
           shape-rendering="crispEdges"
         />
       </g>
@@ -40,7 +40,7 @@ const GradientBackground = () => {
           width="442"
           height="268"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImage" stdDeviation="25" />
@@ -66,8 +66,8 @@ const GradientBackground = () => {
           y2="-43.0893"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0641396" stop-color="white" stop-opacity="0.08" />
-          <stop offset="1" stop-color="white" stop-opacity="0.03" />
+          <stop offset="0.0641396" stopColor="white" stopOpacity="0.08" />
+          <stop offset="1" stopColor="white" stopOpacity="0.03" />
         </linearGradient>
 
         <linearGradient
@@ -78,9 +78,9 @@ const GradientBackground = () => {
           y2="227.279"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00C6A2" stop-opacity="0.83" />
-          <stop offset="0.588542" stop-color="#73818B" stop-opacity="0.56" />
-          <stop offset="1" stop-color="#00BA98" stop-opacity="0.28" />
+          <stop stopColor="#00C6A2" stopOpacity="0.83" />
+          <stop offset="0.588542" stopColor="#73818B" stopOpacity="0.56" />
+          <stop offset="1" stopColor="#00BA98" stopOpacity="0.28" />
         </linearGradient>
       </defs>
     </svg>

@@ -57,8 +57,8 @@ const HeaderBackground = () => {
               y2="820.5"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#00C6A2" />
-              <stop offset="1" stop-color="#00C6A2" stop-opacity="0" />
+              <stop stopColor="#00C6A2" />
+              <stop offset="1" stopColor="#00C6A2" stopOpacity="0" />
             </linearGradient>
             <linearGradient
               id="paint1_linear_458:706"
@@ -68,8 +68,8 @@ const HeaderBackground = () => {
               y2="-12"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#00C6A2" />
-              <stop offset="1" stop-color="#00C6A2" stop-opacity="0" />
+              <stop stopColor="#00C6A2" />
+              <stop offset="1" stopColor="#00C6A2" stopOpacity="0" />
             </linearGradient>
           </defs>
         </svg>

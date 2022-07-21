@@ -90,8 +90,8 @@ export default function BugBountyBanners() {
           fill="#FFE3B4"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M383.238 46.4433L387.456 50.7389L380.545 57.7766L378.767 56.0144L383.948 50.7389L381.508 48.2544L375.503 54.3681V57.6012H373.109V54.4774L366.919 48.1747L364.509 50.6289L369.768 55.9846L367.99 57.7469L361 50.6289L365.219 46.3333L361 42.0377L367.912 35L369.69 36.7622L364.509 42.0377L366.949 44.5222L373.109 38.2497V35.1754H375.503V38.458L381.537 44.6019L383.948 42.1476L378.688 36.7919L380.466 35.0297L387.456 42.1476L383.238 46.4433ZM379.807 46.413L374.252 52.0693L368.649 46.3635L374.204 40.7073L379.807 46.413Z"
           fill="white"
         />
@@ -126,8 +126,8 @@ export default function BugBountyBanners() {
         />
         <rect x="228" y="1.52576" width="89.2577" height="72.4742" rx="20" fill="black" />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M239.733 0C233.253 0 228 5.25312 228 11.7332V59.7489C228 66.2289 233.253 71.482 239.733 71.482H306.883C313.363 71.482 318.616 66.2289 318.616 59.7489V11.7332C318.616 5.25312 313.363 0 306.883 0H239.733ZM231.971 11.7332C231.971 7.44636 235.446 3.97122 239.733 3.97122H306.883C311.17 3.97122 314.645 7.44636 314.645 11.7332V18.5926L231.971 18.5926V11.7332ZM231.971 22.5638V59.7489C231.971 64.0357 235.446 67.5108 239.733 67.5108H306.883C311.17 67.5108 314.645 64.0357 314.645 59.7489V22.5638L231.971 22.5638ZM245.148 11.9138C245.148 13.6085 243.775 14.9824 242.08 14.9824C240.385 14.9824 239.011 13.6085 239.011 11.9138C239.011 10.219 240.385 8.84509 242.08 8.84509C243.775 8.84509 245.148 10.219 245.148 11.9138ZM252.188 14.9824C253.883 14.9824 255.257 13.6085 255.257 11.9138C255.257 10.219 253.883 8.84509 252.188 8.84509C250.494 8.84509 249.12 10.219 249.12 11.9138C249.12 13.6085 250.494 14.9824 252.188 14.9824ZM265.366 11.9138C265.366 13.6085 263.992 14.9824 262.297 14.9824C260.602 14.9824 259.228 13.6085 259.228 11.9138C259.228 10.219 260.602 8.84509 262.297 8.84509C263.992 8.84509 265.366 10.219 265.366 11.9138ZM266.32 60.9292C265.933 61.9556 266.452 63.1007 267.479 63.4868C268.505 63.873 269.65 63.354 270.036 62.3276L282.357 29.5814C282.743 28.555 282.224 27.4099 281.198 27.0238C280.171 26.6376 279.026 27.1566 278.64 28.183L266.32 60.9292ZM257.032 33.8103C257.802 33.0294 257.793 31.7722 257.012 31.0023C256.232 30.2324 254.974 30.2413 254.204 31.0222L241.569 43.8384L240.194 45.2325L241.569 46.6265L254.204 59.4427C254.974 60.2236 256.232 60.2326 257.012 59.4626C257.793 58.6927 257.802 57.4355 257.032 56.6546L245.771 45.2325L257.032 33.8103ZM290.668 31.022C289.898 31.8029 289.906 33.0601 290.687 33.8301L302.25 45.2325L290.687 56.6349C289.906 57.4048 289.898 58.662 290.668 59.4429C291.438 60.2237 292.695 60.2325 293.476 59.4625L306.472 46.6463L307.906 45.2325L306.472 43.8186L293.476 31.0024C292.695 30.2324 291.438 30.2412 290.668 31.022Z"
           fill="url(#paint0_linear_811_270)"
         />
@@ -140,9 +140,9 @@ export default function BugBountyBanners() {
             width="547"
             height="79"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -163,9 +163,9 @@ export default function BugBountyBanners() {
             width="155"
             height="30.7729"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -187,8 +187,8 @@ export default function BugBountyBanners() {
             y2="49.9691"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00D6AF" />
-            <stop offset="1" stop-color="#9A1AFF" />
+            <stop stopColor="#00D6AF" />
+            <stop offset="1" stopColor="#9A1AFF" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_811_270"
@@ -199,7 +199,7 @@ export default function BugBountyBanners() {
             gradientUnits="userSpaceOnUse"
           >
             <stop />
-            <stop offset="1" stop-opacity="0" />
+            <stop offset="1" stopOpacity="0" />
           </linearGradient>
           <image
             id="image0_811_270"
@@ -240,8 +240,8 @@ export function BugBountyBannersMobile() {
         </g>
         <rect x="151.294" y="0.987183" width="57.7495" height="46.8906" rx="10" fill="black" />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M158.885 0C154.693 0 151.294 3.39875 151.294 7.59132V38.6573C151.294 42.8499 154.693 46.2487 158.885 46.2487H202.331C206.524 46.2487 209.922 42.8499 209.922 38.6573V7.59132C209.922 3.39875 206.524 0 202.331 0H158.885ZM153.863 7.59132C153.863 4.81777 156.112 2.56937 158.885 2.56937H202.331C205.105 2.56937 207.353 4.81777 207.353 7.59132V12.0293L153.863 12.0293V7.59132ZM153.863 14.5987V38.6573C153.863 41.4309 156.112 43.6793 158.885 43.6793H202.331C205.105 43.6793 207.353 41.4309 207.353 38.6573V14.5987L153.863 14.5987ZM162.389 7.70813C162.389 8.80465 161.5 9.69355 160.404 9.69355C159.307 9.69355 158.418 8.80465 158.418 7.70813C158.418 6.61161 159.307 5.72271 160.404 5.72271C161.5 5.72271 162.389 6.61161 162.389 7.70813ZM166.944 9.69355C168.04 9.69355 168.929 8.80465 168.929 7.70813C168.929 6.61161 168.04 5.72271 166.944 5.72271C165.847 5.72271 164.958 6.61161 164.958 7.70813C164.958 8.80465 165.847 9.69355 166.944 9.69355ZM175.469 7.70813C175.469 8.80465 174.581 9.69355 173.484 9.69355C172.388 9.69355 171.499 8.80465 171.499 7.70813C171.499 6.61161 172.388 5.72271 173.484 5.72271C174.581 5.72271 175.469 6.61161 175.469 7.70813ZM176.087 39.4209C175.837 40.085 176.173 40.8259 176.837 41.0757C177.501 41.3256 178.242 40.9898 178.491 40.3257L186.463 19.139C186.713 18.4749 186.377 17.7341 185.713 17.4842C185.049 17.2344 184.308 17.5702 184.058 18.2342L176.087 39.4209ZM170.078 21.8751C170.576 21.3698 170.57 20.5564 170.065 20.0583C169.56 19.5602 168.746 19.566 168.248 20.0712L160.073 28.3633L159.184 29.2652L160.073 30.1671L168.248 38.4592C168.746 38.9644 169.56 38.9702 170.065 38.4721C170.57 37.974 170.576 37.1606 170.078 36.6553L162.792 29.2652L170.078 21.8751ZM191.84 20.0711C191.342 20.5763 191.347 21.3897 191.852 21.8879L199.334 29.2652L191.852 36.6425C191.347 37.1407 191.342 37.9541 191.84 38.4593C192.338 38.9645 193.151 38.9702 193.657 38.472L202.065 30.1799L202.993 29.2652L202.065 28.3505L193.657 20.0584C193.151 19.5602 192.338 19.5659 191.84 20.0711Z"
           fill="url(#paint0_linear_816_102)"
         />
@@ -323,8 +323,8 @@ export function BugBountyBannersMobile() {
           fill="#FFE3B4"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M241.365 40.4797L245.228 44.4136L238.899 50.8586L237.271 49.2448L242.015 44.4136L239.781 42.1382L234.282 47.737V50.6979H232.089V47.8373L226.421 42.0653L224.213 44.3128L229.03 49.2175L227.402 50.8314L221 44.3128L224.863 40.3789L221 36.445L227.33 30L228.958 31.6138L224.213 36.445L226.448 38.7203L232.089 32.976V30.1606H234.282V33.1668L239.808 38.7933L242.015 36.5457L237.198 31.641L238.827 30.0272L245.228 36.5457L241.365 40.4797ZM238.224 40.4519L233.136 45.6319L228.005 40.4066L233.092 35.2267L238.224 40.4519Z"
           fill="white"
         />
@@ -365,9 +365,9 @@ export function BugBountyBannersMobile() {
             width="360"
             height="79"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -389,9 +389,9 @@ export function BugBountyBannersMobile() {
             width="133.318"
             height="28.4686"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -413,8 +413,8 @@ export function BugBountyBannersMobile() {
             y2="32.3298"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00D6AF" />
-            <stop offset="1" stop-color="#9A1AFF" />
+            <stop stopColor="#00D6AF" />
+            <stop offset="1" stopColor="#9A1AFF" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_816_102"
@@ -425,7 +425,7 @@ export function BugBountyBannersMobile() {
             gradientUnits="userSpaceOnUse"
           >
             <stop />
-            <stop offset="1" stop-opacity="0" />
+            <stop offset="1" stopOpacity="0" />
           </linearGradient>
           <image
             id="image0_816_102"

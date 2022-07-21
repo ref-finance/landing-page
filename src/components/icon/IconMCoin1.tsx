@@ -31,7 +31,7 @@ const IconMCoin1 = ({ className, style }: Props) => {
           r="28.2683"
           transform="rotate(-32.304 52 52)"
           stroke="url(#paint1_linear_238:634)"
-          stroke-width="3"
+          strokeWidth="3"
           shape-rendering="crispEdges"
         />
       </g>
@@ -39,13 +39,13 @@ const IconMCoin1 = ({ className, style }: Props) => {
         <path
           d="M44.4409 62.5442L38.0161 52.3828C35.9324 49.0872 35.9465 42.5431 43.4165 37.82C50.8865 33.0969 57.2244 37.1625 58.6136 39.3596L65.0384 49.521"
           stroke="white"
-          stroke-width="3"
+          strokeWidth="3"
           stroke-linecap="round"
         />
         <path
           d="M48.6191 57.5974L54.3494 66.6603M53.8372 54.2982L61.4775 66.3821M58.7806 51.1726L62.4271 56.9399C63.1216 58.0385 64.8857 59.5636 67.2571 58.4991C69.3532 57.5582 69.1352 55.3895 69.1352 55.3895"
           stroke="white"
-          stroke-width="3"
+          strokeWidth="3"
           stroke-linecap="round"
         />
         <circle cx="45.131" cy="49.0396" r="1.62462" transform="rotate(-32.304 45.131 49.0396)" fill="white" />
@@ -59,7 +59,7 @@ const IconMCoin1 = ({ className, style }: Props) => {
           width="102.139"
           height="102.139"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImage" stdDeviation="5" />
@@ -85,8 +85,8 @@ const IconMCoin1 = ({ className, style }: Props) => {
           y2="54.9465"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0641396" stop-color="white" stop-opacity="0.15" />
-          <stop offset="1" stop-color="white" stop-opacity="0.22" />
+          <stop offset="0.0641396" stopColor="white" stopOpacity="0.15" />
+          <stop offset="1" stopColor="white" stopOpacity="0.22" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_238:634"
@@ -96,9 +96,9 @@ const IconMCoin1 = ({ className, style }: Props) => {
           y2="48.766"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C1FFF4" />
-          <stop offset="0.588542" stop-color="#73818B" stop-opacity="0.56" />
-          <stop offset="1" stop-color="#BFCDFF" />
+          <stop stopColor="#C1FFF4" />
+          <stop offset="0.588542" stopColor="#73818B" stopOpacity="0.56" />
+          <stop offset="1" stopColor="#BFCDFF" />
         </linearGradient>
       </defs>
     </svg>

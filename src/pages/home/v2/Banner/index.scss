@@ -1,0 +1,52 @@
+.ball1Ani {
+  opacity: 0;
+  bottom: 270px;
+  left: 370px;
+  animation: move1 1.5s ease forwards;
+}
+@keyframes move1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.ball2Ani {
+  opacity: 0;
+  top: 210px;
+  left: 510px;
+  animation: move2 1s 0.5s ease forwards;
+}
+@keyframes move2 {
+  0% {
+    opacity: 0;
+    // top: 390px;
+    // left: 370px;
+  }
+  100% {
+    opacity: 1;
+    // top: 210px;
+    // left: 510px;
+  }
+}
+
+.ball3Ani {
+  opacity: 0;
+  top: 50px;
+  left: 622px;
+  animation: move3 1.5s 1s ease forwards;
+}
+@keyframes move3 {
+  0% {
+    opacity: 0;
+    // top: 390px;
+    // left: 370px;
+  }
+  100% {
+    opacity: 1;
+    // top: 50px;
+    // left: 622px;
+  }
+}
