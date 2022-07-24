@@ -32,6 +32,8 @@ module.exports = {
         darkBorderColor:'#2e3f4d',
         warningColor: '#D73F75',
         growingColor: '#3BB73B',
+        opacity80White: '#cccccc',
+        hightGreenColor:'#00FFD1'
       }
     },
     fontFamily: {

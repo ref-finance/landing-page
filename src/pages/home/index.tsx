@@ -14,7 +14,7 @@ const HomePage = () => {
       </header>
       <section className="mx-auto">
         <Banner />
-        <Intro />
+        {/* <Intro /> */}
         <Data />
         <Investors />
       </section>

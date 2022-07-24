@@ -11,6 +11,7 @@ import {
   IntroVideoPoster,
   IntroVideoLightBg
 } from '~src/components/layoutIcon/Icon';
+import { isMobile } from '~src/utils/device';
 import './index.scss';
 
 const Intro = () => {
@@ -35,11 +36,12 @@ const Intro = () => {
       setShowPlayButton(true);
     });
   }, []);
+  const mobile = isMobile();
   return (
-    <div className="relative pt-px">
+    <div className="relative pt-px sm:w-full md:w-full overflow-hidden">
       <div
-        className="absolute flex justify-end items-center rounded-full  bg-greenColor bg-opacity-20 -left-72"
-        style={{ width: '831px', height: '831px', top: '122px' }}
+        className="absolute flex justify-end items-center rounded-full  bg-greenColor bg-opacity-20 -left-72 sm:left-0 md:-left-0 sm:transform sm:-translate-x-50%"
+        style={{ width: mobile ? '500px' : '831px', height: mobile ? '500px' : '831px', top: '122px' }}
       >
         <div className=" transform translate-x-20 -translate-y-12">
           <p className="text-white font-bold text-2xl">GOVERNANCE</p>
@@ -82,7 +84,7 @@ const Intro = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-end mx-auto 2xl:w-3/5 lg:w-4/5 sm:w-full md:w-full mt-80">
+      <div className=" flex items-center justify-end mx-auto 2xl:w-3/5 lg:w-4/5 sm:w-full md:w-full mt-80">
         <div className="flex flex-col items-center">
           <div className="flex items-center h-60">
             <IntroIcon1></IntroIcon1>

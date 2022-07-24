@@ -53,7 +53,7 @@ const Navbar = () => {
     <div className="relative">
       <div style={{ background: 'rgba(57, 58, 68, 0.4)' }}>
         <div className="flex items-center justify-between mx-auto 2xl:w-4/5 lg:w-4/5 sm:w-full md:w-full h-11">
-          <div className="flex items-center">
+          <div className="flex items-center sm:justify-between md:justify-between sm:w-full md:w-full sm:px-3 md:px-3">
             <div className="flex items-center">
               <span className="text-gray-text text-xs">TVL</span>
               {tvlVariation24h ? (
@@ -73,7 +73,7 @@ const Navbar = () => {
                 </>
               ) : null}
             </div>
-            <div className="flex items-center ml-11">
+            <div className="flex items-center ml-11 sm:ml-0 md:ml-0">
               <span className="text-gray-text text-xs">24h Volume</span>
               {variation ? (
                 <>
@@ -92,19 +92,25 @@ const Navbar = () => {
                 </>
               ) : null}
             </div>
-            <span className="text-mobile text-xs ml-11 cursor-pointer hover:underline" onClick={goPageStats}>
+            <span
+              className="text-mobile text-xs ml-11 cursor-pointer hover:underline sm:hidden md:hidden"
+              onClick={goPageStats}
+            >
               Stats
             </span>
           </div>
-          <div className="flex items-center text-white text-opacity-60 text-sm">
+          <div
+            onClick={goPageNear}
+            className="flex items-center text-white text-opacity-60 text-sm cursor-pointer hover:text-opacity-100 sm:hidden md:hidden"
+          >
             Built on{' '}
-            <span onClick={goPageNear} className="flex items-center ml-3 cursor-pointer">
+            <span className="flex items-center ml-3">
               <NavbarNearIcon className="mr-1"></NavbarNearIcon>NEAR
             </span>
           </div>
         </div>
       </div>
-      <div className="relative z-50 flex items-center justify-between mt-5 mx-auto 2xl:w-4/5 lg:w-4/5 sm:w-full md:w-full h-11">
+      <div className="relative z-50 flex items-center justify-between mt-5 mx-auto 2xl:w-4/5 lg:w-4/5 sm:w-full md:w-full h-11 sm:px-3 md:px-3">
         <NavbarRefIcon className="cursor-pointer" onClick={goRefApp}></NavbarRefIcon>
         <Link />
       </div>
