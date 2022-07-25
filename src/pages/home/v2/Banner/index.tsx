@@ -54,7 +54,7 @@ const Banner = () => {
         <BannerBallIcon2 className={`absolute ${mobile ? '' : 'ball2Ani'}`} style={{ top: '210px', left: '510px' }} />
         <BannerBallIcon3 className={`absolute ${mobile ? '' : 'ball3Ani'}`} style={{ top: '50px', left: '622px' }} />
       </div>
-      <div className="relative z-10 flex justify-end sm:justify-center md:justify-center mx-auto 2xl:w-3/5 lg:w-4/5 sm:w-full md:w-full">
+      <div className="relative z-10 flex justify-end sm:justify-center md:justify-center mx-auto lg:w-4/5 sm:w-full md:w-full">
         <div className="flex flex-col sm:items-center md:items-center text-white mt-44 mr-1/5">
           <div
             onClick={goPageNear}
@@ -86,7 +86,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="relatve z-10 flex mt-40 sm:mt-20 md:mt-20 sm:flex-col md:flex-col justify-between mx-auto 2xl:w-3/5 lg:w-4/5 sm:w-full md:w-full sm:px-5 md:px-5">
+      <div className="relatve z-10 flex mt-40 sm:mt-20 md:mt-20 sm:flex-col md:flex-col justify-between mx-auto lg:w-4/5 sm:w-full md:w-full sm:px-5 md:px-5">
         <div className="flex flex-col items-center rounded-2xl sm:p-5 md:p-5 sm:my-5 md:my-5 sm:border sm:border-mobile md:border md:border-mobile">
           <span className="text-mobile text-2xl">LOW FEES</span>
           <span className="text-white font-bold text-4xl my-2">{'<$0.01'}</span>

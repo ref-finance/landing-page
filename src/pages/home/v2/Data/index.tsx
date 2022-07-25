@@ -16,8 +16,8 @@ const Data = () => {
     setSymbolMap(tempMap);
   }, [tokenBaseInfMap]);
   return (
-    <div className="relative overflow-hidden">
-      <div className="flex flex-col items-center justify-center mx-auto mt-44 sm:mt-20 md:mt-20 2xl:w-3/5 lg:w-4/5 sm:w-full md:w-full">
+    <div className="relative">
+      <div className="relative z-10 flex flex-col items-center justify-center mx-auto mt-44 sm:mt-20 md:mt-20 lg:w-4/5 sm:w-full md:w-full">
         <div className="flex items-center sm:justify-center md:justify-center sm:w-full md:w-full sm:px-6 md:px-6">
           <div className="flex flex-col justify-center items-center">
             <span className="text-white font-bold text-2xl sm:text-xl md:text-xl">TOP TOKENS</span>
@@ -35,8 +35,13 @@ const Data = () => {
         </div>
       </div>
       <div
-        className="absolute right-0 top-20 bg-greenColor rounded-full opacity-10 transform translate-x-1/2 sm:hidden md:hidden"
-        style={{ width: '478px', height: '478px' }}
+        className="absolute right-0 top-5 rounded-full  transform translate-x-1/2 sm:hidden md:hidden"
+        style={{
+          width: '478px',
+          height: '478px',
+          backgroundImage: 'linear-gradient(90deg, #3AFFF2 0%, rgba(58, 255, 242, 0) 55.01%)',
+          opacity: '0.15'
+        }}
       ></div>
     </div>
   );

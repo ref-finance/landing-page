@@ -84,7 +84,7 @@ const Intro = () => {
           </div>
         </div>
       </div>
-      <div className=" flex items-center justify-end mx-auto 2xl:w-3/5 lg:w-4/5 sm:w-full md:w-full mt-80">
+      <div className=" flex items-center justify-end mx-auto lg:w-4/5 sm:w-full md:w-full mt-80">
         <div className="flex flex-col items-center">
           <div className="flex items-center h-60">
             <IntroIcon1></IntroIcon1>
@@ -101,7 +101,7 @@ const Intro = () => {
           <span className="text-white text-lg mt-4">LOVE</span>
         </div>
       </div>
-      <div className="flex items-center justify-center mx-auto mt-28 2xl:w-3/5 lg:w-4/5 sm:w-full md:w-full">
+      <div className="flex items-center justify-center mx-auto mt-28 lg:w-4/5 sm:w-full md:w-full">
         <div className={`relative flex items-center justify-center ${showVideo ? 'hidden' : ''}`}>
           <IntroVideoBg style={{ width: '779px' }}></IntroVideoBg>
           <IntroVideoButtonIcon className="absolute cursor-pointer" onClick={playVideo}></IntroVideoButtonIcon>
