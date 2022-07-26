@@ -4,25 +4,25 @@ const Link = () => {
   return (
     <div className="flex items-center">
       <FooterIcon1
-        className="cursor-pointer text-opacity80White hover:text-white"
+        className="cursor-pointer text-opacity80White hover:text-brightGreenColor"
         onClick={() => {
           window.open('https://twitter.com/finance_ref');
         }}
       />
       <FooterIcon2
-        className="ml-7 cursor-pointer text-opacity80White hover:text-white"
+        className="ml-7 cursor-pointer text-opacity80White hover:text-brightGreenColor"
         onClick={() => {
           window.open('https://t.me/ref_finance');
         }}
       />
       <FooterIcon3
-        className="ml-7 cursor-pointer text-opacity80White hover:text-white"
+        className="ml-7 cursor-pointer text-opacity80White hover:text-brightGreenColor"
         onClick={() => {
           window.open('https://discord.com/invite/SJBGcfMxJz');
         }}
       />
       <FooterIcon4
-        className="ml-7 cursor-pointer text-opacity80White hover:text-white"
+        className="ml-7 cursor-pointer text-opacity80White hover:text-brightGreenColor"
         onClick={() => {
           window.open('https://ref-finance.medium.com/');
         }}

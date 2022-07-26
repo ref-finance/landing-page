@@ -11,7 +11,7 @@ const HomePage = () => {
   const mobile = isMobile();
   return (
     <div className="min-h-screen bg-black">
-      <header className="h-20">
+      <header>
         <Navbar />
       </header>
       <div style={{ maxWidth: mobile ? '' : '1440px' }} className="mx-auto overflow-hidden">

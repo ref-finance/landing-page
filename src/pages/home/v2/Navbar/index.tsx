@@ -1,5 +1,13 @@
-import React from 'react';
-import { NavBarDownArrowIcon, NavBarUpArrowIcon, NavbarRefIcon, NavbarNearIcon } from '~src/components/layoutIcon/Icon';
+import React, { useState } from 'react';
+import {
+  NavBarDownArrowIcon,
+  NavBarUpArrowIcon,
+  NavbarRefIcon,
+  NavbarNearIcon,
+  RefAnalytics,
+  RefAnalyticsGary,
+  RefAnalyticsIcon
+} from '~src/components/layoutIcon/Icon';
 import { use24hVolumeVariation, useHistoricalTvl } from '~src/hooks/home';
 import Link from '~src/components/common/Link';
 import { toInternationalCurrencySystem } from '~src/utils/numbers';
@@ -8,9 +16,11 @@ import { isMobile } from '~src/utils/device';
 
 const Navbar = () => {
   const dayVolumeVariation = use24hVolumeVariation();
+  const [hoverLogo, setHoverLogo] = useState(false);
   const historyTvl = useHistoricalTvl();
   const { amount, variation } = dayVolumeVariation;
   const { tvlAmount24h, tvlVariation24h } = historyTvl;
+
   function displayAmount() {
     if (+amount > 0) {
       return '$' + toInternationalCurrencySystem(amount);
@@ -55,13 +65,16 @@ const Navbar = () => {
     <div className="relative">
       <div style={{ background: 'rgba(57, 58, 68, 0.4)' }}>
         <div style={{ maxWidth: mobile ? '' : '1440px' }} className="mx-auto">
-          <div className="flex items-center justify-between mx-auto lg:w-4/5 sm:w-full md:w-full h-11">
-            <div className="flex items-center sm:justify-between md:justify-between sm:w-full md:w-full sm:px-3 md:px-3">
-              <div className="flex items-center">
+          <div
+            className="flex items-center justify-between mx-auto lg:w-4/5 sm:w-full md:w-full"
+            style={{ minHeight: '44px' }}
+          >
+            <div className="flex items-center py-2 sm:items-end md:items-end sm:justify-between md:justify-between sm:w-full md:w-full sm:px-6 md:px-6">
+              <div className="flex items-center sm:flex-col md:flex-col sm:items-start md:items-start">
                 <span className="text-gray-text text-xs">TVL</span>
                 {tvlVariation24h ? (
-                  <>
-                    <span className="text-white text-xs mx-1.5">{displayTvlAmount24h()}</span>
+                  <div className="flex items-center sm:mt-1 md:mt-1">
+                    <span className="text-white text-xs mx-1.5 sm:ml-0 md:ml-0">{displayTvlAmount24h()}</span>
                     {+tvlVariation24h > 0 ? (
                       <span className={`flex items-center text-xs text-growingColor`}>
                         (<NavBarUpArrowIcon className="mr-0.5"></NavBarUpArrowIcon>
@@ -73,14 +86,14 @@ const Navbar = () => {
                         {displayTvlVariation24h()})
                       </span>
                     )}
-                  </>
+                  </div>
                 ) : null}
               </div>
-              <div className="flex items-center ml-11 sm:ml-0 md:ml-0">
+              <div className="flex items-center sm:flex-col md:flex-col sm:items-start md:items-start ml-11 sm:ml-0 md:ml-0">
                 <span className="text-gray-text text-xs">24h Volume</span>
                 {variation ? (
-                  <>
-                    <span className="text-white text-xs mx-1.5">{displayAmount()}</span>
+                  <div className="flex items-center sm:mt-1 md:mt-1">
+                    <span className="text-white text-xs mx-1.5 sm:ml-0 md:ml-0">{displayAmount()}</span>
                     {+variation > 0 ? (
                       <span className={`flex items-center text-xs text-growingColor`}>
                         (<NavBarUpArrowIcon className="mr-0.5"></NavBarUpArrowIcon>
@@ -92,15 +105,19 @@ const Navbar = () => {
                         {displayVariation()})
                       </span>
                     )}
-                  </>
+                  </div>
                 ) : null}
               </div>
-              <span
-                className="text-mobile text-xs ml-11 cursor-pointer hover:underline sm:hidden md:hidden"
+              <div
+                className="ml-6 cursor-pointer sm:hidden md:hidden"
+                onMouseOver={() => setHoverLogo(true)}
+                onMouseLeave={() => setHoverLogo(false)}
                 onClick={goPageStats}
               >
-                Stats
-              </span>
+                {!hoverLogo && <RefAnalyticsGary className="transform scale-75 origin-center" />}
+                {hoverLogo && <RefAnalytics className="transform scale-75 origin-center" />}
+              </div>
+              <RefAnalyticsIcon className="lg:hidden" onClick={goPageStats}></RefAnalyticsIcon>
             </div>
             <div
               onClick={goPageNear}
@@ -115,7 +132,7 @@ const Navbar = () => {
         </div>
       </div>
       <div style={{ maxWidth: mobile ? '' : '1440px' }} className="mx-auto">
-        <div className="relative z-50 flex items-center justify-between mt-5 mx-auto lg:w-4/5 sm:w-full md:w-full h-11 sm:px-3 md:px-3">
+        <div className="relative z-50 flex items-center justify-between mt-5 mx-auto lg:w-4/5 sm:w-full md:w-full h-11  sm:mt-2 md:mt-2 sm:px-6 md:px-6">
           <NavbarRefIcon className="cursor-pointer" onClick={goRefApp}></NavbarRefIcon>
           <Link />
         </div>

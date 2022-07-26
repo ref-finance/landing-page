@@ -27,6 +27,14 @@
   font-family: 'gotham';
   src: url('./assets/Gotham-Book.ttf');
 }
+@font-face {
+  font-family: 'gothamLight';
+  src: url('./assets/Gotham-Light.otf');
+}
 .gotham_font {
   font-family: 'gotham';
+}
+
+.gotham_font_light {
+  font-family: 'gothamLight';
 }
