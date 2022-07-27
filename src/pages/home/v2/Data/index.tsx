@@ -21,7 +21,7 @@ const Data = () => {
         <div className="flex items-center sm:justify-center md:justify-center sm:w-full md:w-full sm:px-6 md:px-6">
           <div className="flex flex-col justify-center items-center">
             <span className="text-white font-bold text-2xl">TOP TOKENS</span>
-            <div className="bg-brightGreenColor w-full mt-3 sm:hidden md:hidden" style={{ height: '3px' }}></div>
+            {/* <div className="bg-brightGreenColor w-full mt-3" style={{ height: '3px' }}></div> */}
           </div>
           {/* <div className="flex flex-col justify-center items-center ml-28 sm:ml-0 md:ml-0">
             <span className="text-white font-bold text-2xl opacity-30 cursor-pointer sm:text-xl md:text-xl">POPULAR FARMS</span>

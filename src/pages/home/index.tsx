@@ -10,11 +10,11 @@ import { isMobile } from '~src/utils/device';
 const HomePage = () => {
   const mobile = isMobile();
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-black overflow-hidden">
       <header>
         <Navbar />
       </header>
-      <div style={{ maxWidth: mobile ? '' : '1440px' }} className="mx-auto overflow-hidden">
+      <div style={{ maxWidth: mobile ? '' : '1440px' }} className="mx-auto">
         <section className="mx-auto">
           <Banner />
           {/* <Intro /> */}
