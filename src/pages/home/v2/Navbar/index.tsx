@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   NavBarDownArrowIcon,
   NavBarUpArrowIcon,
@@ -13,14 +13,29 @@ import Link from '~src/components/common/Link';
 import { toInternationalCurrencySystem } from '~src/utils/numbers';
 import { BigNumber } from 'bignumber.js';
 import { isMobile } from '~src/utils/device';
-
+const mobile = isMobile();
 const Navbar = () => {
   const dayVolumeVariation = use24hVolumeVariation();
   const [hoverLogo, setHoverLogo] = useState(false);
+  const [float, setFloat] = useState(false);
   const historyTvl = useHistoricalTvl();
   const { amount, variation } = dayVolumeVariation;
   const { tvlAmount24h, tvlVariation24h } = historyTvl;
-
+  useEffect(() => {
+    window.addEventListener('scroll', srollFun);
+    return () => {
+      window.removeEventListener('scroll', srollFun);
+    };
+  }, []);
+  function srollFun(e: any) {
+    const scrollTop = e.srcElement.documentElement.scrollTop || window.pageYOffset || e.srcElement.body.scrollTop;
+    const h = mobile ? 60 : 43;
+    if (scrollTop > h) {
+      setFloat(true);
+    } else {
+      setFloat(false);
+    }
+  }
   function displayAmount() {
     if (+amount > 0) {
       return '$' + toInternationalCurrencySystem(amount);
@@ -60,13 +75,12 @@ const Navbar = () => {
   function goRefApp() {
     window.open('https://app.ref.finance/');
   }
-  const mobile = isMobile();
   return (
     <div className="relative">
       <div style={{ background: 'rgba(57, 58, 68, 0.4)' }}>
-        <div style={{ maxWidth: mobile ? '' : '1440px' }} className="mx-auto">
+        <div className="mx-auto sm:mb-2 md:mb-2">
           <div
-            className="flex items-center justify-between mx-auto lg:w-4/5 sm:w-full md:w-full"
+            className="flex items-center justify-between mx-auto lg:w-5/6 sm:w-full md:w-full"
             style={{ minHeight: '44px' }}
           >
             <div className="flex items-center py-2 sm:items-end md:items-end sm:justify-between md:justify-between sm:w-full md:w-full sm:px-6 md:px-6">
@@ -131,10 +145,13 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div style={{ maxWidth: mobile ? '' : '1440px' }} className="mx-auto">
-        <div className="relative z-50 flex items-center justify-between mt-5 mx-auto lg:w-4/5 sm:w-full md:w-full h-11  sm:mt-2 md:mt-2 sm:px-6 md:px-6">
+      <div
+        className={float ? 'fixed left-0 top-0 w-full bg-shadowColor z-50' : ''}
+        style={{ boxShadow: float ? '0px 4px 20px rgba(0, 0, 0, 0.5)' : '', backdropFilter: float ? 'blur(16px)' : '' }}
+      >
+        <div className="relative z-50 flex items-center justify-between mx-auto lg:w-5/6 sm:w-full md:w-full h-14 sm:px-6 md:px-6">
           <NavbarRefIcon className="cursor-pointer" onClick={goRefApp}></NavbarRefIcon>
-          <Link />
+          <Link className={float ? 'sm:hidden md:hidden' : ''} />
         </div>
       </div>
     </div>

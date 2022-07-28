@@ -17,7 +17,7 @@ import {
 import './index.scss';
 import { isMobile } from '~src/utils/device';
 import { useTrail, animated } from '@react-spring/web';
-
+import useAnimateNumber from 'use-animate-number';
 const Trail: React.FC<{ open: boolean }> = ({ open, children }) => {
   const items = React.Children.toArray(children);
   const trail = useTrail(items.length, {
@@ -48,25 +48,27 @@ const Banner = () => {
   }
   const mobile = isMobile();
   return (
-    <div className="relative overflow-hidden sm:mt-12 md:mt-12">
+    <div className="relative sm:mt-12 md:mt-12">
       {mobile ? null : (
-        <div className="absolute lg:transform xl:transform lg:scale-75 xl:scale-100">
+        <div className="absolute lg:transform xl:transform lg:scale-75 xl:scale-100 right-1/3 mr-32">
           <BannerMainIcon />
-          <BannerBallIcon1 className={`absolute ball1Ani`} style={{ bottom: '270px', left: '370px' }} />
-          <BannerBallIcon2 className={`absolute ball2Ani`} style={{ top: '210px', left: '510px' }} />
-          <BannerBallIcon3 className={`absolute ball3Ani`} style={{ top: '50px', left: '622px' }} />
+          <BannerBallIcon1 className={`absolute ball1Ani`} style={{ bottom: '270px', left: '450px' }} />
+          <BannerBallIcon2 className={`absolute ball2Ani`} style={{ top: '210px', left: '590px' }} />
+          <BannerBallIcon3 className={`absolute ball3Ani`} style={{ top: '50px', left: '702px' }} />
         </div>
       )}
 
       <div className="relative z-10 flex justify-end sm:justify-center md:justify-center mx-auto lg:w-4/5 sm:w-full md:w-full">
         <div className="flex flex-col sm:justify-start md:justify-start text-white mt-44 sm:mt-0 md:mt-0 mr-1/5">
           <Trail open>
-            <span className="text-white gotham_font_light" style={{ fontSize: mobile ? '32px' : '42px' }}>
+            <span className="text-white gotham_font_light lg:hidden" style={{ fontSize: '32px' }}>
               Where your DeFi
             </span>
-            <span className="text-white gotham_font_light" style={{ fontSize: mobile ? '32px' : '42px' }}>
-              {' '}
+            <span className="text-white gotham_font_light lg:hidden" style={{ fontSize: '32px' }}>
               journey on
+            </span>
+            <span className="text-white gotham_font_light sm:hidden md:hidden" style={{ fontSize: '42px' }}>
+              Where your DeFi journey on
             </span>
             <BannerNearIconAndTextIcon className="mb-5 mt-2.5 sm:transform sm:scale-75 md:scale-75 sm:origin-left md:origin-left"></BannerNearIconAndTextIcon>
           </Trail>
@@ -88,20 +90,31 @@ const Banner = () => {
         </div>
       ) : null}
 
-      <div className="relatve z-10 flex mt-40 sm:-mt-10 md:-mt-10 sm:flex-col md:flex-col justify-between mx-auto lg:w-4/5 sm:w-full md:w-full sm:px-5 md:px-5">
+      <div className="relatve z-10 flex mt-40 sm:-mt-10 md:-mt-10 sm:flex-col md:flex-col justify-around mx-auto lg:w-4/5 sm:w-full md:w-full sm:px-5 md:px-5">
         <div className="flex flex-col items-center rounded-2xl sm:p-5 md:p-5 sm:my-5 md:my-5 ">
-          <span className="text-mobile text-2xl gotham_font_light">LOW FEES</span>
-          <span className="text-white font-bold text-4xl my-2">{'<$0.01'}</span>
+          <span className={`text-mobile text-2xl ${mobile ? 'font-bold' : 'gotham_font_light'}`}>LOW FEES</span>
+          <span className="text-white font-bold text-4xl my-2">
+            {'<$'}
+            <FeeNumber />
+          </span>
           <span className="text-white text-base">Near’s Transaction Fees</span>
         </div>
         <div className="flex flex-col items-center rounded-2xl sm:p-5 md:p-5 sm:my-5 md:my-5 ">
-          <span className="text-mobile text-2xl gotham_font_light">LIGHTING FAST</span>
-          <span className="text-white font-bold text-4xl my-2">{'1-2S'}</span>
+          <span className={`text-mobile text-2xl ${mobile ? 'font-bold' : 'gotham_font_light'}`}>LIGHTING FAST</span>
+          <span className="text-white font-bold text-4xl my-2">
+            {'1-'}
+            <FastNumber></FastNumber>
+            {'S'}
+          </span>
           <span className="text-white text-base">Transaction Finality</span>
         </div>
         <div className="flex flex-col items-center rounded-2xl sm:p-5 md:p-5 sm:my-5 md:my-5 ">
-          <span className="text-mobile text-2xl gotham_font_light">GROWING FAST</span>
-          <span className="text-white font-bold text-4xl my-2">{'$30B+'}</span>
+          <span className={`text-mobile text-2xl ${mobile ? 'font-bold' : 'gotham_font_light'}`}>GROWING FAST</span>
+          <span className="text-white font-bold text-4xl my-2">
+            {'$'}
+            <GrowNumber></GrowNumber>
+            {'B+'}
+          </span>
           <span className="text-white text-base">Accumulative Trading Volume</span>
         </div>
       </div>
@@ -110,3 +123,22 @@ const Banner = () => {
 };
 
 export default Banner;
+
+function FeeNumber() {
+  const [value, setValue] = useAnimateNumber(0.01, {
+    decimals: 3
+  });
+  return <>{value}</>;
+}
+function FastNumber() {
+  const [value, setValue] = useAnimateNumber(2, {
+    decimals: 1
+  });
+  return <>{value}</>;
+}
+function GrowNumber() {
+  const [value, setValue] = useAnimateNumber(30, {
+    decimals: 1
+  });
+  return <>{value}</>;
+}

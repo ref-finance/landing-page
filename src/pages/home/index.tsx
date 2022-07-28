@@ -21,10 +21,10 @@ const HomePage = () => {
           <Data />
           <Investors />
         </section>
-        <footer className="Home_footer flex justify-center">
-          <Footer />
-        </footer>
       </div>
+      <footer className="Home_footer flex justify-center">
+        <Footer />
+      </footer>
     </div>
   );
 };

@@ -17,7 +17,7 @@ const Data = () => {
   }, [tokenBaseInfMap]);
   return (
     <div className="relative">
-      <div className="relative flex flex-col items-center justify-center mx-auto mt-44 sm:mt-20 md:mt-20 lg:w-4/5 sm:w-full md:w-full">
+      <div className="relative z-10 flex flex-col items-center justify-center mx-auto mt-44 sm:mt-20 md:mt-20 lg:w-4/5 sm:w-full md:w-full">
         <div className="flex items-center sm:justify-center md:justify-center sm:w-full md:w-full sm:px-6 md:px-6">
           <div className="flex flex-col justify-center items-center">
             <span className="text-white font-bold text-2xl">TOP TOKENS</span>
@@ -40,7 +40,7 @@ const Data = () => {
           width: '478px',
           height: '478px',
           backgroundImage: 'linear-gradient(90deg, #3AFFF2 0%, rgba(58, 255, 242, 0) 55.01%)',
-          opacity: '0.15'
+          opacity: '0.2'
         }}
       ></div>
       <div
@@ -59,22 +59,47 @@ function TokenBox({ token, symbolMap }: { token: Token; symbolMap: any }) {
   const { symbol, icon, amount, tvl } = token;
 
   return (
-    <div className="rounded-2xl px-3.5 py-4 text-white bg-blueColor hover:bg-brightGreenColor hover:text-black">
-      <div className="flex items-center">
-        <img src={icon || symbolMap[symbol]} className="w-10 h-10 rounded-full border-4 border-darkBorderColor"></img>
-        <span className="text-lg ml-2.5 font-extrabold">{symbol}</span>
+    <>
+      <div
+        className="rounded-2xl px-3.5 py-4 text-white bg-blueColor hover:bg-brightGreenColor sm:hidden md:hidden"
+        style={{ backdropFilter: 'blur(10px)' }}
+      >
+        <div className="flex items-center">
+          <img src={icon || symbolMap[symbol]} className="w-10 h-10 rounded-full border-4 border-darkBorderColor"></img>
+          <span className="text-lg ml-2.5 font-extrabold">{symbol == 'wNEAR' ? 'NEAR' : symbol}</span>
+        </div>
+        <div className="flex items-center justify-between mt-6">
+          <div className="flex flex-col">
+            <span className=" opacity-50 text-sm">Locked</span>
+            <span className=" text-lg font-bold">{toInternationalCurrencySystem(amount)}</span>
+          </div>
+          <div className="flex flex-col">
+            <span className="opacity-50 text-sm ">TVL</span>
+            <span className=" text-lg font-bold ">{'$' + toInternationalCurrencySystem(tvl)}</span>
+          </div>
+        </div>
       </div>
-      <div className="flex items-center justify-between mt-6">
+      <div
+        className="flex items-end justify-between rounded-2xl p-3 text-white bg-blueColor hover:bg-brightGreenColor lg:hidden"
+        style={{ backdropFilter: 'blur(10px)' }}
+      >
+        <div className="relative flex flex-col items-start">
+          <img
+            src={icon || symbolMap[symbol]}
+            className="absolute -top-12 w-10 h-10 rounded-full border-4 border-darkBorderColor transform translate-x-2"
+          ></img>
+          <span className="text-lg ml-2.5 font-extrabold">{symbol == 'wNEAR' ? 'NEAR' : symbol}</span>
+        </div>
         <div className="flex flex-col">
-          <span className=" opacity-50 text-sm ">Locked</span>
-          <span className=" text-lg font-bold ">{toInternationalCurrencySystem(amount)}</span>
+          <span className=" opacity-50 text-sm">Locked</span>
+          <span className=" text-lg font-bold mt-2">{toInternationalCurrencySystem(amount)}</span>
         </div>
         <div className="flex flex-col">
           <span className="opacity-50 text-sm ">TVL</span>
-          <span className=" text-lg font-bold ">{'$' + toInternationalCurrencySystem(tvl)}</span>
+          <span className=" text-lg font-bold mt-2">{'$' + toInternationalCurrencySystem(tvl)}</span>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

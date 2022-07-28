@@ -30,12 +30,13 @@
   },
   "dependencies": {
     "axios": "^0.23.0",
+    "bignumber.js": "^9.0.1",
     "classnames": "^2.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
     "react-spring": "^9.4.2",
-    "bignumber.js": "^9.0.1"
+    "use-animate-number": "^1.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
