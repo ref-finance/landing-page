@@ -1846,6 +1846,45 @@ export const FooterIcon1 = (props: any) => {
   );
 };
 
+export const FooterIcon1Hover = (props: any) => {
+  const { hoverLogo, ...reset } = props;
+  return (
+    <svg {...reset} width="44" height="39" viewBox="0 0 44 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter={`${hoverLogo ? 'url(#filter0_d_276_220)' : ''}`}>
+        <path
+          d="M29.6051 15.6821C29.6524 15.7698 29.6524 15.9451 29.6524 16.1643C29.6524 17.8739 29.2265 19.5396 28.3273 21.1176C27.3808 22.7834 26.103 24.1422 24.4466 25.1504C22.6482 26.2463 20.5186 26.8162 18.1997 26.8162C15.928 26.8162 13.893 26.2463 12 25.1504C12.284 25.1943 12.6152 25.1943 12.9465 25.1943C14.8395 25.1943 16.4959 24.6682 17.963 23.5724C17.0638 23.5724 16.2593 23.3094 15.5967 22.8272C14.9342 22.345 14.4609 21.7313 14.177 20.9861C14.4136 21.03 14.6976 21.03 14.8868 21.03C15.2655 21.03 15.5967 20.9861 15.9753 20.9423C15.0762 20.767 14.2716 20.3286 13.6564 19.6272C13.0412 18.9259 12.7572 18.1369 12.7572 17.2602V17.1725C13.3251 17.4794 13.9404 17.6547 14.5556 17.6547C14.035 17.304 13.5617 16.8657 13.2305 16.2958C12.8992 15.7698 12.7099 15.1561 12.7099 14.4986C12.7099 13.8411 12.8992 13.2274 13.2778 12.6137C14.2716 13.7972 15.5021 14.7178 16.9692 15.3753C18.4363 16.0328 19.9507 16.4273 21.6071 16.515C21.5597 16.252 21.5124 15.9451 21.5124 15.6821C21.5124 15.0246 21.7017 14.4109 22.033 13.7972C22.3643 13.1836 22.8849 12.7452 23.5001 12.4383C24.1627 12.1753 24.8252 12 25.5824 12C26.1503 12 26.7182 12.0877 27.2388 12.3068C27.7594 12.526 28.1853 12.789 28.5639 13.1835C29.5104 13.0082 30.3623 12.7013 31.1195 12.3068C30.8356 13.1835 30.2203 13.8849 29.3685 14.3671C30.1257 14.2794 30.8829 14.0602 31.6874 13.7534C31.0722 14.4986 30.4096 15.1561 29.6051 15.6821Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_d_276_220"
+          x="0"
+          y="0"
+          width="43.6875"
+          height="38.8162"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset />
+          <feGaussianBlur stdDeviation="6" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 1 0 0 0 0 0.82 0 0 0 0.6 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_276_220" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_276_220" result="shape" />
+        </filter>
+      </defs>
+    </svg>
+  );
+};
+
 export const FooterIcon2 = (props: any) => {
   return (
     <svg {...props} width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1857,6 +1896,45 @@ export const FooterIcon2 = (props: any) => {
   );
 };
 
+export const FooterIcon2Hover = (props: any) => {
+  const { hoverLogo, ...reset } = props;
+  return (
+    <svg {...reset} width="45" height="40" viewBox="0 0 45 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter={hoverLogo ? 'url(#filter0_d_276_221)' : ''}>
+        <path
+          d="M19.9689 26.5522L20.2748 22.2201L28.6637 15.1329C29.0351 14.8154 28.5873 14.6618 28.0957 14.9383L17.7406 21.073L13.2621 19.7416C12.3009 19.4856 12.2899 18.8608 13.4806 18.4102L30.9248 12.1014C31.7222 11.7635 32.4868 12.2858 32.181 13.4328L29.2099 26.5522C29.0024 27.4842 28.4016 27.7095 27.5714 27.2794L23.0492 24.1455L20.8755 26.1221C20.6243 26.3576 20.4168 26.5522 19.9689 26.5522Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_d_276_221"
+          x="0.5625"
+          y="0"
+          width="43.6875"
+          height="39.4893"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset />
+          <feGaussianBlur stdDeviation="6" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 1 0 0 0 0 0.82 0 0 0 0.6 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_276_221" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_276_221" result="shape" />
+        </filter>
+      </defs>
+    </svg>
+  );
+};
+
 export const FooterIcon3 = (props: any) => {
   return (
     <svg {...props} width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1864,6 +1942,45 @@ export const FooterIcon3 = (props: any) => {
         d="M9.84322 0.628298C5.92411 0.628298 3.17489 2.16562 3.17489 2.16562C4.68111 0.935763 7.31335 0.227257 7.31335 0.227257L7.06475 0C4.59337 0.0401041 2.35597 1.60416 2.35597 1.60416C-0.159279 6.40329 0.00158038 10.5474 0.00158038 10.5474C2.04888 12.967 5.09057 12.7932 5.09057 12.7932L6.12884 11.5901C4.3009 11.2291 3.14564 9.74529 3.14564 9.74529C3.14564 9.74529 5.89487 11.4564 9.84322 11.4564C13.7916 11.4564 16.5408 9.74529 16.5408 9.74529C16.5408 9.74529 15.3855 11.2291 13.5576 11.5901L14.5959 12.7932C14.5959 12.7932 17.6376 12.967 19.6849 10.5474C19.6849 10.5474 19.8457 6.40329 17.3305 1.60416C17.3305 1.60416 15.0931 0.0401041 12.6217 0L12.3731 0.227257C12.3731 0.227257 15.0053 0.935763 16.5116 2.16562C16.5116 2.16562 13.7623 0.628298 9.84322 0.628298ZM6.81615 5.69478C7.76668 5.69478 8.54173 6.45676 8.5271 7.39252C8.5271 8.31491 7.76668 9.09026 6.81615 9.09026C5.88024 9.09026 5.11982 8.31491 5.11982 7.39252C5.11982 6.45676 5.86562 5.69478 6.81615 5.69478ZM12.9142 5.69478C13.8647 5.69478 14.6251 6.45676 14.6251 7.39252C14.6251 8.31491 13.8647 9.09026 12.9142 9.09026C11.9783 9.09026 11.2178 8.31491 11.2178 7.39252C11.2178 6.45676 11.9636 5.69478 12.9142 5.69478Z"
         fill="currentColor"
       />
+    </svg>
+  );
+};
+
+export const FooterIcon3Hover = (props: any) => {
+  const { hoverLogo, ...reset } = props;
+  return (
+    <svg {...reset} width="44" height="37" viewBox="0 0 44 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter={hoverLogo ? 'url(#filter0_d_276_222)' : ''}>
+        <path
+          d="M21.8432 12.6283C17.9241 12.6283 15.1749 14.1656 15.1749 14.1656C16.6811 12.9358 19.3133 12.2273 19.3133 12.2273L19.0648 12C16.5934 12.0401 14.356 13.6042 14.356 13.6042C11.8407 18.4033 12.0016 22.5474 12.0016 22.5474C14.0489 24.967 17.0906 24.7932 17.0906 24.7932L18.1288 23.5901C16.3009 23.2291 15.1456 21.7453 15.1456 21.7453C15.1456 21.7453 17.8949 23.4564 21.8432 23.4564C25.7916 23.4564 28.5408 21.7453 28.5408 21.7453C28.5408 21.7453 27.3855 23.2291 25.5576 23.5901L26.5959 24.7932C26.5959 24.7932 29.6376 24.967 31.6849 22.5474C31.6849 22.5474 31.8457 18.4033 29.3305 13.6042C29.3305 13.6042 27.0931 12.0401 24.6217 12L24.3731 12.2273C24.3731 12.2273 27.0053 12.9358 28.5116 14.1656C28.5116 14.1656 25.7623 12.6283 21.8432 12.6283ZM18.8161 17.6948C19.7667 17.6948 20.5417 18.4568 20.5271 19.3925C20.5271 20.3149 19.7667 21.0903 18.8161 21.0903C17.8802 21.0903 17.1198 20.3149 17.1198 19.3925C17.1198 18.4568 17.8656 17.6948 18.8161 17.6948ZM24.9142 17.6948C25.8647 17.6948 26.6251 18.4568 26.6251 19.3925C26.6251 20.3149 25.8647 21.0903 24.9142 21.0903C23.9783 21.0903 23.2178 20.3149 23.2178 19.3925C23.2178 18.4568 23.9636 17.6948 24.9142 17.6948Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_d_276_222"
+          x="-0.000488281"
+          y="0"
+          width="43.6875"
+          height="36.7959"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset />
+          <feGaussianBlur stdDeviation="6" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 1 0 0 0 0 0.82 0 0 0 0.6 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_276_222" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_276_222" result="shape" />
+        </filter>
+      </defs>
     </svg>
   );
 };
@@ -1881,6 +1998,45 @@ export const FooterIcon4 = (props: any) => {
         <clipPath id="clip0_2_98">
           <rect width="16.0156" height="16" fill="currentColor" />
         </clipPath>
+      </defs>
+    </svg>
+  );
+};
+
+export const FooterIcon4Hover = (props: any) => {
+  const { hoverLogo, ...reset } = props;
+  return (
+    <svg {...reset} width="41" height="38" viewBox="0 0 41 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter={hoverLogo ? 'url(#filter0_d_276_219)' : ''}>
+        <path
+          d="M12 25.35L13.55 23.275C13.55 23.275 13.975 22.95 13.975 21.5V15.075C13.975 15.075 14.05 14.5 13.5 13.825C12.95 13.15 12.425 12.5 12.425 12.5H16.825L20.475 20.4L23.65 12.5H28L26.65 14.05V23.9L28.025 25.325H21.925L23.25 24L23.325 15.275L19.2 25.5L14.7 15.6L14.625 21.925C14.625 21.925 14.575 22.625 15 23.225C15.425 23.8 16.65 25.35 16.65 25.35H12Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_d_276_219"
+          x="0"
+          y="0.5"
+          width="40.0249"
+          height="37"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset />
+          <feGaussianBlur stdDeviation="6" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 1 0 0 0 0 0.82 0 0 0 0.6 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_276_219" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_276_219" result="shape" />
+        </filter>
       </defs>
     </svg>
   );

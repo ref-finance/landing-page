@@ -151,7 +151,7 @@ const Navbar = () => {
       >
         <div className="relative z-50 flex items-center justify-between mx-auto lg:w-5/6 sm:w-full md:w-full h-14 sm:px-6 md:px-6">
           <NavbarRefIcon className="cursor-pointer" onClick={goRefApp}></NavbarRefIcon>
-          <Link className={float ? 'sm:hidden md:hidden' : ''} />
+          <Link className={float ? 'sm:hidden md:hidden' : 'sm:-mr-4'} />
         </div>
       </div>
     </div>
