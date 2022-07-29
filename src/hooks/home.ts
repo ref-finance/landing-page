@@ -84,6 +84,33 @@ export const useHistoricalTvl = () => {
 
   return historicalTvl;
 };
+export const useTotalHistoricalVolume = () => {
+  const [totalHistoricalVolume, setTotalHistoricalVolume] = useState<string>('');
+  const linkMap = {
+    prd: 'https://api.stats.ref.finance/api/total-historical-volume',
+    dev: 'https://api.dev.stats.ref.finance/api/total-historical-volume'
+  };
+  const env = getEnv();
+  useEffect(() => {
+    axios.get<string>(linkMap[env]).then(res => {
+      if (res.status === 200) {
+        setTotalHistoricalVolume(res.data);
+      } else {
+        console.error(res.statusText);
+      }
+    });
+  }, []);
+
+  return totalHistoricalVolume;
+};
+
+function getEnv() {
+  if (location.hostname == 'www.ref.finance') {
+    return 'prd';
+  } else {
+    return 'dev';
+  }
+}
 
 export interface Token {
   rank: number;

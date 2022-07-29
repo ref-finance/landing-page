@@ -1,3 +1,21 @@
+export const toInternationalCurrencySystemSplit = (labelValue: string, percent?: number) => {
+  const result: { value?: string; unit?: string } = {};
+  if (Math.abs(Number(labelValue)) >= 1.0e9) {
+    result.value = (Math.abs(Number(labelValue)) / 1.0e9).toFixed(percent || 2);
+    result.unit = 'B';
+  } else if (Math.abs(Number(labelValue)) >= 1.0e6) {
+    result.value = (Math.abs(Number(labelValue)) / 1.0e6).toFixed(percent || 2);
+    result.unit = 'M';
+  } else if (Math.abs(Number(labelValue)) >= 1.0e3) {
+    result.value = (Math.abs(Number(labelValue)) / 1.0e3).toFixed(percent || 2);
+    result.unit = 'K';
+  } else {
+    result.value = Math.abs(Number(labelValue)).toFixed(percent || 2);
+    result.unit = '';
+  }
+  return result;
+};
+
 export const toInternationalCurrencySystem = (labelValue: string, percent?: number) => {
   return Math.abs(Number(labelValue)) >= 1.0e9
     ? (Math.abs(Number(labelValue)) / 1.0e9).toFixed(percent || 2) + 'B'

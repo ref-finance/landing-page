@@ -18,6 +18,8 @@ import './index.scss';
 import { isMobile } from '~src/utils/device';
 import { useTrail, animated } from '@react-spring/web';
 import useAnimateNumber from 'use-animate-number';
+import { toInternationalCurrencySystemSplit } from '~src/utils/numbers';
+import { useTotalHistoricalVolume } from '~src/hooks/home';
 const Trail: React.FC<{ open: boolean }> = ({ open, children }) => {
   const items = React.Children.toArray(children);
   const trail = useTrail(items.length, {
@@ -37,6 +39,7 @@ const Trail: React.FC<{ open: boolean }> = ({ open, children }) => {
   );
 };
 const Banner = () => {
+  const volume = useTotalHistoricalVolume();
   function goRefApp() {
     window.open('https://app.ref.finance/');
   }
@@ -47,6 +50,10 @@ const Banner = () => {
     window.open('https://stats.ref.finance/');
   }
   const mobile = isMobile();
+  let resultVolume;
+  if (volume) {
+    resultVolume = toInternationalCurrencySystemSplit(volume);
+  }
   return (
     <div className="relative sm:mt-12 md:mt-12">
       {mobile ? null : (
@@ -118,8 +125,14 @@ const Banner = () => {
           </span>
           <span className="text-white font-bold text-4xl my-2" style={{ fontSize: '42px' }}>
             {'$'}
-            <GrowNumber></GrowNumber>
-            {'B+'}
+            {resultVolume ? (
+              <>
+                <GrowNumber num={resultVolume.value}></GrowNumber>
+                {resultVolume.unit}
+              </>
+            ) : (
+              '0'
+            )}
           </span>
           <span className="text-white text-base">Accumulative Trading Volume</span>
         </div>
@@ -142,8 +155,8 @@ function FastNumber() {
   });
   return <>{value}</>;
 }
-function GrowNumber() {
-  const [value, setValue] = useAnimateNumber(30, {
+function GrowNumber(props: any) {
+  const [value, setValue] = useAnimateNumber(+props.num, {
     decimals: 1
   });
   return <>{value}</>;
