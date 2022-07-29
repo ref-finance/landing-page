@@ -92,16 +92,20 @@ const Banner = () => {
 
       <div className="relatve z-10 flex mt-40 sm:-mt-10 md:-mt-10 sm:flex-col md:flex-col justify-around mx-auto lg:w-4/5 sm:w-full md:w-full sm:px-5 md:px-5">
         <div className="flex flex-col items-center rounded-2xl sm:p-5 md:p-5 sm:my-5 md:my-5 ">
-          <span className={`text-mobile text-2xl ${mobile ? 'font-bold' : 'gotham_font_light'}`}>LOW FEES</span>
-          <span className="text-white font-bold text-4xl my-2">
+          <span className={`text-mobile text-2xl sm:text-xl md:text-xl ${mobile ? 'font-bold' : 'gotham_font_light'}`}>
+            LOW FEES
+          </span>
+          <span className="text-white font-bold text-4xl my-2" style={{ fontSize: '42px' }}>
             {'<$'}
             <FeeNumber />
           </span>
           <span className="text-white text-base">Near’s Transaction Fees</span>
         </div>
         <div className="flex flex-col items-center rounded-2xl sm:p-5 md:p-5 sm:my-5 md:my-5 ">
-          <span className={`text-mobile text-2xl ${mobile ? 'font-bold' : 'gotham_font_light'}`}>LIGHTING FAST</span>
-          <span className="text-white font-bold text-4xl my-2">
+          <span className={`text-mobile text-2xl sm:text-xl md:text-xl ${mobile ? 'font-bold' : 'gotham_font_light'}`}>
+            LIGHTING FAST
+          </span>
+          <span className="text-white font-bold text-4xl my-2" style={{ fontSize: '42px' }}>
             {'1-'}
             <FastNumber></FastNumber>
             {'S'}
@@ -109,8 +113,10 @@ const Banner = () => {
           <span className="text-white text-base">Transaction Finality</span>
         </div>
         <div className="flex flex-col items-center rounded-2xl sm:p-5 md:p-5 sm:my-5 md:my-5 ">
-          <span className={`text-mobile text-2xl ${mobile ? 'font-bold' : 'gotham_font_light'}`}>GROWING FAST</span>
-          <span className="text-white font-bold text-4xl my-2">
+          <span className={`text-mobile text-2xl sm:text-xl md:text-xl ${mobile ? 'font-bold' : 'gotham_font_light'}`}>
+            GROWING FAST
+          </span>
+          <span className="text-white font-bold text-4xl my-2" style={{ fontSize: '42px' }}>
             {'$'}
             <GrowNumber></GrowNumber>
             {'B+'}

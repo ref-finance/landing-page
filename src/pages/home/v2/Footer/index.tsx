@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { BannerArrowIcon } from '~src/components/layoutIcon/Icon';
+import Link from '~src/components/common/Link';
 
 const Footer = () => {
   function goRefApp() {
@@ -17,7 +18,7 @@ const Footer = () => {
   return (
     <div className="mx-auto mt-32 sm:mt-20 md:mt-20 lg:w-5/6 sm:w-full md:w-full mb-10">
       <div className="flex justify-between items-center sm:flex-col md:flex-col sm:justify-center md:justify-center">
-        <div className="flex items-center sm:mb-8 md:mb-8">
+        <div className="flex items-center sm:mb-5 md:mb-5">
           <span onClick={goDocs} className="text-white text-sm mr-14 cursor-pointer">
             Docs
           </span>
@@ -34,6 +35,7 @@ const Footer = () => {
             Launch APP <BannerArrowIcon className="ml-2 transform scale-75" />
           </div>
         </div>
+        <Link className="lg:hidden" />
       </div>
     </div>
   );

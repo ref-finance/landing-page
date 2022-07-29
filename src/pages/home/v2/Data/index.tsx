@@ -92,15 +92,15 @@ function TokenBox({ token, symbolMap }: { token: Token; symbolMap: any }) {
             src={symbol == 'wNEAR' ? nearIcon : icon || symbolMap[symbol]}
             className="absolute -top-12 w-10 h-10 rounded-full border-4 border-darkBorderColor transform translate-x-2"
           ></img>
-          <span className="text-lg ml-2.5 font-extrabold">{symbol == 'wNEAR' ? 'NEAR' : symbol}</span>
+          <span className="text-base ml-2.5 font-extrabold">{symbol == 'wNEAR' ? 'NEAR' : symbol}</span>
         </div>
         <div className="flex flex-col">
           <span className=" opacity-50 text-sm">Locked</span>
-          <span className=" text-lg font-bold mt-2">{toInternationalCurrencySystem(amount)}</span>
+          <span className=" text-base font-bold mt-2">{toInternationalCurrencySystem(amount)}</span>
         </div>
         <div className="flex flex-col">
           <span className="opacity-50 text-sm ">TVL</span>
-          <span className=" text-lg font-bold mt-2">{'$' + toInternationalCurrencySystem(tvl)}</span>
+          <span className=" text-base font-bold mt-2">{'$' + toInternationalCurrencySystem(tvl)}</span>
         </div>
       </div>
     </>
