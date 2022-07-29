@@ -147,7 +147,11 @@ const Navbar = () => {
       </div>
       <div
         className={float ? 'fixed left-0 top-0 w-full bg-shadowColor z-50' : ''}
-        style={{ boxShadow: float ? '0px 4px 20px rgba(0, 0, 0, 0.5)' : '', backdropFilter: float ? 'blur(16px)' : '' }}
+        style={{
+          boxShadow: float ? '0px 4px 20px rgba(0, 0, 0, 0.5)' : '',
+          backdropFilter: float ? 'blur(16px)' : '',
+          WebkitBackdropFilter: float ? 'blur(16px)' : ''
+        }}
       >
         <div className="relative z-50 flex items-center justify-between mx-auto lg:w-5/6 sm:w-full md:w-full h-14 sm:px-6 md:px-6">
           <NavbarRefIcon className="cursor-pointer" onClick={goRefApp}></NavbarRefIcon>
