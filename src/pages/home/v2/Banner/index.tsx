@@ -81,7 +81,7 @@ const Banner = () => {
           </Trail>
           <div
             onClick={goRefApp}
-            className="flex items-center justify-center bg-primary rounded-lg cursor-pointer text-lg text-black h-12 font-extrabold w-48 hover:bg-hightGreenColor sm:text-sm md:text-sm sm:h-8 md:h-8 sm:w-32 md:w-32"
+            className="flex items-center justify-center bg-primary rounded-lg cursor-pointer text-lg text-black h-12 font-extrabold w-48  hover:bg-hightGreenColor sm:text-base md:text-base sm:h-8 md:h-8 sm:w-40 md:w-40"
           >
             Launch APP{' '}
             <BannerArrowIcon className="ml-2 sm:transform sm:scale-75 sm:origin-left md:transform md:scale-75 md:origin-left sm:ml-1 md:ml-1" />

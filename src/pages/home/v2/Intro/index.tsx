@@ -13,7 +13,10 @@ import {
   MobileVeIconList,
   IntroVideoLightBg_m,
   IntroVideoBg_m,
-  IntroVideoButtonIcon_m
+  IntroVideoButtonIcon_m,
+  MobileVeIcon,
+  MobileLoveIcon,
+  MobileREFAandNEARIcon
 } from '~src/components/layoutIcon/Icon';
 import { isMobile } from '~src/utils/device';
 import './index.scss';
@@ -86,7 +89,7 @@ const Intro = () => {
               onClick={() => {
                 window.open('https://app.ref.finance/referendum');
               }}
-              className="flex items-center justify-center bg-primary text-black text-sm cursor-pointer rounded-lg h-9 w-32 hover:bg-hightGreenColor"
+              className="flex items-center justify-center bg-primary text-black text-base cursor-pointer rounded-lg h-9 w-40 hover:bg-hightGreenColor"
             >
               Vote<IntroArrowIcon className="ml-3.5"></IntroArrowIcon>
             </div>
@@ -94,28 +97,28 @@ const Intro = () => {
               onClick={() => {
                 window.open('https://medium.com/@ref-finance/ref-tokenomics-2-0-vetokenomics-on-testnet-c2b6ea0e4f96');
               }}
-              className="flex items-center justify-center bg-primary text-black text-sm cursor-pointer rounded-lg h-9 w-32 ml-3 hover:bg-hightGreenColor"
+              className="flex items-center justify-center bg-primary text-black text-base cursor-pointer rounded-lg h-9 w-40 ml-3 hover:bg-hightGreenColor"
             >
               Read more<IntroArrowIcon className="ml-3.5"></IntroArrowIcon>
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center mt-16 lg:hidden">
+        <div className="relative z-10 flex items-center justify-center mt-16 lg:hidden">
           <div
             onClick={() => {
               window.open('https://app.ref.finance/referendum');
             }}
-            className="flex items-center justify-center bg-primary text-black text-sm cursor-pointer rounded-lg h-9 w-32 hover:bg-hightGreenColor"
+            className="flex items-center justify-center bg-primary text-black text-base cursor-pointer rounded-lg h-9 w-36 hover:bg-hightGreenColor"
           >
-            Vote<IntroArrowIcon className="ml-3.5"></IntroArrowIcon>
+            Vote<IntroArrowIcon className="ml-3"></IntroArrowIcon>
           </div>
           <div
             onClick={() => {
               window.open('https://medium.com/@ref-finance/ref-tokenomics-2-0-vetokenomics-on-testnet-c2b6ea0e4f96');
             }}
-            className="flex items-center justify-center bg-primary text-black text-sm cursor-pointer rounded-lg h-9 w-32 ml-3 hover:bg-hightGreenColor"
+            className="flex items-center justify-center bg-primary text-black text-base cursor-pointer rounded-lg h-9 w-36 ml-3 hover:bg-hightGreenColor"
           >
-            Read more<IntroArrowIcon className="ml-3.5"></IntroArrowIcon>
+            Read more<IntroArrowIcon className="ml-3"></IntroArrowIcon>
           </div>
         </div>
       </div>
@@ -136,8 +139,10 @@ const Intro = () => {
           <span className="text-white text-lg mt-4">LOVE</span>
         </div>
       </div>
-      <div className="lg:hidden flex justify-center mt-20 w-full">
-        <MobileVeIconList></MobileVeIconList>
+      <div className="lg:hidden flex  items-center justify-center mt-20 w-full">
+        <MobileREFAandNEARIcon></MobileREFAandNEARIcon>
+        <MobileVeIcon className="relative z-10 boardAni2_m"></MobileVeIcon>
+        <MobileLoveIcon className="boardAni3_m"></MobileLoveIcon>
       </div>
       <div className="flex items-center justify-center mx-auto mt-44 sm:mt-20 md:mt-20 lg:w-4/5 sm:w-full md:w-full">
         <div className={`relative flex items-center justify-center ${showVideo ? 'hidden' : ''}`}>

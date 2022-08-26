@@ -50,7 +50,7 @@ const Investors = () => {
         )}
         <div
           onClick={goRefApp}
-          className="lg:hidden flex font-extrabold items-center justify-center bg-primary rounded-lg cursor-pointer  mt-44 text-sm text-black h-8 w-32 hover:bg-hightGreenColor"
+          className="lg:hidden flex font-extrabold items-center justify-center bg-primary rounded-lg cursor-pointer  mt-44 text-base text-black h-8 w-40 hover:bg-hightGreenColor"
         >
           Launch APP <BannerArrowIcon className="ml-1 transform scale-75" />
         </div>

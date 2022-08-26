@@ -26,3 +26,32 @@
     margin-left: 2.25rem;
   }
 }
+
+.boardAni2_m {
+  opacity: 0;
+  animation: left2_m 1.5s ease forwards;
+}
+@keyframes left2_m {
+  0% {
+    opacity: 0;
+    margin-right: -5rem;
+  }
+  100% {
+    opacity: 1;
+    margin-right: -3rem;
+  }
+}
+.boardAni3_m {
+  opacity: 0;
+  animation: left3_m 1.5s ease forwards;
+}
+@keyframes left3_m {
+  0% {
+    opacity: 0;
+    margin-right: -2rem;
+  }
+  100% {
+    opacity: 1;
+    margin-right: 0;
+  }
+}

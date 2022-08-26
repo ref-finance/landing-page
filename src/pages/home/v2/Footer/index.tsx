@@ -30,7 +30,7 @@ const Footer = () => {
           </span>
           <div
             onClick={goRefApp}
-            className="flex items-center font-extrabold justify-center bg-primary rounded-lg cursor-pointer text-sm text-black h-9 w-40 sm:hidden md:hidden hover:bg-hightGreenColor"
+            className="flex items-center font-extrabold justify-center bg-primary rounded-lg cursor-pointer text-base text-black h-9 w-40 sm:hidden md:hidden hover:bg-hightGreenColor"
           >
             Launch APP <BannerArrowIcon className="ml-2 transform scale-75" />
           </div>
