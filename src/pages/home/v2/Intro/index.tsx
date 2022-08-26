@@ -42,9 +42,9 @@ const Intro = () => {
   }, []);
   const mobile = isMobile();
   return (
-    <div className="sm:flex md:flex sm:flex-col md:flex-col relative pt-px sm:w-full md:w-full mt-16">
+    <div className="sm:flex md:flex sm:flex-col md:flex-col relative pt-px mt-16 sm:w-full md:w-full sm:mt-28 md:mt-28">
       <div
-        className="sm:relative md:relative absolute flex justify-end items-center -left-72 sm:left-0 md:left-0 sm:transform sm:-translate-x-50%"
+        className="sm:relative md:relative absolute flex justify-end items-center sm:flex-col md:flex-col -left-72 sm:left-0 md:left-0 sm:transform sm:-translate-x-50%"
         style={{ top: mobile ? '' : '122px' }}
       >
         <div
@@ -55,23 +55,23 @@ const Intro = () => {
             right: mobile ? '20%' : ''
           }}
         ></div>
-        <div className="sm:relative md:relative absolute z-10 transform translate-x-20  sm:translate-x-10 md:translate-x-10 -translate-y-12 sm:translate-y-8 md:translate-y-8 sm:pr-10 md:pr-10">
+        <div className="sm:relative md:relative absolute z-10 transform translate-x-20  sm:translate-x-10 md:translate-x-10 -translate-y-12 sm:-translate-y-2 md:-translate-y-2 sm:pr-10 md:pr-10">
           <p className="text-white font-bold text-2xl">GOVERNANCE</p>
           <div
-            className="text-white w-80 leading-tight mt-3 gotham_font_light sm:opacity-50 md:opacity-50"
+            className="text-white w-96 sm:w-80 md:w-80 leading-tight mt-3 gotham_font_light sm:opacity-50 md:opacity-50"
             style={{ fontSize: mobile ? '32px' : '42px' }}
           >
             Voting power & Extra earnings
           </div>
           <div className="flex items-center mt-12">
-            <IntroRightIcon></IntroRightIcon>
+            <IntroRightIcon className="flex flex-shrink-0 relative sm:-top-3 md:-top-3"></IntroRightIcon>
             <span className="text-white text-lg sm:text-base md:text-base ml-2">
               Assign the weight multiplier according to lockup period
             </span>
           </div>
           <div className="flex items-center mt-3">
             <IntroRightIcon></IntroRightIcon>
-            <span className="text-white text-lg sm:text-base md:text-base ml-2">Vote on farm set up & ballocation</span>
+            <span className="text-white text-lg sm:text-base md:text-base ml-2">Vote on farm set up & allocation</span>
           </div>
           <div className="flex items-center mt-3">
             <IntroRightIcon></IntroRightIcon>
@@ -81,7 +81,7 @@ const Intro = () => {
             <IntroRightIcon></IntroRightIcon>
             <span className="text-white text-lg sm:text-base md:text-base ml-2">Boost farming</span>
           </div>
-          <div className="flex items-center mt-16">
+          <div className="flex items-center mt-16 sm:hidden md:hidden">
             <div
               onClick={() => {
                 window.open('https://app.ref.finance/referendum');
@@ -98,6 +98,24 @@ const Intro = () => {
             >
               Read more<IntroArrowIcon className="ml-3.5"></IntroArrowIcon>
             </div>
+          </div>
+        </div>
+        <div className="flex items-center justify-center mt-16 lg:hidden">
+          <div
+            onClick={() => {
+              window.open('https://app.ref.finance/referendum');
+            }}
+            className="flex items-center justify-center bg-primary text-black text-sm cursor-pointer rounded-lg h-9 w-32 hover:bg-hightGreenColor"
+          >
+            Vote<IntroArrowIcon className="ml-3.5"></IntroArrowIcon>
+          </div>
+          <div
+            onClick={() => {
+              window.open('https://medium.com/@ref-finance/ref-tokenomics-2-0-vetokenomics-on-testnet-c2b6ea0e4f96');
+            }}
+            className="flex items-center justify-center bg-primary text-black text-sm cursor-pointer rounded-lg h-9 w-32 ml-3 hover:bg-hightGreenColor"
+          >
+            Read more<IntroArrowIcon className="ml-3.5"></IntroArrowIcon>
           </div>
         </div>
       </div>
