@@ -17,7 +17,7 @@ const HomePage = () => {
       <div style={{ maxWidth: mobile ? '' : '1440px' }} className="mx-auto">
         <section className="mx-auto">
           <Banner />
-          {/* <Intro /> */}
+          <Intro />
           <Data />
           <Investors />
         </section>

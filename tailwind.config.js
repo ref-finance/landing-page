@@ -44,6 +44,9 @@ module.exports = {
         greenColor:'#1d4a46',
         shadowColor:'rgba(14, 33, 33, 0.8)',
         shadowColorIcon: '0px 0px 12px rgba(0, 255, 209, 0.6)'
+      },
+      backgroundImage: {
+        leftBall: 'linear-gradient(270deg, #3AFFF2 2.65%, rgba(58, 255, 242, 0) 44.99%)'
       }
     },
     fontFamily: {
