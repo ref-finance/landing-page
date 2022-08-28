@@ -128,7 +128,7 @@ const Intro = () => {
             <IntroIcon1></IntroIcon1>
             <IntroIcon2></IntroIcon2>
           </div>
-          <span className="text-white text-lg mt-4">REF+ NEAR</span>
+          <span className="text-white text-lg mt-4">REF+NEAR</span>
         </div>
         <div className="flex flex-col items-center boardAni2">
           <IntroIcon3 className="h-60"></IntroIcon3>
