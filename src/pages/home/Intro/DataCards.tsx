@@ -136,7 +136,7 @@ const DataCards = () => {
   return (
     <ul className="mt-44 mb-7 s:mt-8 s:mb-16 flex s:flex-col">
       <DataCard title="LOW FEES" value={withPrefix('0.01', '<$')} description="Near’s Transaction Fees" />
-      <DataCard title="LIGHTING FAST" value={withSuffix('1-2', 'S')} description="Transaction Finality" />
+      <DataCard title="LIGHTNING FAST" value={withSuffix('1-2', 'S')} description="Transaction Finality" />
       <DataCard
         title="GROWING FAST"
         value={usersCount}

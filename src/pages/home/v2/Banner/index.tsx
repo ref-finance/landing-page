@@ -110,7 +110,7 @@ const Banner = () => {
         </div>
         <div className="flex flex-col items-center rounded-2xl sm:p-5 md:p-5 sm:my-5 md:my-5 ">
           <span className={`text-mobile text-2xl sm:text-xl md:text-xl ${mobile ? 'font-bold' : 'gotham_font_light'}`}>
-            LIGHTING FAST
+            LIGHTNING FAST
           </span>
           <span className="text-white font-bold text-4xl my-2" style={{ fontSize: '42px' }}>
             {'1-'}
