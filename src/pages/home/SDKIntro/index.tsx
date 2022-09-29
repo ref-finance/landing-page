@@ -20,6 +20,9 @@ export const SDKIntro = () => {
               style={{
                 background: 'linear-gradient(270deg, #7331FF 0%, #004FC6 49.79%, #00C6A2 97.06%)'
               }}
+              onClick={() => {
+                window.open('https://github.com/ref-finance/ref-sdk/releases', '_blank');
+              }}
             >
               Download ref-sdk
               <span className="ml-3">
@@ -51,6 +54,9 @@ export const SDKIntro = () => {
             className="flex mt-8 mb-6 w-full justify-center items-center rounded-lg text-white font-bold text-lg px-6 py-4 h-14"
             style={{
               background: 'linear-gradient(270deg, #7331FF 0%, #004FC6 49.79%, #00C6A2 97.06%)'
+            }}
+            onClick={() => {
+              window.open('https://github.com/ref-finance/ref-sdk/releases', '_blank');
             }}
           >
             Download ref-sdk
