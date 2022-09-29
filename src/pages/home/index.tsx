@@ -6,6 +6,7 @@ import Data from './v2/Data';
 import Investors from './v2/Investors';
 import Footer from './v2/Footer';
 import { isMobile } from '~src/utils/device';
+import { SDKIntro } from './SDKIntro/index';
 
 const HomePage = () => {
   const mobile = isMobile();
@@ -19,6 +20,7 @@ const HomePage = () => {
           <Banner />
           {/* <Intro /> */}
           <Data />
+          <SDKIntro />
           <Investors />
         </section>
       </div>
