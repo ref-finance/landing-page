@@ -195,8 +195,8 @@ export const CodeBlockMobile = () => {
         style={{
           color: 'rgba(124, 236, 17, 1)',
           fontSize: '16px',
-          top: '198px',
-          left: '80px'
+          top: 'calc(47% + 2px)',
+          left: '24%'
         }}
       >
         npm install @ref_finance/ref-sdk
@@ -207,8 +207,8 @@ export const CodeBlockMobile = () => {
         style={{
           color: 'rgba(171, 86, 255, 1)',
           fontSize: '16px',
-          top: '305px',
-          left: '140px'
+          top: 'calc(72% + 2px)',
+          left: '38%'
         }}
         onClick={() => {
           window.open('https://www.npmjs.com/package/@ref_finance/ref-sdk', '_blank');
