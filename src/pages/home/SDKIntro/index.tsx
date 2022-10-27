@@ -10,8 +10,8 @@ export const SDKIntro = () => {
 
           <div className="text-hightGreenColor text-6xl sm:text-center md:text-center  sm:text-5xl md:text-5xl font-bold mt-12 sm:mt-8 md:mt-8">{`{ REF SDK`}</div>
 
-          <div className="font-light text-white text-4xl sm:text-2xl md:text-2xl sm:px-10 md:px-10 sm:text-opacity-50 md:text-opacity-50 mt-4 sm:text-center md:text-center  mb-8">
-            0 code functional components of AMM
+          <div className="font-light text-white lg:max-w-sm text-4xl sm:text-2xl md:text-2xl sm:px-10 md:px-10 sm:text-opacity-50 md:text-opacity-50 mt-4 sm:text-center md:text-center  mb-8">
+            The easiest way to build on top of Ref
           </div>
 
           <div className="flex items-center sm:hidden md:hidden">
