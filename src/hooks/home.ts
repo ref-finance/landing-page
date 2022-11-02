@@ -28,7 +28,11 @@ export const useTokenList = () => {
   useEffect(() => {
     axios.get<Token[]>('https://api.stats.ref.finance/api/top-tokens').then(res => {
       if (res.status === 200) {
-        setTokenList((res.data || []).slice(0, 8));
+        const list = (res.data || []).slice(0, 30);
+        const targetList = list.filter(t => {
+          if (t.symbol !== 'USN') return true;
+        });
+        setTokenList((targetList || []).slice(0, 8));
       } else {
         console.error(res.statusText);
       }
