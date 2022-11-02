@@ -173,7 +173,7 @@ export const CodeBlock = () => {
           left: '170px'
         }}
         onClick={() => {
-          window.open('https://www.npmjs.com/package/@ref_finance/ref-sdk', '_blank');
+          window.open('https://www.npmjs.com/package/@ref-finance/ref-sdk', '_blank');
         }}
       >
         quickstart tutorial
