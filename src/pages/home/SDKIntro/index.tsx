@@ -73,6 +73,9 @@ export const SDKIntro = () => {
             style={{
               background: 'linear-gradient(90deg, rgba(58, 110, 114, 0.64) 0%, rgba(13, 43, 37, 0.64) 100.18%)'
             }}
+            onClick={() => {
+              window.open('https://github.com/ref-finance/ref-sdk/blob/main/README.md', '_blank');
+            }}
           >
             Read Doc
             <span className="ml-2">
