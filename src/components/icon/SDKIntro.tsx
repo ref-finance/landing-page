@@ -211,7 +211,7 @@ export const CodeBlockMobile = () => {
           left: '38%'
         }}
         onClick={() => {
-          window.open('https://www.npmjs.com/package/@ref_finance/ref-sdk', '_blank');
+          window.open('https://www.npmjs.com/package/@ref-finance/ref-sdk', '_blank');
         }}
       >
         quickstart tutorial
