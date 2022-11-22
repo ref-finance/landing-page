@@ -31,9 +31,21 @@ const Investors = () => {
         Trusted by the best
       </div>
       <div className="flex flex-col justify-center items-center">
-        <div className="relative z-10 grid grid-cols-5 sm:grid-cols-2 md:grid-cols-2 place-items-center gap-y-16 mt-16 w-full">
+        <div className="relative z-10 grid grid-cols-5 sm:hidden md:hidden place-items-center gap-y-16 mt-16 w-full">
           <InvestorsIcon1 className="sm:transform sm:scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-          <InvestorsIcon2 className="sm:transform sm:scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <InvestorsIcon3 className="sm:transform sm:scale-90  origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <InvestorsIcon4 className="sm:transform sm:scale-90  origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <InvestorsIcon5 className="sm:transform sm:scale-90  origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <InvestorsIcon6 className="sm:transform sm:scale-90  origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+        </div>
+        <div className="relative z-10 grid grid-cols-4 sm:hidden md:hidden place-items-center gap-y-16 mt-16 w-full">
+          <InvestorsIcon7 className="sm:transform sm:scale-90  origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <InvestorsIcon8 className="sm:transform sm:scale-90  origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <InvestorsIcon9 className="sm:transform sm:scale-90  origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <InvestorsIcon10 className="sm:transform sm:scale-90  origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+        </div>
+        <div className="lg:hidden relative z-10 grid grid-cols-2 place-items-center gap-y-16 mt-16 w-full">
+          <InvestorsIcon1 className="sm:transform sm:scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
           <InvestorsIcon3 className="sm:transform sm:scale-90  origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
           <InvestorsIcon4 className="sm:transform sm:scale-90  origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
           <InvestorsIcon5 className="sm:transform sm:scale-90  origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
