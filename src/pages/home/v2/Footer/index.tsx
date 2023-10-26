@@ -20,32 +20,24 @@ const Footer = () => {
   return (
     <div className="mx-auto mt-32 sm:mt-20 md:mt-20 lg:w-5/6 sm:w-full md:w-full mb-10">
       <div className="flex justify-between items-center sm:flex-col md:flex-col sm:justify-center md:justify-center">
-        <div className="sm:w-full md:w-full flex items-center justify-center sm:mb-5 md:mb-5">
-          <span onClick={goDocs} className="text-white text-sm mr-14 cursor-pointer sm:mr-10 md:mr-10">
+        <div className="sm:w-full md:w-full sm:gap-4 md:gap-4 flex items-center justify-center sm:mb-5 md:mb-5">
+          <span onClick={goDocs} className="text-white text-sm mr-14 cursor-pointer sm:mr-0 md:mr-0">
             Docs
           </span>
-          <span onClick={goForum} className="text-white text-sm mr-14 cursor-pointer sm:mr-10 md:mr-10">
+          <span onClick={goForum} className="text-white text-sm mr-14 cursor-pointer sm:mr-0 md:mr-0">
             Forum
           </span>
-          <span onClick={goGitHub} className="text-white text-sm mr-14 cursor-pointer sm:mr-10 md:mr-10">
+          <span onClick={goGitHub} className="text-white text-sm mr-14 cursor-pointer sm:mr-0 md:mr-0">
             Github
           </span>
-          <div
-            className={`text-white text-right lg:mr-11 lg:-ml-3`}
-            data-class="reactTip"
-            data-for={'mailBoxId'}
-            data-place="top"
-            data-html={true}
-            data-tip={isMobile() ? '' : `<div class="opacity-50 text-xs text-left">Business Inquiries</div>`}
+          <span
+            onClick={() => {
+              window.open('https://form.typeform.com/to/onOPhJ6Y');
+            }}
+            className="text-white text-sm mr-14 cursor-pointer sm:mr-0 md:mr-0"
           >
-            <MailBoxIcon
-              className="relative cursor-pointer"
-              onClick={() => {
-                window.open('https://form.typeform.com/to/onOPhJ6Y');
-              }}
-            ></MailBoxIcon>
-            <ReactTooltip id={'mailBoxId'} backgroundColor="#1D2932" border borderColor="#7e8a93" effect="solid" />
-          </div>
+            Business Inquiries
+          </span>
           <div
             onClick={goRefApp}
             className="flex items-center font-extrabold justify-center bg-primary rounded-lg cursor-pointer text-sm text-black h-9 w-40 sm:hidden md:hidden hover:bg-hightGreenColor"
