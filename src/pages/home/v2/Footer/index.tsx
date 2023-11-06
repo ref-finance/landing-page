@@ -27,7 +27,7 @@ const Footer = () => {
   return (
     <div className="mx-auto mt-32 sm:mt-20 md:mt-20 lg:w-5/6 sm:w-full md:w-full mb-10">
       <div className="flex justify-between items-center sm:flex-col md:flex-col sm:justify-center md:justify-center">
-        <div className="sm:w-full md:w-full sm:gap-4 md:gap-4 flex items-center justify-center sm:mb-5 md:mb-5">
+        <div className="sm:w-full md:w-full sm:gap-4 md:gap-4 flex flex-wrap items-center justify-center sm:mb-5 md:mb-5">
           <span onClick={goDocs} className="footer-link">
             Docs
           </span>
