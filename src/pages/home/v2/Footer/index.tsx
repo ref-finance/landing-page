@@ -3,6 +3,7 @@ import { BannerArrowIcon, MailBoxIcon } from '~src/components/layoutIcon/Icon';
 import Link from '~src/components/common/Link';
 import ReactTooltip from 'react-tooltip';
 import { isMobile } from '~src/utils/device';
+import './index.scss';
 
 const Footer = () => {
   function goRefApp() {
@@ -17,25 +18,29 @@ const Footer = () => {
   function goForum() {
     window.open('https://gov.ref.finance/');
   }
+  function goSecurity(){
+    window.open('https://guide.ref.finance/developers/audits');
+  }
+  function goBusinessInquiries() {
+    window.open('https://form.typeform.com/to/onOPhJ6Y');
+  }
   return (
     <div className="mx-auto mt-32 sm:mt-20 md:mt-20 lg:w-5/6 sm:w-full md:w-full mb-10">
       <div className="flex justify-between items-center sm:flex-col md:flex-col sm:justify-center md:justify-center">
         <div className="sm:w-full md:w-full sm:gap-4 md:gap-4 flex items-center justify-center sm:mb-5 md:mb-5">
-          <span onClick={goDocs} className="text-white text-sm mr-14 cursor-pointer sm:mr-0 md:mr-0">
+          <span onClick={goDocs} className="footer-link">
             Docs
           </span>
-          <span onClick={goForum} className="text-white text-sm mr-14 cursor-pointer sm:mr-0 md:mr-0">
+          <span onClick={goForum} className="footer-link">
             Forum
           </span>
-          <span onClick={goGitHub} className="text-white text-sm mr-14 cursor-pointer sm:mr-0 md:mr-0">
+          <span onClick={goGitHub} className="footer-link">
             Github
           </span>
-          <span
-            onClick={() => {
-              window.open('https://form.typeform.com/to/onOPhJ6Y');
-            }}
-            className="text-white text-sm mr-14 cursor-pointer sm:mr-0 md:mr-0"
-          >
+          <span onClick={goSecurity} className="footer-link">
+            Security
+          </span>
+          <span onClick={goBusinessInquiries} className="footer-link">
             Business Inquiries
           </span>
           <div
