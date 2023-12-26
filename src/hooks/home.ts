@@ -26,7 +26,7 @@ export const useTokenList = () => {
   const [tokenList, setTokenList] = useState<Token[]>([]);
 
   useEffect(() => {
-    axios.get<Token[]>('https://api.stats.ref.finance/api/top-tokens').then(res => {
+    axios.get<Token[]>('https://api-stats.ref-finance.fun/api/top-tokens').then(res => {
       if (res.status === 200) {
         const list = (res.data || []).slice(0, 30);
         const targetList = list.filter(t => {
@@ -61,7 +61,7 @@ export const use24hVolumeVariation = () => {
   const [dayVolumeVariation, setDayVolumeVariation] = useState<Record<string, string>>({});
 
   useEffect(() => {
-    axios.get<Record<string, string>>('https://api.stats.ref.finance/api/24h-volume-variation').then(res => {
+    axios.get<Record<string, string>>('https://api-stats.ref-finance.fun/api/24h-volume-variation').then(res => {
       if (res.status === 200) {
         setDayVolumeVariation(res.data);
       } else {
@@ -77,7 +77,7 @@ export const useHistoricalTvl = () => {
   const [historicalTvl, setHistoricalTvl] = useState<Record<string, string>>({});
 
   useEffect(() => {
-    axios.get<Record<string, string>>('https://api.stats.ref.finance/api/historical-tvl?period=30').then(res => {
+    axios.get<Record<string, string>>('https://api-stats.ref-finance.fun/api/historical-tvl?period=30').then(res => {
       if (res.status === 200) {
         setHistoricalTvl(res.data);
       } else {
@@ -91,7 +91,7 @@ export const useHistoricalTvl = () => {
 export const useTotalHistoricalVolume = () => {
   const [totalHistoricalVolume, setTotalHistoricalVolume] = useState<string>('');
   useEffect(() => {
-    axios.get<string>('https://api.stats.ref.finance/api/total-historical-volume').then(res => {
+    axios.get<string>('https://api-stats.ref-finance.fun/api/total-historical-volume').then(res => {
       if (res.status === 200) {
         setTotalHistoricalVolume(res.data);
       } else {
