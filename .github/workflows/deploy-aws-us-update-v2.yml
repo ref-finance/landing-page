@@ -62,7 +62,7 @@ jobs:
             
       - name: deploy to remote server [34.224.251.142]
         uses: easingthemes/ssh-deploy@v2.2.11
-        with:ffff
+        with:
           # Private Key
           SSH_PRIVATE_KEY:  ${{ secrets.SSH_PRIVATE_KEY_PROD_02 }}
           # Server IP
