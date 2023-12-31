@@ -45,3 +45,5 @@ Do you have ideas for Ref or the $REF token? Let us know!
 | Twitter | [https://twitter.com/finance\_ref](https://twitter.com/finance_ref) |
 | Medium | [https://ref-finance.medium.com/](https://ref-finance.medium.com/) |
 | Telegram | [https://t.me/ref\_finance](https://t.me/ref_finance) |
+
+**Last Update: 2024-01-01**

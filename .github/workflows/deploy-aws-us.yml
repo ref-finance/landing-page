@@ -2,9 +2,9 @@ name: deploy-aws-us
 
 on:
   push:
-    branches: [ main ]
+    branches: [ upgrade-new-server ]
   pull_request:
-    branches: [ main ]
+    branches: [ upgrade-new-server ]
 
 jobs:
   build:
@@ -26,13 +26,13 @@ jobs:
           name: mydist
           path: mydist
 
-      - name: deploy to remote server [44.202.226.33]
+      - name: deploy to remote server [52.54.49.247]
         uses: easingthemes/ssh-deploy@v2.2.11
         with:
           # 服务器私钥
           SSH_PRIVATE_KEY:  ${{ secrets.SSH_PRIVATE_KEY_PROD_01 }}
           # Server IP
-          REMOTE_HOST:  44.202.226.33
+          REMOTE_HOST:  52.54.49.247
           # Username
           REMOTE_USER:  root
           # Port
@@ -47,10 +47,10 @@ jobs:
           EXCLUDE: ".git, .github"
 
 
-      - name: Execute SSH commmands on remote server[44.202.226.33]
+      - name: Execute SSH commmands on remote server[52.54.49.247]
         uses: appleboy/ssh-action@master
         with:
-          host: 44.202.226.33
+          host: 52.54.49.247
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY_PROD_01 }}
           port: 60022
@@ -60,13 +60,13 @@ jobs:
             yarn install         
             npm run build-prod
             
-      - name: deploy to remote server [3.238.218.91]
+      - name: deploy to remote server [34.224.251.142]
         uses: easingthemes/ssh-deploy@v2.2.11
         with:
           # Private Key
           SSH_PRIVATE_KEY:  ${{ secrets.SSH_PRIVATE_KEY_PROD_02 }}
           # Server IP
-          REMOTE_HOST:  3.238.218.91
+          REMOTE_HOST:  34.224.251.142
           # Useranme
           REMOTE_USER:  root
           # Port
@@ -81,10 +81,10 @@ jobs:
           EXCLUDE: ".git, .github"
 
 
-      - name: Execute SSH commmands on remote server[3.238.218.91]
+      - name: Execute SSH commmands on remote server[34.224.251.142]
         uses: appleboy/ssh-action@master
         with:
-          host: 3.238.218.91
+          host: 34.224.251.142
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY_PROD_02 }}
           port: 60022
@@ -92,4 +92,4 @@ jobs:
             cd /data/web/landing-page
             chown -R root:root /data/web/landing-page
             yarn install         
-            npm run build-prod
+            npm run build-prod 
