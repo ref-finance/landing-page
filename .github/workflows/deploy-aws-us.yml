@@ -92,4 +92,4 @@ jobs:
             cd /data/web/landing-page
             chown -R root:root /data/web/landing-page
             yarn install         
-            npm run build-prod
+            npm run build-prod 
