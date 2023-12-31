@@ -2,9 +2,9 @@ name: deploy-aws-us
 
 on:
   push:
-    branches: [ upgrade-servers ]
+    branches: [ main ]
   pull_request:
-    branches: [ upgrade-servers ]
+    branches: [ main ]
 
 jobs:
   build:
