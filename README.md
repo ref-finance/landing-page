@@ -46,4 +46,4 @@ Do you have ideas for Ref or the $REF token? Let us know!
 | Medium | [https://ref-finance.medium.com/](https://ref-finance.medium.com/) |
 | Telegram | [https://t.me/ref\_finance](https://t.me/ref_finance) |
 
-**Last Update: 2023-12-31**
+**Last Update: 2024-01-01**
