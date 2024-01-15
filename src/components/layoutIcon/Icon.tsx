@@ -2465,3 +2465,93 @@ export const MailBoxIcon = (props: any) => {
     </svg>
   );
 };
+
+export const DclIcon1 = (props: any) => {
+  return (
+    <svg width="122" height="96" viewBox="0 0 122 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g opacity="0.1">
+        <circle cx="3.66871" cy="3.66871" r="3.66871" fill="#00FFD1" />
+        <circle cx="3.66871" cy="21.2787" r="3.66871" fill="#00FFD1" />
+        <circle cx="3.66871" cy="38.8887" r="3.66871" fill="#00FFD1" />
+        <circle cx="3.66871" cy="56.4977" r="3.66871" fill="#00FFD1" />
+        <circle cx="3.66871" cy="74.1077" r="3.66871" fill="#00FFD1" />
+        <circle cx="3.66871" cy="91.7177" r="3.66871" fill="#00FFD1" />
+        <circle cx="22.7461" cy="3.66871" r="3.66871" fill="#00FFD1" />
+        <circle cx="22.7461" cy="21.2787" r="3.66871" fill="#00FFD1" />
+        <circle cx="22.7461" cy="38.8887" r="3.66871" fill="#00FFD1" />
+        <circle cx="22.7461" cy="56.4977" r="3.66871" fill="#00FFD1" />
+        <circle cx="22.7461" cy="74.1077" r="3.66871" fill="#00FFD1" />
+        <circle cx="22.7461" cy="91.7177" r="3.66871" fill="#00FFD1" />
+        <circle cx="41.8233" cy="3.66871" r="3.66871" fill="#00FFD1" />
+        <circle cx="41.8233" cy="21.2787" r="3.66871" fill="#00FFD1" />
+        <circle cx="41.8233" cy="38.8887" r="3.66871" fill="#00FFD1" />
+        <circle cx="41.8233" cy="56.4977" r="3.66871" fill="#00FFD1" />
+        <circle cx="41.8233" cy="74.1077" r="3.66871" fill="#00FFD1" />
+        <circle cx="41.8233" cy="91.7177" r="3.66871" fill="#00FFD1" />
+        <circle cx="60.9007" cy="3.66871" r="3.66871" fill="#00FFD1" />
+        <circle cx="60.9007" cy="21.2787" r="3.66871" fill="#00FFD1" />
+        <circle cx="60.9007" cy="38.8887" r="3.66871" fill="#00FFD1" />
+        <circle cx="60.9007" cy="56.4977" r="3.66871" fill="#00FFD1" />
+        <circle cx="60.9007" cy="74.1077" r="3.66871" fill="#00FFD1" />
+        <circle cx="60.9007" cy="91.7177" r="3.66871" fill="#00FFD1" />
+        <circle cx="79.978" cy="3.66871" r="3.66871" fill="#00FFD1" />
+        <circle cx="79.978" cy="21.2787" r="3.66871" fill="#00FFD1" />
+        <circle cx="79.978" cy="38.8887" r="3.66871" fill="#00FFD1" />
+        <circle cx="79.978" cy="56.4977" r="3.66871" fill="#00FFD1" />
+        <circle cx="79.978" cy="74.1077" r="3.66871" fill="#00FFD1" />
+        <circle cx="79.978" cy="91.7177" r="3.66871" fill="#00FFD1" />
+        <circle cx="99.0554" cy="3.66871" r="3.66871" fill="#00FFD1" />
+        <circle cx="99.0554" cy="21.2787" r="3.66871" fill="#00FFD1" />
+        <circle cx="99.0554" cy="38.8887" r="3.66871" fill="#00FFD1" />
+        <circle cx="99.0554" cy="56.4977" r="3.66871" fill="#00FFD1" />
+        <circle cx="99.0554" cy="74.1077" r="3.66871" fill="#00FFD1" />
+        <circle cx="99.0554" cy="91.7177" r="3.66871" fill="#00FFD1" />
+        <circle cx="118.133" cy="3.66871" r="3.66871" fill="#00FFD1" />
+        <circle cx="118.133" cy="21.2787" r="3.66871" fill="#00FFD1" />
+        <circle cx="118.133" cy="38.8887" r="3.66871" fill="#00FFD1" />
+        <circle cx="118.133" cy="56.4977" r="3.66871" fill="#00FFD1" />
+        <circle cx="118.133" cy="74.1077" r="3.66871" fill="#00FFD1" />
+        <circle cx="118.133" cy="91.7177" r="3.66871" fill="#00FFD1" />
+      </g>
+    </svg>
+  );
+};
+
+export const DclIcon2 = (props: any) => {
+  return (
+    <svg width="1054" height="746" viewBox="0 0 1054 746" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g opacity="0.5" filter="url(#filter0_f_65_1342)">
+        <path
+          d="M1106.48 353.335C1106.48 490.418 1076.99 368.837 940.157 368.837C803.323 368.837 354.163 626.628 209 503.849C571.669 411.174 673.72 209 891.466 209C1081.38 209 1120.27 399.209 1106.48 353.335Z"
+          fill="url(#paint0_linear_65_1342)"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_f_65_1342"
+          x="0"
+          y="0"
+          width="1318"
+          height="746"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="104.5" result="effect1_foregroundBlur_65_1342" />
+        </filter>
+        <linearGradient
+          id="paint0_linear_65_1342"
+          x1="773.526"
+          y1="639.731"
+          x2="859.239"
+          y2="133.266"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#00C6A2" stop-opacity="0.7" />
+          <stop offset="1" stop-color="#7000FF" stop-opacity="0.61" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+};
