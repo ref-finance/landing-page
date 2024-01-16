@@ -1,21 +1,57 @@
 import React from 'react';
-import { DclIcon1, DclIcon2 } from '~src/components/layoutIcon/Icon';
+import { BannerArrowIcon, DclIcon1, DclIcon2, DclIcon3, DclIcon4, DclIcon5 } from '~src/components/layoutIcon/Icon';
 
 const Dcl = () => {
   return (
     <div className="relative">
-      <div className="relative z-10  mx-auto mt-64 sm:mt-20 md:mt-20 lg:w-4/5 sm:w-full md:w-full">
-        <div className="mb-16 sm:justify-center md:justify-center sm:w-full md:w-full sm:px-6 md:px-6">
-          <div className="relative mb-4">
-            <DclIcon1 />
-            <p className="absolute bottom-2 left-8 text-white font-bold text-5xl">REF V2 - DCL</p>
+      <div className="relative z-10  mx-auto mt-64 sm:mt-24 md:mt-24 lg:w-4/5 sm:w-full md:w-full">
+        <div className="mb-16 sm:justify-center md:justify-center sm:w-full md:w-full sm:text-center sm:mb-11">
+          <div className="relative mb-4 sm:w-full">
+            <div className="transform -translate-x-8 sm:hidden">
+              <DclIcon1 />
+            </div>
+            <p className="absolute bottom-2 left-0 text-white font-bold text-5xl sm:text-3xl sm:left-28">
+              REF V2 - DCL
+            </p>
           </div>
-          <p className="text-white font-bold ml-8 text-3xl">Both Win by using Discretized Liquidity AMM</p>
+          <p className="text-white font-bold text-3xl sm:text-2xl">Both Win by using Discretized Liquidity AMM</p>
         </div>
-        <div className="absolute top-1/2 right-0 rounded-full transform translate-x-1/2 -translate-y-1/2">
+        <div className="absolute top-16 transform translate-x-1/2 -translate-y-1/2 sm:left-0 sm:-translate-x-1/3">
           <DclIcon2 />
         </div>
-        <div className="text-white">111</div>
+        <div className="relative z-10 flex justify-between items-baseline text-white mb-24 sm:grid sm:pl-10 sm:pr-10 sm:mb-0">
+          <div className="flex-1 mr-12 sm:w-10/12 sm:mr-0 sm:mb-14">
+            <DclIcon3 />
+            <h1 className="mt-20 mb-2.5 text-3xl font-bold text-center sm:mt-16 sm:text-left">Precise & Efficient</h1>
+            <p className="text-xl">Reduced slippage and more accurate liquidity provision within a price range</p>
+          </div>
+          <div className="flex-1 mr-12 sm:w-10/12 sm:mr-0 sm:mb-14">
+            <DclIcon4 />
+            <h1 className="mt-20 mb-2.5 text-3xl font-bold text-center sm:mt-16 sm:text-left">Experience</h1>
+            <p className="text-xl">
+              Enable a CEX-like trading experience on DEXs with a built-in limit order functionality
+            </p>
+          </div>
+          <div className="flex-1 sm:w-11/12 sm:mr-0 sm:mb-14">
+            <DclIcon5 />
+            <h1 className="mt-20 mb-2.5 text-3xl font-bold text-center sm:mt-16 sm:text-left">Both Win</h1>
+            <p className="text-xl">Discretized liquidity AMM is a positive sum game where LPs and traders both win.</p>
+          </div>
+        </div>
+        <div className="relative flex justify-center mb-72">
+          <div className="absolute -top-44 z-0 sm:hidden">
+            <img src="https://assets.ref.finance/images/dclIcon6.svg"></img>
+          </div>
+          <div className="absolute flex sm:block sm:w-full sm:pl-10 sm:pr-10">
+            <div className="flex items-center justify-center  mr-5 border border-primary hover:border-hightGreenColor rounded-lg cursor-pointer text-white text-black h-12 font-extrabold w-44 sm:text-sm md:text-sm  sm:w-full md:w-full sm:mb-6">
+              Learn more
+            </div>
+            <div className="flex items-center justify-center bg-primary rounded-lg cursor-pointer text-lg text-black h-12 font-extrabold w-80 hover:bg-hightGreenColor sm:text-sm md:text-sm sm:w-full md:w-full">
+              Add Liquidity in DCL Pool{' '}
+              <BannerArrowIcon className="ml-2 sm:transform sm:scale-75 sm:origin-left md:transform md:scale-75 md:origin-left sm:ml-1 md:ml-1" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
