@@ -1,6 +1,20 @@
 import React from 'react';
 import { BannerArrowIcon, DclIcon1, DclIcon2, DclIcon3, DclIcon4, DclIcon5 } from '~src/components/layoutIcon/Icon';
 
+type FeatureCardProps = {
+  Icon: React.ElementType;
+  title: string;
+  description: string;
+};
+
+const FeatureCard: React.FC<FeatureCardProps> = ({ Icon, title, description }) => (
+  <div className="flex-1 mr-12 sm:w-10/12 sm:mr-0 sm:mb-14">
+    <Icon />
+    <h1 className="mt-20 mb-2.5 text-3xl font-bold text-center sm:mt-16 sm:text-left">{title}</h1>
+    <p className="text-xl">{description}</p>
+  </div>
+);
+
 const Dcl = () => {
   return (
     <div className="relative">
@@ -20,25 +34,23 @@ const Dcl = () => {
           <DclIcon2 />
         </div>
         <div className="relative z-10 flex justify-between items-baseline text-white mb-24 sm:grid sm:pl-10 sm:pr-10 sm:mb-0">
-          <div className="flex-1 mr-12 sm:w-10/12 sm:mr-0 sm:mb-14">
-            <DclIcon3 />
-            <h1 className="mt-20 mb-2.5 text-3xl font-bold text-center sm:mt-16 sm:text-left">Precise & Efficient</h1>
-            <p className="text-xl">Reduced slippage and more accurate liquidity provision within a price range</p>
-          </div>
-          <div className="flex-1 mr-12 sm:w-10/12 sm:mr-0 sm:mb-14">
-            <DclIcon4 />
-            <h1 className="mt-20 mb-2.5 text-3xl font-bold text-center sm:mt-16 sm:text-left">Experience</h1>
-            <p className="text-xl">
-              Enable a CEX-like trading experience on DEXs with a built-in limit order functionality
-            </p>
-          </div>
-          <div className="flex-1 sm:w-11/12 sm:mr-0 sm:mb-14">
-            <DclIcon5 />
-            <h1 className="mt-20 mb-2.5 text-3xl font-bold text-center sm:mt-16 sm:text-left">Both Win</h1>
-            <p className="text-xl">Discretized liquidity AMM is a positive sum game where LPs and traders both win.</p>
-          </div>
+          <FeatureCard
+            Icon={DclIcon3}
+            title="Precise & Efficient"
+            description="Reduced slippage and more accurate liquidity provision within a price range"
+          />
+          <FeatureCard
+            Icon={DclIcon4}
+            title="Experience"
+            description="Enable a CEX-like trading experience on DEXs with a built-in limit order functionality"
+          />
+          <FeatureCard
+            Icon={DclIcon5}
+            title="Both Win"
+            description="Discretized liquidity AMM is a positive sum game where LPs and traders both win."
+          />
         </div>
-        <div className="relative flex justify-center mb-72">
+        <div className="relative flex justify-center mb-80">
           <div className="absolute -top-44 z-0 sm:hidden">
             <img src="https://assets.ref.finance/images/dclIcon6.svg"></img>
           </div>
