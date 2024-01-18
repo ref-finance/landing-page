@@ -8,7 +8,7 @@ type FeatureCardProps = {
 };
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ Icon, title, description }) => (
-  <div className="flex-1 mr-12 sm:w-10/12 sm:mr-0 sm:mb-14">
+  <div className="flex-1 mr-12 sm:w-11/12 sm:mr-0 sm:mb-14">
     <Icon />
     <h1 className="mt-20 mb-2.5 text-3xl font-bold text-center sm:mt-16 sm:text-left">{title}</h1>
     <p className="text-xl">{description}</p>
@@ -50,7 +50,7 @@ const Dcl = () => {
             description="Discretized liquidity AMM is a positive sum game where LPs and traders both win."
           />
         </div>
-        <div className="relative flex justify-center mb-80">
+        <div className="relative flex justify-center mb-80 sm:mb-64">
           <div className="absolute -top-44 z-0 sm:hidden">
             <img src="https://assets.ref.finance/images/dclIcon6.svg"></img>
           </div>

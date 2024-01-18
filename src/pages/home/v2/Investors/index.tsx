@@ -56,16 +56,16 @@ const Investors = () => {
           <InvestorsIcon10 className="sm:transform sm:scale-90  origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
         </div>
         {mobile ? (
-          <InvestorsBgIconBobile className="absolute bottom-10"></InvestorsBgIconBobile>
+          <InvestorsBgIconBobile className="absolute -bottom-20"></InvestorsBgIconBobile>
         ) : (
           <InvestorsBgIcon className="absolute"></InvestorsBgIcon>
         )}
-        <div
+        {/* <div
           onClick={goRefApp}
           className="lg:hidden flex font-extrabold items-center justify-center bg-primary rounded-lg cursor-pointer  mt-44 text-sm text-black h-8 w-32 hover:bg-hightGreenColor"
         >
           Launch APP <BannerArrowIcon className="ml-1 transform scale-75" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
