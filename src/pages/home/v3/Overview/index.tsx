@@ -19,12 +19,18 @@ const Overview = () => {
     marginLeft: windowWidth < 600 ? '-78px' : '0',
     marginTop: windowWidth < 600 ? '-30px' : '0'
   };
+  function checkYourPortfolio() {
+    window.open('https://app.ref.finance/overview');
+  }
   return (
     <div className="relative">
       <div className="relative z-10 flex items-center mx-auto mt-64 sm:mt-24 sm:flex-col-reverse md:mt-24 pl-12 sm:px-9 sm:w-full md:w-full">
         <div className="w-fit sm:justify-center md:justify-center sm:w-full md:w-full sm:text-center sm:mb-11 sm:">
           <img src="https://assets.ref.finance/images/dclIcon10.svg" alt="" style={imgStyle} />
-          <div className="hidden  sm:flex items-center justify-center bg-primary font-bold rounded-lg cursor-pointer text-lg text-black h-12 font-extrabold w-60  hover:bg-hightGreenColor sm:text-sm md:text-sm sm:ml-14 sm:-mt-4">
+          <div
+            onClick={checkYourPortfolio}
+            className="hidden  sm:flex items-center justify-center bg-primary font-bold rounded-lg cursor-pointer text-lg text-black h-12 font-extrabold w-60  hover:bg-hightGreenColor sm:text-sm md:text-sm sm:ml-14 sm:-mt-4"
+          >
             Check your Portfolio
             <BannerArrowIcon className="ml-2 sm:transform sm:scale-75 sm:origin-left md:transform md:scale-75 md:origin-left sm:ml-1 md:ml-1 " />
           </div>
@@ -50,7 +56,10 @@ const Overview = () => {
             </div>
             Orderly
           </p>
-          <div className="sm:hidden flex items-center justify-center bg-primary font-bold rounded-lg cursor-pointer text-lg text-black h-12 font-extrabold w-72  hover:bg-hightGreenColor sm:text-sm md:text-sm sm:w-full md:w-full">
+          <div
+            onClick={checkYourPortfolio}
+            className="sm:hidden flex items-center justify-center bg-primary font-bold rounded-lg cursor-pointer text-lg text-black h-12 font-extrabold w-72  hover:bg-hightGreenColor sm:text-sm md:text-sm sm:w-full md:w-full"
+          >
             Check your Portfolio
             <BannerArrowIcon className="ml-2 sm:transform sm:scale-75 sm:origin-left md:transform md:scale-75 md:origin-left sm:ml-1 md:ml-1" />
           </div>
