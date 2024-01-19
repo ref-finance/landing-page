@@ -15,8 +15,8 @@ const Overview = () => {
   }, []);
 
   const imgStyle = {
-    maxWidth: windowWidth < 600 ? '148%' : '100%',
-    marginLeft: windowWidth < 600 ? '-78px' : '0',
+    maxWidth: windowWidth < 600 ? '142%' : '100%',
+    marginLeft: windowWidth < 600 ? '-72px' : '0',
     marginTop: windowWidth < 600 ? '-30px' : '0'
   };
   function checkYourPortfolio() {
@@ -45,7 +45,7 @@ const Overview = () => {
             </div>
             Ref. <span className="text-primary">finance</span>
             <div className="ml-3.5 mr-2">
-              <DclIcon11 />
+              <img src="https://assets.ref.finance/images/dclIcon16.svg" alt="" />
             </div>
             Burrow
           </p>
