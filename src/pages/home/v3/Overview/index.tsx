@@ -37,7 +37,8 @@ const Overview = () => {
         </div>
         <div className="text-white ml-7 sm:ml-0 sm:text-center">
           <h1 className="text-5xl font-bold whitespace-nowrap mb-5 sm:text-4xl sm:mb-3">Portfolio-Overview</h1>
-          <p className="text-3xl font-bold mb-5 sm:text-2xl sm:mb-3">Overview of your invests and assets</p>
+          <p className="text-3xl font-bold mb-5 sm:text-2xl sm:mb-3 sm:hidden">Overview of your invests and assets</p>
+          <p className="text-3xl font-bold mb-5 sm:text-2xl sm:mb-3 lg:hidden">Overview Of Your Invests And Assets</p>
           <p className="flex items-center text-lg sm:text-base">
             Composed by
             <div className="ml-2 mr-2">

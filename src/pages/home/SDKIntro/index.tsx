@@ -6,12 +6,15 @@ export const SDKIntro = () => {
     <div className="relative">
       <div className="relative z-10 flex sm:flex-col md:flex-col  items-center justify-center mx-auto mt-44 sm:mt-20 md:mt-20 lg:w-4/5 sm:w-full md:w-full">
         <div className="w-1/2 sm:w-full md:w-full flex flex-col">
-          <div className="text-white text-2xl sm:text-center md:text-center font-bold">Developers</div>
+          <div className="text-white text-2xl sm:text-center md:text-center font-bold">DEVELOPERS</div>
 
           <div className="text-hightGreenColor text-6xl sm:text-center md:text-center  sm:text-5xl md:text-5xl font-bold mt-12 sm:mt-8 md:mt-8">{`{ REF SDK`}</div>
 
-          <div className="font-light text-white lg:max-w-sm text-4xl sm:text-2xl md:text-2xl sm:px-10 md:px-10 sm:text-opacity-50 md:text-opacity-50 mt-4 sm:text-center md:text-center  mb-8">
+          <div className="sm:hidden font-light text-white lg:max-w-sm text-4xl sm:text-2xl md:text-2xl sm:px-10 md:px-10  mt-4 sm:text-center md:text-center  mb-8">
             The easiest way to build on top of Ref
+          </div>
+          <div className="lg:hidden font-light text-white lg:max-w-sm text-4xl sm:text-2xl md:text-2xl sm:px-10 md:px-10  mt-4 sm:text-center md:text-center  mb-8">
+            The Easiest Way To Build On Top Of Ref
           </div>
 
           <div className="flex items-center sm:hidden md:hidden">

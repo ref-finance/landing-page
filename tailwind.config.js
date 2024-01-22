@@ -34,16 +34,17 @@ module.exports = {
         globalBg: '#131419',
         roadmapBg: '#161e22',
         greenColor: '#3AFFF2',
-        darkBorderColor:'#2e3f4d',
+        darkBorderColor: '#2e3f4d',
         warningColor: '#D73F75',
         growingColor: '#3BB73B',
         opacity80White: '#cccccc',
-        hightGreenColor:'#00FFD1',
+        hightGreenColor: '#00FFD1',
         blueColor: 'rgba(24, 48, 48, 0.7)',
-        brightGreenColor:'rgba(0, 94, 88, 0.8)',
-        greenColor:'#1d4a46',
-        shadowColor:'rgba(14, 33, 33, 0.8)',
-        shadowColorIcon: '0px 0px 12px rgba(0, 255, 209, 0.6)'
+        brightGreenColor: 'rgba(0, 94, 88, 0.8)',
+        greenColor: '#1d4a46',
+        shadowColor: 'rgba(14, 33, 33, 0.8)',
+        shadowColorIcon: '0px 0px 12px rgba(0, 255, 209, 0.6)',
+        footerHoverColor: 'rgba(0, 255, 209, 1)'
       }
     },
     fontFamily: {
@@ -56,7 +57,7 @@ module.exports = {
       justifySelf: ['first', 'last'],
       marginBottom: ['first', 'last'],
       filter: ['hover', 'focus'],
-      dropShadow:['hover']
+      dropShadow: ['hover']
     }
   },
   plugins: []

@@ -34,7 +34,7 @@ const Dcl = () => {
               REF V2 - DCL
             </p>
           </div>
-          <p className="text-white font-bold text-3xl sm:text-2xl">Both Win by using Discretized Liquidity AMM</p>
+          <p className="text-white font-bold text-3xl sm:text-2xl">Both Win By Using Discretized Liquidity AMM</p>
         </div>
         <div className="absolute top-16 transform translate-x-1/2 -translate-y-1/2 sm:left-0 sm:-translate-x-1/3">
           <DclIcon2 />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { openInNewTab } from '~src/utils/openNewTab';
 
 type FooterLinkProps = {
@@ -7,12 +7,28 @@ type FooterLinkProps = {
 };
 
 export const FooterLink: React.FC<FooterLinkProps> = ({ children, href }) => {
+  const [clicked, setClicked] = useState(false);
+
   const handleClick = (event: React.MouseEvent<HTMLDivElement>) => {
     event.preventDefault();
     openInNewTab(href);
+    setClicked(true);
   };
+
+  const handleMouseLeave = () => {
+    setClicked(false);
+  };
+
+  const divClass = `opacity-50 mb-4 cursor-pointer ${
+    clicked ? '' : 'hover:text-footerHoverColor hover:opacity-100'
+  }`;
+
   return (
-    <div className="opacity-50 mb-4 hover:text-hightGreenColor hover:opacity-100 cursor-pointer" onClick={handleClick}>
+    <div
+      className={divClass}
+      onClick={handleClick}
+      onMouseLeave={handleMouseLeave}
+    >
       {children}
     </div>
   );
