@@ -21,6 +21,7 @@ const Navbar = () => {
   const historyTvl = useHistoricalTvl();
   const { amount, variation } = dayVolumeVariation;
   const { tvlAmount24h, tvlVariation24h } = historyTvl;
+  const [price, setPrice] = useState('');
   useEffect(() => {
     window.addEventListener('scroll', srollFun);
     return () => {
@@ -75,6 +76,17 @@ const Navbar = () => {
   function goRefApp() {
     window.open('https://app.ref.finance/');
   }
+  useEffect(() => {
+    fetch('https://indexer.ref.finance/get-token-price?token_id=token.v2.ref-finance.near')
+      .then(response => response.json())
+      .then(data => {
+        const formattedPrice = Number(data.price).toFixed(2);
+        setPrice(formattedPrice);
+      })
+      .catch(error => {
+        console.error('Error fetching price:', error);
+      });
+  }, []);
   return (
     <div className="relative">
       <div style={{ background: 'rgba(57, 58, 68, 0.4)' }}>
@@ -121,6 +133,12 @@ const Navbar = () => {
                     )}
                   </div>
                 ) : null}
+              </div>
+              <div className="flex items-center sm:flex-col md:flex-col sm:items-start md:items-start ml-11 sm:ml-0 md:ml-0">
+                <span className="text-gray-text text-xs">Price</span>
+                <div className="flex items-center sm:mt-1 md:mt-1">
+                  {price && <span className="text-white text-xs mx-1.5 sm:ml-0 md:ml-0">${price}</span>}
+                </div>
               </div>
               <div
                 className="ml-6 cursor-pointer sm:hidden md:hidden"

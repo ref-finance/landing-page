@@ -44,7 +44,7 @@ module.exports = {
         greenColor: '#1d4a46',
         shadowColor: 'rgba(14, 33, 33, 0.8)',
         shadowColorIcon: '0px 0px 12px rgba(0, 255, 209, 0.6)',
-        footerHoverColor: 'rgba(0, 255, 209, 1)'
+        footerHoverColor: '#00C6A2'
       }
     },
     fontFamily: {

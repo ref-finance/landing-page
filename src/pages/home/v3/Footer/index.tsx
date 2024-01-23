@@ -1,5 +1,12 @@
 import React from 'react';
-import { BannerArrowIcon, FooterIcon1, FooterIcon2, FooterIcon3, FooterIcon4 } from '~src/components/layoutIcon/Icon';
+import {
+  BannerArrowIcon,
+  FooterIcon1,
+  FooterIcon2,
+  FooterIcon3,
+  FooterIcon4,
+  DclIcon18
+} from '~src/components/layoutIcon/Icon';
 import './index.scss';
 import { FooterLink } from '~src/components/common/FooterLink';
 import { IconLink } from '~src/components/common/FooterIconLink';
@@ -10,7 +17,7 @@ const Footer = () => {
   }
   return (
     <div className="mx-auto lg:w-5/6 sm:w-full md:w-full mb-10 sm:px-9 sm:mb-8">
-      <div className="flex justify-center mb-32 sm:-mt-24">
+      <div className="flex justify-center mb-32 sm:mt-2">
         <div
           onClick={goRefApp}
           className="sm:hidden flex items-center font-extrabold text-lg justify-center bg-primary rounded-lg cursor-pointer text-sm text-black h-16 w-64 hover:bg-hightGreenColor"
@@ -69,7 +76,7 @@ const Footer = () => {
         <div className="sm:w-full sm:mt-6">
           <h1 className="font-bold mb-4 sm:hidden">Community</h1>
           <div className="flex justify-between items-center mb-7 sm:px-9">
-            <IconLink IconComponent={FooterIcon1} href="https://twitter.com/finance_ref" />
+            <IconLink IconComponent={DclIcon18} href="https://twitter.com/finance_ref" />
             <IconLink IconComponent={FooterIcon2} href="https://t.me/ref_finance" />
             <IconLink IconComponent={FooterIcon3} href="https://discord.com/invite/SJBGcfMxJz" />
             <IconLink IconComponent={FooterIcon4} href="https://ref-finance.medium.com/" />
@@ -85,7 +92,9 @@ const Footer = () => {
               <FooterLink href="https://app.ref.finance/risks">Risks</FooterLink>
             </div>
           </div>
-          <div className="text-white text-xs float-right sm:flex sm:justify-center sm:items-center sm:float-none">@ 2023 Ref fiance Ltd</div>
+          <div className="text-white text-xs float-right sm:flex sm:justify-center sm:items-center sm:float-none">
+            @ 2023 Ref fiance Ltd
+          </div>
         </div>
       </div>
     </div>
