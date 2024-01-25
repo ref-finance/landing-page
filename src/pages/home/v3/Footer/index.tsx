@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
         <div
           onClick={goRefApp}
-          className="lg:hidden flex font-extrabold items-center justify-center bg-primary rounded-lg cursor-pointer text-sm text-black h-8 w-32 hover:bg-hightGreenColor"
+          className="lg:hidden md:hidden flex font-extrabold items-center justify-center bg-primary rounded-lg cursor-pointer text-sm text-black h-8 w-32 hover:bg-hightGreenColor"
         >
           Launch APP <BannerArrowIcon className="ml-1 transform scale-75" />
         </div>

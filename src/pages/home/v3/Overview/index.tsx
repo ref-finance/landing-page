@@ -2,23 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { BannerArrowIcon, DclIcon11, DclIcon12 } from '~src/components/layoutIcon/Icon';
 
 const Overview = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const handleResize = () => {
-    setWindowWidth(window.innerWidth);
-  };
-
-  useEffect(() => {
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  const imgStyle = {
-    maxWidth: windowWidth < 600 ? '180%' : '100%',
-    marginLeft: windowWidth < 600 ? '-96px' : '0',
-    marginTop: windowWidth < 600 ? '-72px' : '0'
-  };
   function checkYourPortfolio() {
     window.open('https://app.ref.finance/overview');
   }
@@ -29,12 +12,16 @@ const Overview = () => {
           <div className="sm:hidden">
             <img src="https://assets.ref.finance/images/dclIcon10.svg" alt="" />
           </div>
-          <div className="lg:hidden">
-            <img src="https://assets.ref.finance/images/dclIcon14.svg" alt="" style={imgStyle} />
+          <div className="lg:hidden md:hidden flex justify-center items-center">
+            <img
+              src="https://assets.ref.finance/images/LandingViewMobile.png"
+              alt=""
+              style={{ transform: 'scale(1.5)' }}
+            />
           </div>
           <div
             onClick={checkYourPortfolio}
-            className="hidden  sm:flex items-center justify-center bg-primary font-bold rounded-lg cursor-pointer text-lg text-black h-12 font-extrabold w-60  hover:bg-hightGreenColor sm:text-sm md:text-sm sm:ml-14 sm:-mt-12"
+            className="hidden  sm:flex items-center justify-center bg-primary font-bold rounded-lg cursor-pointer text-lg text-black h-12 font-extrabold w-60  hover:bg-hightGreenColor sm:text-sm md:text-sm sm:ml-14 sm:mt-0"
           >
             Check your Portfolio
             <BannerArrowIcon className="ml-2 sm:transform sm:scale-75 sm:origin-left md:transform md:scale-75 md:origin-left sm:ml-1 md:ml-1 " />
