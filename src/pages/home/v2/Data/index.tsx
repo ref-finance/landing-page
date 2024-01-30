@@ -19,11 +19,11 @@ const Data = () => {
       <div className="relative z-10 flex flex-col items-center justify-center mx-auto mt-44 sm:mt-20 md:mt-20 lg:w-4/5 sm:w-full md:w-full">
         <div className="flex items-center sm:justify-center md:justify-center sm:w-full md:w-full sm:px-6 md:px-6">
           <div className="flex flex-col justify-center items-center">
-            <span className="text-white font-bold text-2xl">TOP TOKENS</span>
+            <span className="text-white gotham_font_bold  text-2xl">TOP TOKENS</span>
             {/* <div className="bg-brightGreenColor w-full mt-3" style={{ height: '3px' }}></div> */}
           </div>
           {/* <div className="flex flex-col justify-center items-center ml-28 sm:ml-0 md:ml-0">
-            <span className="text-white font-bold text-2xl opacity-30 cursor-pointer sm:text-xl md:text-xl">POPULAR FARMS</span>
+            <span className="text-white gotham_font_bold  text-2xl opacity-30 cursor-pointer sm:text-xl md:text-xl">POPULAR FARMS</span>
             <div className="bg-brightGreenColor w-full mt-3 opacity-0 cursor-pointer" style={{ height: '3px' }}></div>
           </div> */}
         </div>
@@ -74,11 +74,11 @@ function TokenBox({ token, symbolMap }: { token: Token; symbolMap: any }) {
         <div className="flex items-center justify-between mt-6">
           <div className="flex flex-col">
             <span className=" opacity-50 text-sm">Locked</span>
-            <span className=" text-lg font-bold">{toInternationalCurrencySystem(amount)}</span>
+            <span className=" text-lg gotham_font_bold ">{toInternationalCurrencySystem(amount)}</span>
           </div>
           <div className="flex flex-col">
             <span className="opacity-50 text-sm ">TVL</span>
-            <span className=" text-lg font-bold ">{'$' + toInternationalCurrencySystem(tvl)}</span>
+            <span className=" text-lg gotham_font_bold  ">{'$' + toInternationalCurrencySystem(tvl)}</span>
           </div>
         </div>
       </div>
@@ -95,11 +95,11 @@ function TokenBox({ token, symbolMap }: { token: Token; symbolMap: any }) {
         </div>
         <div className="flex flex-col w-24">
           <span className="opacity-50 text-sm">Locked</span>
-          <span className="text-base font-bold mt-2">{toInternationalCurrencySystem(amount)}</span>
+          <span className="text-base gotham_font_bold  mt-2">{toInternationalCurrencySystem(amount)}</span>
         </div>
         <div className="flex flex-col w-24">
           <span className="opacity-50 text-sm text-right">TVL</span>
-          <span className="text-base font-bold mt-2 text-right">{'$' + toInternationalCurrencySystem(tvl)}</span>
+          <span className="text-base gotham_font_bold  mt-2 text-right">{'$' + toInternationalCurrencySystem(tvl)}</span>
         </div>
       </div>
     </>

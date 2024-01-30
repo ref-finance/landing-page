@@ -19,7 +19,7 @@ export const IconLink: React.FC<IconLinkProps> = ({ IconComponent, href }) => {
     setClicked(false);
   };
 
-  const divClass = `w-10 h-10 bg-opacity-50 rounded-3xl bg-footerHoverColor flex justify-center items-center mr-6 cursor-pointer  ${
+  const divClass = `w-10 h-10 bg-opacity-50 rounded-3xl bg-footerHoverColor flex justify-center items-center mr-6 cursor-pointer md:mb-4  ${
     clicked ? '' : 'hover:bg-opacity-100'
   }`;
 

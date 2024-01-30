@@ -7,7 +7,7 @@ const Investors = () => {
   return (
     <div className="mt-24 w-full l:mt-44 flex justify-center s:w-full">
       <div className="flex flex-col Investors_max_width s:w-full l:items-center">
-        <div className="font-poppins l:inline-flex l:flex-col font-bold text-6xl s:text-4xl s:px-10 investorCard_title_max_width text-white ">
+        <div className="font-poppins l:inline-flex l:flex-col gotham_font_bold  text-6xl s:text-4xl s:px-10 investorCard_title_max_width text-white ">
           <div className="italic">
             Investors
             <div

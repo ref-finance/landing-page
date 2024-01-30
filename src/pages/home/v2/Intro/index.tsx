@@ -44,7 +44,7 @@ const Intro = () => {
         style={{ width: mobile ? '500px' : '831px', height: mobile ? '500px' : '831px', top: '122px' }}
       >
         <div className=" transform translate-x-20 -translate-y-12">
-          <p className="text-white font-bold text-2xl">GOVERNANCE</p>
+          <p className="text-white gotham_font_bold  text-2xl">GOVERNANCE</p>
           <div className="text-white w-80 leading-tight mt-3 font-extralight" style={{ fontSize: '42px' }}>
             Voting power & Extra earnings
           </div>

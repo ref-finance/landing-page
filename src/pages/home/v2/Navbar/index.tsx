@@ -6,7 +6,8 @@ import {
   NavbarNearIcon,
   RefAnalytics,
   RefAnalyticsGary,
-  RefAnalyticsIcon
+  RefAnalyticsIcon,
+  NavbarRefMobileIcon
 } from '~src/components/layoutIcon/Icon';
 import { use24hVolumeVariation, useHistoricalTvl } from '~src/hooks/home';
 import Link from '~src/components/common/Link';
@@ -172,7 +173,8 @@ const Navbar = () => {
         }}
       >
         <div className="relative z-50 flex items-center justify-between mx-auto lg:w-5/6 sm:w-full md:w-full h-14 sm:px-6 md:px-6">
-          <NavbarRefIcon className="cursor-pointer" onClick={goRefApp}></NavbarRefIcon>
+          <NavbarRefIcon className="sm:hidden cursor-pointer" onClick={goRefApp}></NavbarRefIcon>
+          <NavbarRefMobileIcon className="lg:hidden md:hidden cursor-pointer" onClick={goRefApp}></NavbarRefMobileIcon>
           <Link className={float ? 'sm:hidden md:hidden' : 'sm:-mr-4'} />
         </div>
       </div>

@@ -8,9 +8,13 @@ type FeatureCardProps = {
 };
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ Icon, title, description }) => (
-  <div className="flex-1 mr-12 sm:w-11/12 sm:mr-0 sm:mb-14">
-    <Icon />
-    <h1 className="mt-20 mb-2.5 text-3xl font-bold text-center sm:mt-16 sm:text-left">{title}</h1>
+  <div className="flex-1 mr-12 sm:w-full sm:mr-0 sm:mb-14 md:w-full">
+    <div className="md:w-max md:mx-auto">
+      <Icon />
+    </div>
+    <h1 className="mt-20 mb-2.5 text-3xl gotham_font_bold  text-center sm:mt-16 sm:text-left md:mt-16 md:text-left">
+      {title}
+    </h1>
     <p className="text-xl">{description}</p>
   </div>
 );
@@ -25,26 +29,32 @@ const Dcl = () => {
   return (
     <div className="relative">
       <div className="relative z-10  mx-auto mt-64 sm:mt-24 md:mt-24 lg:w-4/5 sm:w-full md:w-full">
-        <div className="mb-16 sm:justify-center md:justify-center sm:w-full md:w-full sm:text-center sm:mb-11">
-          <div className="relative mb-4 sm:w-full">
-            <div className="transform -translate-x-8 sm:hidden">
+        <div className="mb-16 sm:justify-center md:justify-center sm:w-full md:w-full sm:text-center sm:mb-11 md:text-center md:mb-11">
+          <div className="relative mb-4 sm:w-full md:w-full">
+            <div className="transform -translate-x-8 sm:hidden md:hidden">
               <DclIcon1 />
             </div>
-            <p className="absolute bottom-2 left-0 text-white font-bold text-5xl sm:text-3xl sm:left-28">
+            <p className="absolute bottom-2 left-0 text-white gotham_font_bold  text-5xl sm:text-3xl  md:text-3xl md:left-1/3 sm:relative">
               REF V2 - DCL
             </p>
           </div>
-          <p className="text-white font-bold text-3xl sm:text-2xl">Both win by using discretized liquidity AMM</p>
+          <p className="text-white gotham_font_bold  text-3xl sm:text-2xl md:text-2xl">
+            Both win by using discretized liquidity AMM
+          </p>
         </div>
-        <div className="absolute top-16 transform translate-x-1/2 -translate-y-1/2 sm:left-0 sm:-translate-x-1/3">
+        <div className="absolute top-16 transform translate-x-1/2 -translate-y-1/2 sm:left-0 sm:-translate-x-1/3 md:left-0 md:hidden">
           <DclIcon2 />
         </div>
-        <div className="relative z-10 flex justify-between items-baseline text-white mb-24 sm:grid sm:pl-10 sm:pr-10 sm:mb-0">
-          <FeatureCard
-            Icon={DclIcon3}
-            title="Precise & Efficient"
-            description="Reduced slippage and more accurate liquidity provision within a price range"
-          />
+        <div className="relative z-10 flex justify-between items-baseline text-white mb-24 overflow-auto sm:grid sm:grid-cols-1 sm:pl-4 sm:pr-4 sm:mb-0 md:grid md:grid-cols-2 md:pl-4 md:mb-0 custom-md:grid custom-md:grid-cols-3 lg:grid-cols-2">
+          <div className="flex-1 mr-12 sm:w-full sm:mr-0 sm:mb-14 md:w-full md:mb-14">
+            <div className="sm:w-4/5 sm:mx-auto md:w-max md:mx-auto">
+              <DclIcon3 />
+            </div>
+            <h1 className="mt-20 mb-2.5 text-3xl gotham_font_bold  text-center sm:mt-16 sm:text-left md:mt-16 md:text-left">
+              Precise & Efficient
+            </h1>
+            <p className="text-xl">Reduced slippage and more accurate liquidity provision within a price range</p>
+          </div>
           <FeatureCard
             Icon={DclIcon4}
             title="Experience"
@@ -56,20 +66,20 @@ const Dcl = () => {
             description="Discretized liquidity AMM is a positive sum game where LPs and traders both win."
           />
         </div>
-        <div className="relative flex justify-center mb-80 sm:mb-64">
-          <div className="absolute -top-44 z-0 sm:hidden">
+        <div className="relative flex justify-center mb-80 sm:mb-64 md:mb-64">
+          <div className="absolute -top-44 z-0 sm:hidden mb:hidden">
             <img src="https://assets.ref.finance/images/dclIcon6.svg"></img>
           </div>
-          <div className="absolute flex sm:block sm:w-full sm:pl-10 sm:pr-10">
+          <div className="absolute flex sm:block sm:w-full sm:pl-4 sm:pr-4 mb:block mb:w-full mb:pl-4 mb:pr-4">
             <div
               onClick={learnMore}
-              className="flex items-center justify-center  mr-5 border border-primary hover:border-hightGreenColor rounded-lg cursor-pointer text-white text-black h-12 font-extrabold w-44 sm:text-sm md:text-sm  sm:w-full md:w-full sm:mb-6"
+              className="flex items-center justify-center  mr-5 border border-primary hover:border-hightGreenColor rounded-lg cursor-pointer text-white text-black h-12 font-extrabold w-44 sm:text-sm md:text-sm  sm:w-full md:w-fit sm:mb-6 md:mb-6 md:mt-6"
             >
               Learn more
             </div>
             <div
               onClick={addLiquidity}
-              className="flex items-center justify-center bg-primary rounded-lg cursor-pointer text-lg text-black h-12 font-extrabold w-80 hover:bg-hightGreenColor sm:text-sm md:text-sm sm:w-full md:w-full"
+              className="flex items-center justify-center bg-primary rounded-lg cursor-pointer text-lg text-black h-12 font-extrabold w-80 hover:bg-hightGreenColor sm:text-sm md:text-sm sm:w-full md:w-fit md:mt-6"
             >
               Add Liquidity in DCL Pool{' '}
               <BannerArrowIcon className="ml-2 sm:transform sm:scale-75 sm:origin-left md:transform md:scale-75 md:origin-left sm:ml-1 md:ml-1" />

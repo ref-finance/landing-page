@@ -11,7 +11,8 @@ module.exports = {
       lg: { min: '1024px' },
       xl: { min: '1200px' },
       '2xl': { min: '1536px' },
-      '3xl': { min: '1792px' }
+      '3xl': { min: '1792px' },
+      'custom-md': { min: '1314px' }
     },
     extend: {
       dropShadow: {

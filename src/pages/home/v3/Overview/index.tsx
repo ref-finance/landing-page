@@ -7,29 +7,32 @@ const Overview = () => {
   }
   return (
     <div className="relative">
-      <div className="relative z-10 flex items-center mx-auto mt-64 sm:mt-24 sm:flex-col-reverse md:mt-24 pl-12 sm:px-9 sm:w-full md:w-full">
-        <div className="w-fit sm:justify-center md:justify-center sm:w-full md:w-full sm:text-center sm:mb-11 sm:">
+      <div className="relative z-10 flex items-center mx-auto mt-64 sm:mt-24 md:mt-24 sm:flex-col-reverse md:flex-col-reverse md:mt-24 pl-12 sm:px-9 md:px-9 sm:w-full md:w-full">
+        <div className="relative w-fit sm:justify-center md:justify-center sm:w-full md:w-full sm:text-center md:text-center sm:mb-11 md:mb-11">
           <div className="sm:hidden">
             <img src="https://assets.ref.finance/images/dclIcon10.svg" alt="" />
           </div>
-          <div className="lg:hidden md:hidden flex justify-center items-center">
+          <div className="absolute lg:hidden md:hidden">
+            <img src="https://assets.ref.finance/images/dclIcon13.svg" alt="" style={{ transform: 'scale(1.5)' }} />
+          </div>
+          <div className="lg:hidden md:hidden flex justify-center items-center mt-8">
             <img
               src="https://assets.ref.finance/images/LandingViewMobile.png"
               alt=""
-              style={{ transform: 'scale(1.5)' }}
+              style={{ transform: 'scale(1.75)' }}
             />
           </div>
           <div
             onClick={checkYourPortfolio}
-            className="hidden  sm:flex items-center justify-center bg-primary font-bold rounded-lg cursor-pointer text-lg text-black h-12 font-extrabold w-60  hover:bg-hightGreenColor sm:text-sm md:text-sm sm:ml-14 sm:mt-0"
+            className="lg:hidden md:hidden sm:flex md:flex items-center justify-center bg-primary gotham_font_bold  rounded-lg cursor-pointer text-lg text-black h-12 font-extrabold w-60  hover:bg-hightGreenColor sm:text-sm md:text-sm sm:ml-14 md:ml-14 sm:mt-8 md:mt-8 relative"
           >
             Check your Portfolio
             <BannerArrowIcon className="ml-2 sm:transform sm:scale-75 sm:origin-left md:transform md:scale-75 md:origin-left sm:ml-1 md:ml-1 " />
           </div>
         </div>
         <div className="text-white ml-7 sm:ml-0 sm:text-center">
-          <h1 className="text-5xl font-bold whitespace-nowrap mb-5 sm:text-4xl sm:mb-3">Portfolio-Overview</h1>
-          <p className="text-3xl font-bold mb-5 sm:text-2xl sm:mb-3">Overview of your invests and assets</p>
+          <h1 className="text-5xl gotham_font_bold  whitespace-nowrap mb-5 sm:text-4xl sm:mb-3">Portfolio-Overview</h1>
+          <p className="text-3xl gotham_font_bold  mb-5 sm:text-2xl sm:mb-3">Overview of your invests and assets</p>
           <p className="flex items-center text-lg sm:text-base">
             Composed by
             <div className="ml-2 mr-2">
@@ -50,7 +53,7 @@ const Overview = () => {
           </p>
           <div
             onClick={checkYourPortfolio}
-            className="sm:hidden flex items-center justify-center bg-primary font-bold rounded-lg cursor-pointer text-lg text-black h-12 font-extrabold w-72  hover:bg-hightGreenColor sm:text-sm md:text-sm sm:w-full md:w-full"
+            className="sm:hidden flex items-center justify-center bg-primary gotham_font_bold  rounded-lg cursor-pointer text-lg text-black h-12 font-extrabold w-72  hover:bg-hightGreenColor sm:text-sm md:text-sm sm:w-full md:w-full"
           >
             Check your Portfolio
             <BannerArrowIcon className="ml-2 sm:transform sm:scale-75 sm:origin-left md:transform md:scale-75 md:origin-left sm:ml-1 md:ml-1" />

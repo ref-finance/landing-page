@@ -12,7 +12,7 @@ const Roadmap = () => {
       `}
     >
       {/* Title */}
-      <div className="font-poppins flex font-bold text-6xl s:text-4xl italic text-white l:mb-16 s:mb-0">
+      <div className="font-poppins flex gotham_font_bold  text-6xl s:text-4xl italic text-white l:mb-16 s:mb-0">
         What we’re
         <br />
         working on
