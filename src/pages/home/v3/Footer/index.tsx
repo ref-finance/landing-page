@@ -76,7 +76,7 @@ const Footer = () => {
         </div>
         <div className="sm:w-full sm:mt-6 md:w-1/3">
           <h1 className="gotham_font_bold  mb-4 sm:hidden">Community</h1>
-          <div className="flex flex-wrap justify-between items-center mb-7 sm:px-9 md:grid md:grid-cols-2 md:gap-x-9">
+          <div className="flex flex-wrap justify-between items-center mb-7 sm:px-6 md:grid md:grid-cols-2 md:gap-x-9">
             <IconLink IconComponent={DclIcon18} href="https://twitter.com/finance_ref" />
             <IconLink IconComponent={FooterIcon2} href="https://t.me/ref_finance" />
             <IconLink IconComponent={FooterIcon3} href="https://discord.com/invite/SJBGcfMxJz" />
