@@ -22,12 +22,14 @@ const Overview = () => {
               style={{ transform: 'scale(1.75)' }}
             />
           </div>
-          <div
-            onClick={checkYourPortfolio}
-            className="lg:hidden md:hidden sm:flex md:flex items-center justify-center bg-primary gotham_font_bold  rounded-lg cursor-pointer text-lg text-black h-12 font-extrabold w-60  hover:bg-hightGreenColor sm:text-sm md:text-sm sm:ml-14 md:ml-14 sm:mt-8 md:mt-8 relative"
-          >
-            Check your Portfolio
-            <BannerArrowIcon className="ml-2 sm:transform sm:scale-75 sm:origin-left md:transform md:scale-75 md:origin-left sm:ml-1 md:ml-1 " />
+          <div className="lg:hidden md:hidden flex sm:flex-col justify-center items-center relative mt-8">
+            <div
+              onClick={checkYourPortfolio}
+              className="flex items-center justify-center bg-primary gotham_font_bold rounded-lg cursor-pointer text-lg text-black h-12 font-extrabold w-60 hover:bg-hightGreenColor text-sm"
+            >
+              Check your Portfolio
+              <BannerArrowIcon className="ml-2 transform scale-75 origin-left" />
+            </div>
           </div>
         </div>
         <div className="text-white ml-7 sm:ml-0 sm:text-center">

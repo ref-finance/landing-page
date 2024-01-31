@@ -20,13 +20,13 @@ const Footer = () => {
       <div className="flex justify-center mb-32 sm:mt-2 md:mt-2">
         <div
           onClick={goRefApp}
-          className="sm:hidden md:hidden flex items-center font-extrabold text-lg justify-center bg-primary rounded-lg cursor-pointer text-sm text-black h-16 w-64 hover:bg-hightGreenColor"
+          className="sm:hidden md:hidden  gotham_font_bold flex items-center font-extrabold text-lg justify-center bg-primary rounded-lg cursor-pointer text-sm text-black h-16 w-64 hover:bg-hightGreenColor"
         >
           Launch APP <BannerArrowIcon className="ml-2 transform scale-75" />
         </div>
         <div
           onClick={goRefApp}
-          className="lg:hidden flex font-extrabold items-center justify-center bg-primary rounded-lg cursor-pointer text-sm text-black h-8 w-32 hover:bg-hightGreenColor"
+          className="lg:hidden flex font-extrabold  gotham_font_bold items-center justify-center bg-primary rounded-lg cursor-pointer text-sm text-black h-8 w-32 hover:bg-hightGreenColor"
         >
           Launch APP <BannerArrowIcon className="ml-1 transform scale-75" />
         </div>
@@ -76,12 +76,13 @@ const Footer = () => {
         </div>
         <div className="sm:w-full sm:mt-6 md:w-1/3">
           <h1 className="gotham_font_bold  mb-4 sm:hidden">Community</h1>
-          <div className="flex flex-wrap justify-between items-center mb-7 sm:px-6 md:grid md:grid-cols-2 md:gap-x-9">
-            <IconLink IconComponent={DclIcon18} href="https://twitter.com/finance_ref" />
-            <IconLink IconComponent={FooterIcon2} href="https://t.me/ref_finance" />
-            <IconLink IconComponent={FooterIcon3} href="https://discord.com/invite/SJBGcfMxJz" />
-            <IconLink IconComponent={FooterIcon4} href="https://ref-finance.medium.com/" />
+          <div className="flex justify-center items-center mb-7 sm:px-6 md:grid md:grid-cols-2 md:gap-x-9">
+            <IconLink className="mr-4" IconComponent={DclIcon18} href="https://twitter.com/finance_ref" />
+            <IconLink className="mx-4" IconComponent={FooterIcon2} href="https://t.me/ref_finance" />
+            <IconLink className="mx-4" IconComponent={FooterIcon3} href="https://discord.com/invite/SJBGcfMxJz" />
+            <IconLink className="ml-4" IconComponent={FooterIcon4} href="https://ref-finance.medium.com/" />
           </div>
+
           <div className="flex justify-between items-center">
             <div className="sm:hidden">
               <FooterLink href="https://immunefi.com/bounty/reffinance/">Bug Bounty</FooterLink>

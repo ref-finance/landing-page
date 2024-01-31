@@ -66,7 +66,7 @@ const Banner = () => {
       )}
 
       <div className="relative z-10 flex justify-end sm:justify-center mx-auto sm:w-full">
-        <div className="flex flex-col sm:justify-start md:justify-start text-white mt-44 sm:mt-0  mr-1/5">
+        <div className="flex flex-col sm:justify-center md:justify-center text-white mt-44 sm:mt-0  mr-1/5">
           <Trail open>
             <span className="text-white gotham_font_bold  lg:hidden md:hidden" style={{ fontSize: '32px' }}>
               Where your DeFi
@@ -77,11 +77,13 @@ const Banner = () => {
             <span className="text-white gotham_font_bold  sm:hidden" style={{ fontSize: '42px' }}>
               Where your DeFi journey on
             </span>
-            <BannerNearIconAndTextIcon className="mb-5 mt-2.5 sm:transform sm:scale-75 md:scale-75 sm:origin-left md:origin-left"></BannerNearIconAndTextIcon>
+            <div className="sm:w-56">
+              <BannerNearIconAndTextIcon className="mb-5 mt-2.5 sm:transform sm:scale-75 md:scale-75 sm:origin-left md:origin-left"></BannerNearIconAndTextIcon>
+            </div>
           </Trail>
           <div
             onClick={goRefApp}
-            className="flex items-center justify-center bg-primary rounded-lg cursor-pointer text-lg text-black h-12 font-extrabold w-48 hover:bg-hightGreenColor sm:text-sm md:text-sm sm:h-8 md:h-8 sm:w-32 md:w-32"
+            className="flex items-center gotham_font_bold justify-center bg-primary rounded-lg cursor-pointer text-lg text-black h-12 font-extrabold w-48 hover:bg-hightGreenColor sm:text-sm md:text-sm sm:h-8 md:h-8 sm:w-32 md:w-32"
           >
             Launch APP{' '}
             <BannerArrowIcon className="ml-2 sm:transform sm:scale-75 sm:origin-left md:transform md:scale-75 md:origin-left sm:ml-1 md:ml-1" />
@@ -90,7 +92,7 @@ const Banner = () => {
       </div>
       {mobile ? (
         <div className="relative">
-          <BannerMainIconMobile />  
+          <BannerMainIconMobile />
           <BannerBallIcon1Mobile className="absolute ball1AniMobile" style={{ bottom: '160', left: '105px' }} />
           <BannerBallIcon2Mobile className="absolute ball2AniMobile" style={{ top: '110px', left: '195px' }} />
           <BannerBallIcon3Mobile className="absolute ball3AniMobile" style={{ top: '10px', left: '260px' }} />
@@ -99,9 +101,7 @@ const Banner = () => {
 
       <div className="relatve z-10 flex mt-40 sm:-mt-10 sm:flex-col justify-around mx-auto lg:w-4/5 sm:w-full sm:px-5 md:px-5">
         <div className="flex flex-col items-center rounded-2xl sm:p-5 md:p-5 sm:my-5 md:my-5 ">
-          <span className={`text-mobile text-2xl sm:text-xl md:text-xl ${mobile ? 'gotham_font_bold ' : 'gotham_font_light'}`}>
-            Low Fees
-          </span>
+          <span className={`text-mobile text-2xl sm:text-xl md:text-xl gotham_font_bold`}>Low Fees</span>
           <span className="text-white gotham_font_bold  text-4xl my-2" style={{ fontSize: '42px' }}>
             {'<$'}
             <FeeNumber />
@@ -109,9 +109,7 @@ const Banner = () => {
           <span className="text-white text-base">Near’s Transaction Fees</span>
         </div>
         <div className="flex flex-col items-center rounded-2xl sm:p-5 md:p-5 sm:my-5 md:my-5 ">
-          <span className={`text-mobile text-2xl sm:text-xl md:text-xl ${mobile ? 'gotham_font_bold ' : 'gotham_font_light'}`}>
-            Lightning Fast
-          </span>
+          <span className={`text-mobile text-2xl sm:text-xl md:text-xl gotham_font_bold`}>Lightning Fast</span>
           <span className="text-white gotham_font_bold  text-4xl my-2" style={{ fontSize: '42px' }}>
             {'1-'}
             <FastNumber></FastNumber>
@@ -120,9 +118,7 @@ const Banner = () => {
           <span className="text-white text-base">Transaction Finality</span>
         </div>
         <div className="flex flex-col items-center rounded-2xl sm:p-5 md:p-5 sm:my-5 md:my-5 ">
-          <span className={`text-mobile text-2xl sm:text-xl md:text-xl ${mobile ? 'gotham_font_bold ' : 'gotham_font_light'}`}>
-            Growing Fast
-          </span>
+          <span className={`text-mobile text-2xl sm:text-xl md:text-xl gotham_font_bold`}>Growing Fast</span>
           <span className="text-white gotham_font_bold  text-4xl my-2" style={{ fontSize: '42px' }}>
             {'$'}
             {resultVolume ? (
