@@ -20,13 +20,13 @@ const Footer = () => {
       <div className="flex justify-center mb-32 sm:mt-2 md:mt-2">
         <div
           onClick={goRefApp}
-          className="sm:hidden md:hidden  gotham_font_bold flex items-center font-extrabold text-lg justify-center bg-primary rounded-lg cursor-pointer text-sm text-black h-16 w-64 hover:bg-hightGreenColor"
+          className="sm:hidden md:hidden  gotham_font_bold flex items-center font-extrabold text-lg justify-center bg-primary rounded-lg px-14 cursor-pointer text-sm text-black h-16 w-max hover:bg-hightGreenColor px-5 px-5"
         >
           Launch APP <BannerArrowIcon className="ml-2 transform scale-75" />
         </div>
         <div
           onClick={goRefApp}
-          className="lg:hidden flex font-extrabold  gotham_font_bold items-center justify-center bg-primary rounded-lg cursor-pointer text-sm text-black h-8 w-32 hover:bg-hightGreenColor"
+          className="lg:hidden flex font-extrabold  gotham_font_bold items-center justify-center bg-primary rounded-lg cursor-pointer text-sm text-black h-9 w-max hover:bg-hightGreenColor px-5 px-5"
         >
           Launch APP <BannerArrowIcon className="ml-1 transform scale-75" />
         </div>

@@ -25,7 +25,7 @@ const Overview = () => {
           <div className="lg:hidden md:hidden flex sm:flex-col justify-center items-center relative mt-8">
             <div
               onClick={checkYourPortfolio}
-              className="flex items-center justify-center bg-primary gotham_font_bold rounded-lg cursor-pointer text-lg text-black h-12 font-extrabold w-60 hover:bg-hightGreenColor text-sm"
+              className="flex items-center justify-center bg-primary gotham_font_bold rounded-lg px-8 cursor-pointer text-lg text-black h-14 font-extrabold w-max hover:bg-hightGreenColor text-sm"
             >
               Check your Portfolio
               <BannerArrowIcon className="ml-2 transform scale-75 origin-left" />
@@ -55,7 +55,7 @@ const Overview = () => {
           </p>
           <div
             onClick={checkYourPortfolio}
-            className="sm:hidden flex items-center justify-center bg-primary gotham_font_bold  rounded-lg cursor-pointer text-lg text-black h-12 font-extrabold w-72  hover:bg-hightGreenColor sm:text-sm md:text-sm sm:w-full md:w-full"
+            className="sm:hidden flex items-center justify-center bg-primary gotham_font_bold px-8 rounded-lg cursor-pointer text-lg text-black h-14 font-extrabold w-max  hover:bg-hightGreenColor sm:text-sm md:text-sm sm:w-full md:w-full"
           >
             Check your Portfolio
             <BannerArrowIcon className="ml-2 sm:transform sm:scale-75 sm:origin-left md:transform md:scale-75 md:origin-left sm:ml-1 md:ml-1" />

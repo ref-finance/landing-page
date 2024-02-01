@@ -8,7 +8,7 @@ type FeatureCardProps = {
 };
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ Icon, title, description }) => (
-  <div className="flex-1 mr-12 sm:w-full sm:mr-0 sm:mb-14 md:w-full">
+  <div className="flex-1 mr-12 sm:w-full sm:mr-0 sm:mb-14 md:w-full lg:mb-6">
     <div className="flex justify-center sm:overflow-hidden">
       <div className="sm:scale-90 sm:transform">
         <Icon />
@@ -47,7 +47,7 @@ const Dcl = () => {
         <div className="absolute top-16 transform translate-x-1/2 -translate-y-1/2 sm:left-0 sm:-translate-x-1/3 md:left-0 md:hidden">
           <DclIcon2 />
         </div>
-        <div className="relative z-10 flex justify-between items-baseline text-white mb-24 overflow-auto sm:overflow-hidden sm:grid sm:grid-cols-1 sm:pl-4 sm:pr-4 sm:mb-0 md:grid md:grid-cols-2 md:pl-4 md:mb-0 custom-md:grid custom-md:grid-cols-3 lg:grid-cols-2">
+        <div className="relative z-10 flex flex-wrap justify-between items-baseline text-white mb-24 sm:overflow-hidden sm:grid sm:grid-cols-1 sm:pl-4 sm:pr-4 sm:mb-0 md:grid md:grid-cols-2 md:pl-4 md:mb-0 custom-md:grid custom-md:grid-cols-3 lg:grid-cols-2">
           <FeatureCard
             Icon={DclIcon3}
             title="Precise & Efficient"
@@ -71,13 +71,13 @@ const Dcl = () => {
           <div className="absolute flex sm:block sm:w-full sm:pl-4 sm:pr-4 mb:block mb:w-full mb:pl-4 mb:pr-4">
             <div
               onClick={learnMore}
-              className="flex items-center justify-center gotham_font_bold  mr-5 border border-primary hover:border-hightGreenColor rounded-lg cursor-pointer text-white text-black h-12 font-extrabold w-44 sm:text-sm md:text-sm  sm:w-full md:w-fit sm:mb-6 md:mb-6 md:mt-6"
+              className="flex items-center justify-center gotham_font_bold  mr-5 border border-primary hover:border-hightGreenColor px-10 rounded-lg cursor-pointer text-white text-black h-14 font-extrabold w-max  sm:w-full md:w-fit sm:mb-6 md:mb-6 md:mt-6"
             >
               Learn more
             </div>
             <div
               onClick={addLiquidity}
-              className="flex items-center justify-center gotham_font_bold bg-primary rounded-lg cursor-pointer text-lg text-black h-12 font-extrabold w-80 hover:bg-hightGreenColor sm:text-sm md:text-sm sm:w-full md:w-fit md:mt-6"
+              className="flex items-center justify-center gotham_font_bold bg-primary rounded-lg cursor-pointer text-lg text-black h-14 px-10 font-extrabold w-max hover:bg-hightGreenColor sm:w-full md:w-fit md:mt-6"
             >
               Add Liquidity in DCL Pool{' '}
               <BannerArrowIcon className="ml-2 sm:transform sm:scale-75 sm:origin-left md:transform md:scale-75 md:origin-left sm:ml-1 md:ml-1" />
