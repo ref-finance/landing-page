@@ -7,19 +7,19 @@ const Overview = () => {
   }
   return (
     <div className="relative">
-      <div className="relative z-10 flex items-center mx-auto mt-64 sm:mt-24 md:mt-24 sm:flex-col-reverse md:flex-col-reverse md:mt-24 pl-12 sm:px-9 md:px-9 sm:w-full md:w-full">
+      <div className="relative z-10 flex items-center mx-auto mt-64 sm:mt-24 md:mt-24 sm:flex-col-reverse md:flex-col-reverse md:mt-24 sm:px-9 md:px-9 sm:w-full md:w-full">
         <div className="relative w-fit sm:justify-center md:justify-center sm:w-full md:w-full sm:text-center md:text-center sm:mb-11 md:mb-11">
           <div className="sm:hidden">
-            <img src="https://assets.ref.finance/images/dclIcon10.svg" alt="" />
+            <img src="https://assets.ref.finance/images/portfolioOverviewPc.svg" alt="" />
           </div>
           <div className="absolute lg:hidden md:hidden">
             <img src="https://assets.ref.finance/images/dclIcon13.svg" alt="" style={{ transform: 'scale(1.5)' }} />
           </div>
-          <div className="lg:hidden md:hidden flex justify-center items-center mt-8">
+          <div className="lg:hidden md:hidden flex justify-center items-center">
             <img
-              src="https://assets.ref.finance/images/LandingViewMobile.png"
+              src="https://assets.ref.finance/images/portfolioOverviewMobile.png"
               alt=""
-              style={{ transform: 'scale(1.75)' }}
+              style={{ transform: 'scale(1.24)' }}
             />
           </div>
           <div className="lg:hidden md:hidden flex sm:flex-col justify-center items-center relative mt-8">
@@ -33,8 +33,8 @@ const Overview = () => {
           </div>
         </div>
         <div className="text-white ml-7 sm:ml-0 sm:text-center">
-          <h1 className="text-5xl gotham_font_bold  whitespace-nowrap mb-5 sm:text-4xl sm:mb-3">Portfolio-Overview</h1>
-          <p className="text-3xl gotham_font_bold  mb-5 sm:text-2xl sm:mb-3">Overview of your invests and assets</p>
+          <h1 className="text-5xl gotham_font_bold  whitespace-nowrap mb-2.5 sm:text-4xl sm:mb-3">Portfolio-Overview</h1>
+          <p className="text-2xl  mb-16 sm:text-2xl sm:mb-3">Overview of your invests and assets</p>
           <p className="flex items-center text-lg sm:text-base">
             Composed by
             <div className="ml-2 mr-2">

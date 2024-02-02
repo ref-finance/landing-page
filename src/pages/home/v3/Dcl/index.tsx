@@ -14,10 +14,10 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ Icon, title, description }) =
         <Icon />
       </div>
     </div>
-    <h1 className="mt-16 mb-2.5 text-3xl gotham_font_bold  text-center sm:mt-10 sm:text-left md:mt-10 md:text-left">
+    <h1 className="mt-16 mb-2.5 text-3xl gotham_font_bold  text-left sm:mt-10 sm:text-left md:mt-10 md:text-left">
       {title}
     </h1>
-    <p className="text-xl">{description}</p>
+    <p className="text-lg gotham_font_light">{description}</p>
   </div>
 );
 
@@ -47,7 +47,7 @@ const Dcl = () => {
         <div className="absolute top-16 transform translate-x-1/2 -translate-y-1/2 sm:left-0 sm:-translate-x-1/3 md:left-0 md:hidden">
           <DclIcon2 />
         </div>
-        <div className="relative z-10 flex flex-wrap justify-between items-baseline text-white mb-24 sm:overflow-hidden sm:grid sm:grid-cols-1 sm:pl-4 sm:pr-4 sm:mb-0 md:grid md:grid-cols-2 md:pl-4 md:mb-0 custom-md:grid custom-md:grid-cols-3 lg:grid-cols-2">
+        <div className="relative z-10 flex flex-wrap gap-20 justify-between items-baseline text-white mb-24 sm:overflow-hidden sm:grid sm:grid-cols-1 sm:pl-4 sm:pr-4 sm:mb-0 md:grid md:grid-cols-2 md:pl-4 md:mb-0 custom-md:grid custom-md:grid-cols-3 lg:grid-cols-2">
           <FeatureCard
             Icon={DclIcon3}
             title="Precise & Efficient"
@@ -61,7 +61,7 @@ const Dcl = () => {
           <FeatureCard
             Icon={DclIcon5}
             title="Both Win"
-            description="Discretized liquidity AMM is a positive sum game where LPs and traders both win."
+            description="Discretized liquidity AMM is a positive sum game where LPs and traders both win"
           />
         </div>
         <div className="relative flex justify-center mb-80 sm:mb-64 md:mb-64">
@@ -77,9 +77,16 @@ const Dcl = () => {
             </div>
             <div
               onClick={addLiquidity}
-              className="flex items-center justify-center gotham_font_bold bg-primary rounded-lg cursor-pointer text-lg text-black h-14 px-10 font-extrabold w-max hover:bg-hightGreenColor sm:w-full md:w-fit md:mt-6"
+              className="sm:hidden md:hidden flex items-center justify-center gotham_font_bold bg-primary rounded-lg  cursor-pointer text-lg text-black h-14 px-10 font-extrabold w-max hover:bg-hightGreenColor sm:w-full md:w-fit md:mt-6 sm:px-2"
             >
               Add Liquidity in DCL Pool{' '}
+              <BannerArrowIcon className="ml-2 sm:transform sm:scale-75 sm:origin-left md:transform md:scale-75 md:origin-left sm:ml-1 md:ml-1" />
+            </div>
+            <div
+              onClick={addLiquidity}
+              className="lg:hidden flex items-center justify-center gotham_font_bold bg-primary rounded-lg  cursor-pointer text-lg text-black h-14 px-10 font-extrabold w-max hover:bg-hightGreenColor sm:w-full md:w-fit md:mt-6 sm:px-2"
+            >
+              Add Liq. in DCL Pool{' '}
               <BannerArrowIcon className="ml-2 sm:transform sm:scale-75 sm:origin-left md:transform md:scale-75 md:origin-left sm:ml-1 md:ml-1" />
             </div>
           </div>

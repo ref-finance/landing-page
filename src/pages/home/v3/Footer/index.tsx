@@ -95,7 +95,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="text-white text-xs float-right sm:flex md:flex sm:justify-center md:justify-center sm:items-center md:items-center sm:float-none md:float-none">
-            @ 2023 Ref finance Ltd
+            @ 2024 Ref finance Ltd
           </div>
         </div>
       </div>
