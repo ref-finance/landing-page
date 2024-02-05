@@ -9,15 +9,13 @@ type FeatureCardProps = {
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ Icon, title, description }) => (
   <div className="flex-1 mr-12 sm:w-full sm:mr-0 sm:mb-14 md:w-full lg:mb-6">
-    <div className="flex justify-center sm:overflow-hidden">
-      <div className="sm:scale-90 sm:transform">
-        <Icon />
-      </div>
+    <div className="flex justify-center sm:overflow-hidden md:scale-110 md:transform md:origin-center">
+      <Icon />
     </div>
-    <h1 className="mt-16 mb-2.5 text-3xl gotham_font_bold  text-left sm:mt-10 sm:text-left md:mt-10 md:text-left">
+    <h1 className="mt-16 mb-2.5 text-3xl gotham_font_bold text-left sm:mt-10 sm:text-center md:mt-10 md:text-left whitespace-nowrap md:text-2xl">
       {title}
     </h1>
-    <p className="text-lg gotham_font_light">{description}</p>
+    <p className="text-lg gotham_font_light md:text-base sm:text-center">{description}</p>
   </div>
 );
 
@@ -30,7 +28,7 @@ const Dcl = () => {
   }
   return (
     <div className="relative">
-      <div className="relative z-10  mx-auto mt-64 sm:mt-24 md:mt-24 lg:w-4/5 sm:w-full md:w-full">
+      <div className="relative z-10  mx-auto mt-64 sm:mt-24 md:mt-52 lg:w-4/5 sm:w-full md:w-full">
         <div className="mb-16 sm:justify-center md:justify-center sm:w-full md:w-full sm:text-center sm:mb-11 md:text-center md:mb-11">
           <div className="relative mb-4 sm:w-full md:w-full">
             <div className="transform -translate-x-8 sm:hidden md:hidden">
@@ -44,10 +42,10 @@ const Dcl = () => {
             Both win by using discretized liquidity AMM
           </p>
         </div>
-        <div className="absolute top-16 transform translate-x-1/2 -translate-y-1/2 sm:left-0 sm:-translate-x-1/3 md:left-0 md:hidden">
+        <div className="absolute top-16 transform translate-x-1/2 -translate-y-1/2 sm:left-0 sm:-translate-x-1/3 md:left-0 md:top-16">
           <DclIcon2 />
         </div>
-        <div className="relative z-10 flex flex-wrap gap-20 justify-between items-baseline text-white mb-24 sm:overflow-hidden sm:grid sm:grid-cols-1 sm:pl-4 sm:pr-4 sm:mb-0 md:grid md:grid-cols-2 md:pl-4 md:mb-0 custom-md:grid custom-md:grid-cols-3 lg:grid-cols-2">
+        <div className="relative z-10 flex flex-wrap gap-20 justify-between items-baseline text-white mb-24 grid grid-cols-3 sm:grid-cols-1 sm:pl-4 sm:pr-4 sm:mb-0 md:px-6 md:mb-24">
           <FeatureCard
             Icon={DclIcon3}
             title="Precise & Efficient"
@@ -65,7 +63,7 @@ const Dcl = () => {
           />
         </div>
         <div className="relative flex justify-center mb-80 sm:mb-64 md:mb-64">
-          <div className="absolute -top-44 z-0 sm:hidden mb:hidden">
+          <div className="absolute -top-44 z-0 sm:hidden md:-top-24">
             <img src="https://assets.ref.finance/images/dclIcon6.svg"></img>
           </div>
           <div className="absolute flex sm:block sm:w-full sm:pl-4 sm:pr-4 mb:block mb:w-full mb:pl-4 mb:pr-4">
@@ -77,14 +75,14 @@ const Dcl = () => {
             </div>
             <div
               onClick={addLiquidity}
-              className="sm:hidden md:hidden flex items-center justify-center gotham_font_bold bg-primary rounded-lg  cursor-pointer text-lg text-black h-14 px-10 font-extrabold w-max hover:bg-hightGreenColor sm:w-full md:w-fit md:mt-6 sm:px-2"
+              className="sm:hidden flex items-center justify-center gotham_font_bold bg-primary rounded-lg  cursor-pointer text-lg text-black h-14 px-10 font-extrabold w-max hover:bg-hightGreenColor sm:w-full md:w-fit md:mt-6 sm:px-2"
             >
               Add Liquidity in DCL Pool{' '}
               <BannerArrowIcon className="ml-2 sm:transform sm:scale-75 sm:origin-left md:transform md:scale-75 md:origin-left sm:ml-1 md:ml-1" />
             </div>
             <div
               onClick={addLiquidity}
-              className="lg:hidden flex items-center justify-center gotham_font_bold bg-primary rounded-lg  cursor-pointer text-lg text-black h-14 px-10 font-extrabold w-max hover:bg-hightGreenColor sm:w-full md:w-fit md:mt-6 sm:px-2"
+              className="lg:hidden md:hidden flex items-center justify-center gotham_font_bold bg-primary rounded-lg  cursor-pointer text-lg text-black h-14 px-10 font-extrabold w-max hover:bg-hightGreenColor sm:w-full md:w-fit md:mt-6 sm:px-2"
             >
               Add Liq. in DCL Pool{' '}
               <BannerArrowIcon className="ml-2 sm:transform sm:scale-75 sm:origin-left md:transform md:scale-75 md:origin-left sm:ml-1 md:ml-1" />

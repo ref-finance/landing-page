@@ -16,17 +16,17 @@ const Footer = () => {
     window.open('https://app.ref.finance/');
   }
   return (
-    <div className="mx-auto lg:w-5/6 sm:w-full md:w-full mb-10 sm:px-9 sm:mb-8 md:px-9 md:mb-8">
+    <div className="mx-auto lg:w-5/6 sm:w-full md:w-full mb-10 sm:px-9 sm:mb-8 md:pl-8 md:mb-8">
       <div className="flex justify-center mb-32 sm:mt-2 md:mt-2">
         <div
           onClick={goRefApp}
-          className="sm:hidden md:hidden  gotham_font_bold flex items-center font-extrabold text-lg justify-center bg-primary rounded-lg px-14 cursor-pointer text-sm text-black h-16 w-max hover:bg-hightGreenColor px-5 px-5"
+          className="sm:hidden gotham_font_bold flex items-center font-extrabold text-lg justify-center bg-primary rounded-lg px-14 cursor-pointer  text-black h-16 w-max hover:bg-hightGreenColor"
         >
           Launch APP <BannerArrowIcon className="ml-2 transform scale-75" />
         </div>
         <div
           onClick={goRefApp}
-          className="lg:hidden flex font-extrabold  gotham_font_bold items-center justify-center bg-primary rounded-lg cursor-pointer text-sm text-black h-9 w-max hover:bg-hightGreenColor px-5 px-5"
+          className="lg:hidden md:hidden flex font-extrabold  gotham_font_bold items-center justify-center bg-primary rounded-lg cursor-pointer text-sm text-black h-9 w-max hover:bg-hightGreenColor px-5 mt-4"
         >
           Launch APP <BannerArrowIcon className="ml-1 transform scale-75" />
         </div>
@@ -74,16 +74,27 @@ const Footer = () => {
             Contact Us
           </FooterLink>
         </div>
-        <div className="sm:w-full sm:mt-6 md:w-1/3">
-          <h1 className="gotham_font_bold  mb-7 sm:hidden">Community</h1>
-          <div className="flex justify-center items-center mb-7 sm:px-6 md:grid md:grid-cols-2 md:gap-x-9">
+        <div className="w-1/3 flex flex-col mt-10 lg:hidden sm:hidden">
+          <div className="block">
+            <FooterLink href="https://immunefi.com/bounty/reffinance/">Bug Bounty</FooterLink>
+          </div>
+          <div className="block">
+            <FooterLink href="https://guide.ref.finance/developers/audits">Security</FooterLink>
+          </div>
+          <div className="block">
+            <FooterLink href="https://app.ref.finance/risks">Risks</FooterLink>
+          </div>
+        </div>
+        <div className="sm:w-full sm:mt-6 md:w-full md:mt-20">
+          <h1 className="gotham_font_bold  mb-7 sm:hidden md:hidden">Community</h1>
+          <div className="flex justify-center items-center mb-7 sm:px-6 md:mb-4">
             <IconLink className="mr-4" IconComponent={DclIcon18} href="https://twitter.com/finance_ref" />
             <IconLink className="mx-4" IconComponent={FooterIcon2} href="https://t.me/ref_finance" />
             <IconLink className="mx-4" IconComponent={FooterIcon3} href="https://discord.com/invite/SJBGcfMxJz" />
             <IconLink className="ml-4" IconComponent={FooterIcon4} href="https://ref-finance.medium.com/" />
           </div>
 
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center md:hidden">
             <div className="sm:hidden">
               <FooterLink href="https://immunefi.com/bounty/reffinance/">Bug Bounty</FooterLink>
             </div>

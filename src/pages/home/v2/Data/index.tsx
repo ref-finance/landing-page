@@ -16,7 +16,7 @@ const Data = () => {
   }, [tokenBaseInfMap]);
   return (
     <div className="relative">
-      <div className="relative z-10 flex flex-col items-center justify-center mx-auto mt-44 sm:mt-20 md:mt-20 lg:w-4/5 sm:w-full md:w-full">
+      <div className="relative z-10 flex flex-col items-center justify-center mx-auto mt-44 sm:mt-20 md:mt-20 lg:w-4/5 sm:w-full md:w-full md:mb-44 sm:mb-44">
         <div className="flex items-center sm:justify-center md:justify-center sm:w-full md:w-full sm:px-6 md:px-6">
           <div className="flex flex-col justify-center items-center">
             <span className="text-white gotham_font_bold  text-2xl">TOP TOKENS</span>
@@ -27,14 +27,14 @@ const Data = () => {
             <div className="bg-brightGreenColor w-full mt-3 opacity-0 cursor-pointer" style={{ height: '3px' }}></div>
           </div> */}
         </div>
-        <div className="grid grid-cols-4 sm:grid-cols-1 md:grid-cols-1 sm:px-9 md:px-9 gap-x-3 gap-y-5 mt-10 w-full">
+        <div className="grid grid-cols-4 sm:grid-cols-1 md:grid-cols-2  sm:px-9  md:px-9 gap-x-3 gap-y-5 mt-10 w-full">
           {tokenList.map((token: Token, index: number) => {
             return <TokenBox token={token} key={index} symbolMap={symbolMap}></TokenBox>;
           })}
         </div>
       </div>
       <div
-        className="absolute right-0 top-5 rounded-full  transform translate-x-1/2 sm:hidden md:hidden"
+        className="absolute right-0 top-5 rounded-full  transform translate-x-1/2 sm:hidden md:translate-y-full"
         style={{
           width: '478px',
           height: '478px',
@@ -43,7 +43,7 @@ const Data = () => {
         }}
       ></div>
       <div
-        className="lg:hidden absolute left-5 -top-20 rounded-full opacity-20 transform -translate-x-2/3"
+        className="lg:hidden md:hidden absolute left-5 -top-20 rounded-full opacity-20 transform -translate-x-2/3"
         style={{
           width: '405px',
           height: '405px',
@@ -61,7 +61,7 @@ function TokenBox({ token, symbolMap }: { token: Token; symbolMap: any }) {
   return (
     <>
       <div
-        className="rounded-2xl px-3.5 py-4 text-white bg-blueColor hover:bg-brightGreenColor sm:hidden md:hidden"
+        className="rounded-2xl px-3.5 py-4 text-white bg-blueColor hover:bg-brightGreenColor sm:hidden"
         style={{ backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}
       >
         <div className="flex items-center">
@@ -83,7 +83,7 @@ function TokenBox({ token, symbolMap }: { token: Token; symbolMap: any }) {
         </div>
       </div>
       <div
-        className="flex items-end justify-between rounded-2xl p-3 text-white bg-blueColor hover:bg-brightGreenColor lg:hidden"
+        className="flex items-end justify-between rounded-2xl p-3 text-white bg-blueColor hover:bg-brightGreenColor lg:hidden md:hidden"
         style={{ backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}
       >
         <div className="relative flex flex-col items-start w-36">
