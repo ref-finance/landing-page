@@ -1,5 +1,5 @@
 import React from 'react';
-import { BannerArrowIcon, DclIcon1, DclIcon2, DclIcon3, DclIcon4, DclIcon5 } from '~src/components/layoutIcon/Icon';
+import { BannerArrowIcon, DclIcon1, DclIcon19, DclIcon2, DclIcon3, DclIcon4, DclIcon5 } from '~src/components/layoutIcon/Icon';
 
 type FeatureCardProps = {
   Icon: React.ElementType;
@@ -29,7 +29,7 @@ const Dcl = () => {
   return (
     <div className="relative">
       <div className="relative z-10  mx-auto mt-64 sm:mt-24 md:mt-52 lg:w-4/5 sm:w-full md:w-full">
-        <div className="mb-16 sm:justify-center md:justify-center sm:w-full md:w-full sm:text-center sm:mb-11 md:text-center md:mb-11">
+        <div className="relative z-10 mb-16 sm:justify-center md:justify-center sm:w-full md:w-full sm:text-center sm:mb-11 md:text-center md:mb-11">
           <div className="relative mb-4 sm:w-full md:w-full">
             <div className="transform -translate-x-8 sm:hidden md:hidden">
               <DclIcon1 />
@@ -42,8 +42,11 @@ const Dcl = () => {
             Both win by using discretized liquidity AMM
           </p>
         </div>
-        <div className="absolute top-16 transform translate-x-1/2 -translate-y-1/2 sm:left-0 sm:-translate-x-1/3 md:left-0 md:top-16">
+        <div className="absolute top-16 transform translate-x-1/2 -translate-y-1/2 md:left-0 md:top-16">
           <DclIcon2 />
+        </div>
+        <div className='lg:hidden md:hidden absolute left-0 -top-44 right-0 z-0'>
+          <DclIcon19 />
         </div>
         <div className="relative z-10 flex flex-wrap gap-20 justify-between items-baseline text-white mb-24 grid grid-cols-3 sm:grid-cols-1 sm:pl-4 sm:pr-4 sm:mb-0 md:px-6 md:mb-24">
           <FeatureCard

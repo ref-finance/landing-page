@@ -105,7 +105,7 @@ const Footer = () => {
               <FooterLink href="https://app.ref.finance/risks">Risks</FooterLink>
             </div>
           </div>
-          <div className="text-white text-xs float-right sm:flex md:flex sm:justify-center md:justify-center sm:items-center md:items-center sm:float-none md:float-none">
+          <div className="text-white text-13 float-right sm:flex md:flex sm:justify-center md:justify-center sm:items-center md:items-center sm:float-none md:float-none">
             @ 2024 Ref finance Ltd
           </div>
         </div>

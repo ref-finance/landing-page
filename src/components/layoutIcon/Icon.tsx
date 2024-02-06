@@ -2806,3 +2806,24 @@ export const DclIcon18 = (props: any) => {
     </svg>
   );
 };
+export const DclIcon19 = (props: any) => {
+  return (
+    <svg width="640" height="644" viewBox="0 0 640 644" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_249_64)">
+        <path d="M588.773 304.613C588.773 425.815 562.69 318.319 441.668 318.319C320.646 318.319 -76.611 546.245 -205 437.689C115.76 355.751 206.019 177 398.603 177C566.571 177 600.964 345.172 588.773 304.613Z" fill="url(#paint0_linear_249_64)" />
+      </g>
+      <defs>
+        <filter id="filter0_f_249_64" x="-382" y="0" width="1150" height="644" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="88.5" result="effect1_foregroundBlur_249_64" />
+        </filter>
+        <linearGradient id="paint0_linear_249_64" x1="294.292" y1="557.829" x2="370.051" y2="110.032" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#00C6A2" stop-opacity="0.7" />
+          <stop offset="1" stop-color="#7000FF" stop-opacity="0.61" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+};
+

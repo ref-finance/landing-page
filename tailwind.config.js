@@ -8,7 +8,7 @@ module.exports = {
     screens: {
       sm: { min: '300px', max: '600px' },
       md: { min: '600px', max: '1024px' },
-      lg: { min: '1024px' },
+      lg: { min: '1025px' },
       xl: { min: '1200px' },
       '2xl': { min: '1536px' },
       '3xl': { min: '1792px' },
@@ -48,12 +48,13 @@ module.exports = {
         footerHoverColor: '#00C6A2'
       },
       spacing: {
-        '10p': '10%',
+        '16%': '16%',
       },
       scale: {
         '65': '0.65',
       },
       fontSize: {
+        '13': '13px',
         '26': '26px',
         '32': '32px',
         '42': '42px',
