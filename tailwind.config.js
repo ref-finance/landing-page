@@ -46,19 +46,32 @@ module.exports = {
         shadowColor: 'rgba(14, 33, 33, 0.8)',
         shadowColorIcon: '0px 0px 12px rgba(0, 255, 209, 0.6)',
         footerHoverColor: '#00C6A2'
-      }
+      },
+      spacing: {
+        '10p': '10%',
+      },
+      scale: {
+        '65': '0.65',
+      },
+      fontSize: {
+        '26': '26px',
+        '32': '32px',
+        '42': '42px',
+        '46': '46px',
+      },
     },
     fontFamily: {
       lexend: ['"Lexend Deca"'],
       poppins: ['"Poppins"']
-    }
+    },
   },
   variants: {
     extend: {
       justifySelf: ['first', 'last'],
       marginBottom: ['first', 'last'],
       filter: ['hover', 'focus'],
-      dropShadow: ['hover']
+      dropShadow: ['hover'],
+      scale: ['responsive'],
     }
   },
   plugins: []

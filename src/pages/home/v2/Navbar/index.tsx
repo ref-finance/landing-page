@@ -96,7 +96,7 @@ const Navbar = () => {
             className="flex items-center justify-between mx-auto lg:w-5/6 sm:w-full md:w-full"
             style={{ minHeight: '44px' }}
           >
-            <div className="flex items-center py-2 sm:items-end md:items-end sm:justify-between md:justify-between sm:w-full md:w-full sm:px-6 md:px-6">
+            <div className="flex items-center py-2 sm:items-end md:items-end sm:justify-between sm:w-full md:w-full sm:px-6 md:px-6">
               <div className="flex items-center sm:flex-col md:flex-col sm:items-start md:items-start">
                 <span className="text-gray-text text-xs">TVL</span>
                 {tvlVariation24h ? (
@@ -116,7 +116,7 @@ const Navbar = () => {
                   </div>
                 ) : null}
               </div>
-              <div className="flex items-center sm:flex-col md:flex-col sm:items-start md:items-start ml-11 sm:ml-0 md:ml-0">
+              <div className="flex items-center sm:flex-col md:flex-col sm:items-start md:items-start ml-11 sm:ml-0 md:ml-8">
                 <span className="text-gray-text text-xs">24h Volume</span>
                 {variation ? (
                   <div className="flex items-center sm:mt-1 md:mt-1">
@@ -135,7 +135,7 @@ const Navbar = () => {
                   </div>
                 ) : null}
               </div>
-              <div className="flex items-center sm:flex-col md:flex-col sm:items-start md:items-start ml-11 sm:ml-0 md:ml-0">
+              <div className="flex items-center sm:flex-col md:flex-col sm:items-start md:items-start ml-11 sm:ml-0 md:ml-8">
                 <span className="text-gray-text text-xs">Price</span>
                 <div className="flex items-center sm:mt-1 md:mt-1">
                   {price && <span className="text-white text-xs mx-1.5 sm:ml-0 md:ml-0">${price}</span>}
@@ -150,7 +150,9 @@ const Navbar = () => {
                 {!hoverLogo && <RefAnalyticsGary className="transform scale-75 origin-center" />}
                 {hoverLogo && <RefAnalytics className="transform scale-75 origin-center" />}
               </div>
-              <RefAnalyticsIcon className="lg:hidden" onClick={goPageStats}></RefAnalyticsIcon>
+              <div className="lg:hidden md:ml-auto" onClick={goPageStats}>
+                <RefAnalyticsIcon></RefAnalyticsIcon>
+              </div>
             </div>
             <div
               onClick={goPageNear}
@@ -173,8 +175,8 @@ const Navbar = () => {
         }}
       >
         <div className="relative z-50 flex items-center justify-between mx-auto lg:w-5/6 sm:w-full md:w-full h-14 sm:px-6 md:px-6">
-          <NavbarRefIcon className="sm:hidden cursor-pointer" onClick={goRefApp}></NavbarRefIcon>
-          <NavbarRefMobileIcon className="lg:hidden md:hidden cursor-pointer" onClick={goRefApp}></NavbarRefMobileIcon>
+          <NavbarRefIcon className="sm:hidden md:hidden cursor-pointer" onClick={goRefApp}></NavbarRefIcon>
+          <NavbarRefMobileIcon className="lg:hidden cursor-pointer" onClick={goRefApp}></NavbarRefMobileIcon>
           <Link className={float ? 'sm:hidden md:hidden' : 'sm:-mr-4'} />
         </div>
       </div>

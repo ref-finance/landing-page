@@ -16,7 +16,7 @@ const Footer = () => {
     window.open('https://app.ref.finance/');
   }
   return (
-    <div className="mx-auto lg:w-5/6 sm:w-full md:w-full mb-10 sm:px-9 sm:mb-8 md:pl-8 md:mb-8">
+    <div className="mx-auto lg:w-5/6 sm:w-full md:w-full mb-10 sm:px-9 sm:mb-8 md:mb-8">
       <div className="flex justify-center mb-32 sm:mt-2 md:mt-2">
         <div
           onClick={goRefApp}
@@ -31,25 +31,25 @@ const Footer = () => {
           Launch APP <BannerArrowIcon className="ml-1 transform scale-75" />
         </div>
       </div>
-      <div className="flex justify-between text-base text-white mb-16 sm:flex-wrap sm:mb-0 md:flex-wrap md:mb-0">
-        <div className="sm:w-1/2 md:w-1/3">
-          <h1 className="gotham_font_bold  mb-4">REF Token</h1>
+      <div className="flex justify-between text-base text-white mb-16 sm:flex-wrap sm:mb-0 md:flex-wrap md:mb-0 px-4">
+        <div className="sm:w-1/2 md:w-1/3 md:pl-20">
+          <h1 className="gotham_font_bold mb-4">REF Token</h1>
           <FooterLink href="https://www.coingecko.com/en/coins/ref-finance">Coingecko</FooterLink>
           <FooterLink href="https://coinmarketcap.com/currencies/ref-finance/">CoinMarketCap</FooterLink>
         </div>
-        <div className="sm:w-1/2 sm:pl-12 md:w-1/3">
+        <div className="sm:w-1/2 sm:pl-12 md:w-1/3 md:pl-16">
           <h1 className="gotham_font_bold  mb-4">Exchanges</h1>
           <FooterLink href="https://www.gate.io/trade/REF_USDT">Gate.io</FooterLink>
           <FooterLink href="https://www.mexc.com/exchange/REF_USDT?_from=search_spot_trade">MEXC</FooterLink>
         </div>
 
-        <div className="sm:w-1/2 sm:mt-6 md:w-1/3">
+        <div className="sm:w-1/2 sm:mt-6 md:w-1/3 md:pl-10">
           <h1 className="gotham_font_bold  mb-4">Analytics</h1>
           <FooterLink href="https://stats.ref.finance/">Stats.ref.finance</FooterLink>
           <FooterLink href="https://defillama.com/protocol/ref-finance">Defi Llama</FooterLink>
           <FooterLink href="https://dexscreener.com/near/reffinance">DEX Screener</FooterLink>
         </div>
-        <div className="sm:w-1/2 sm:mt-6 sm:pl-12 md:w-1/3">
+        <div className="sm:w-1/2 sm:mt-6 sm:pl-12 md:w-1/3 md:pl-20">
           <h1 className="gotham_font_bold  mb-4">Learn More</h1>
           <FooterLink href="https://guide.ref.finance/">Docs</FooterLink>
           <FooterLink href="https://github.com/ref-finance">Github</FooterLink>
@@ -64,7 +64,7 @@ const Footer = () => {
             <FooterLink href="https://app.ref.finance/risks">Risks</FooterLink>
           </div>
         </div>
-        <div className="sm:w-7/12 sm:-mt-24 md:w-1/3">
+        <div className="sm:w-7/12 sm:-mt-24 md:w-1/3 md:pl-16">
           <h1 className="gotham_font_bold  mb-4">Business</h1>
           <FooterLink href="https://form.typeform.com/to/onOPhJ6Y?typeform-source=www.ref.finance">
             Business Inquiries
@@ -74,7 +74,7 @@ const Footer = () => {
             Contact Us
           </FooterLink>
         </div>
-        <div className="w-1/3 flex flex-col mt-10 lg:hidden sm:hidden">
+        <div className="w-1/3 flex flex-col mt-10 lg:hidden sm:hidden md:pl-10">
           <div className="block">
             <FooterLink href="https://immunefi.com/bounty/reffinance/">Bug Bounty</FooterLink>
           </div>

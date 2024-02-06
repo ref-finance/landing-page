@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 export const isMobile = (): Boolean => {
-  return window.screen.width <= 1023;
+  return window.screen.width <= 767;
 };
 
 export const isPC = (): Boolean => {

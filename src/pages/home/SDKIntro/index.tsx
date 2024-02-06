@@ -8,7 +8,7 @@ export const SDKIntro = () => {
         <div className="w-1/2 sm:w-full md:w-full flex flex-col">
           <div className="text-white text-2xl sm:text-center md:text-center gotham_font_bold ">DEVELOPERS</div>
 
-          <div className="text-hightGreenColor text-6xl sm:text-center md:text-center  sm:text-5xl md:text-5xl gotham_font_bold  mt-12 sm:mt-8 md:mt-8">{`{ REF SDK`}</div>
+          <div className="text-hightGreenColor text-6xl sm:text-center md:text-center  sm:text-42 md:text-46 gotham_font_bold  mt-12 sm:mt-8 md:mt-8">{`{ REF SDK`}</div>
 
           <div className="font-light text-white lg:max-w-sm text-4xl gotham_font_light sm:text-2xl md:text-2xl sm:px-10 md:px-10  mt-4 sm:text-center md:text-center mb-6">
             The easiest way to build on top of Ref
@@ -49,10 +49,13 @@ export const SDKIntro = () => {
         <div className="w-1/2 sm:hidden md:hidden relative bottom-44">
           <CodeBlock />
         </div>
-        <div className="lg:hidden">
+        <div className="lg:hidden md:hidden">
           <CodeBlockMobile />
         </div>
-        <div className="flex flex-col px-10 w-full items-center lg:hidden md:flex-row md:mt-20 md:space-x-4 md:justify-center">
+        <div className="sm:hidden lg:hidden mb-80 absolute md:scale-x-110 top-44 left-1/2 transform -translate-x-1/2 mx-auto" style={{width:'556px'}}>
+          <CodeBlock />
+        </div>
+        <div className="flex flex-col px-10 w-full items-center lg:hidden md:flex-row md:mt-96 md:space-x-4 md:justify-center">
           <button
             className="flex mt-8 w-full md:w-auto md:mt-0 md:mb-0 justify-center items-center rounded-lg text-white gotham_font_bold text-lg px-6 py-4 h-14"
             style={{

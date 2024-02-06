@@ -12,7 +12,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ Icon, title, description }) =
     <div className="flex justify-center sm:overflow-hidden md:scale-110 md:transform md:origin-center">
       <Icon />
     </div>
-    <h1 className="mt-16 mb-2.5 text-3xl gotham_font_bold text-left sm:mt-10 sm:text-center md:mt-10 md:text-left whitespace-nowrap md:text-2xl">
+    <h1 className="mt-16 mb-2.5 text-32 gotham_font_bold text-left sm:mt-10 sm:text-center md:mt-10 md:text-left whitespace-nowrap md:text-26">
       {title}
     </h1>
     <p className="text-lg gotham_font_light md:text-base sm:text-center">{description}</p>
@@ -34,11 +34,11 @@ const Dcl = () => {
             <div className="transform -translate-x-8 sm:hidden md:hidden">
               <DclIcon1 />
             </div>
-            <p className="absolute bottom-2 left-0 text-white gotham_font_bold  text-5xl sm:text-3xl  md:text-3xl md:left-1/3 sm:relative">
+            <p className="absolute bottom-2 left-0 text-white gotham_font_bold  text-46 sm:text-4xl  md:text-4xl md:left-1/3 sm:relative">
               REF V2 - DCL
             </p>
           </div>
-          <p className="text-white gotham_font_bold  text-3xl sm:text-2xl md:text-2xl">
+          <p className="text-white gotham_font_bold  text-26 sm:text-xl md:text-xl sm:px-4">
             Both win by using discretized liquidity AMM
           </p>
         </div>
@@ -69,7 +69,7 @@ const Dcl = () => {
           <div className="absolute flex sm:block sm:w-full sm:pl-4 sm:pr-4 mb:block mb:w-full mb:pl-4 mb:pr-4">
             <div
               onClick={learnMore}
-              className="flex items-center justify-center gotham_font_bold  mr-5 border border-primary hover:border-hightGreenColor px-10 rounded-lg cursor-pointer text-white text-black h-14 font-extrabold w-max  sm:w-full md:w-fit sm:mb-6 md:mb-6 md:mt-6"
+              className="flex items-center justify-center gotham_font_bold text-lg  mr-5 border border-primary hover:border-hightGreenColor px-10 rounded-lg cursor-pointer text-white h-14 font-extrabold w-max  sm:w-full md:w-fit sm:mb-6 md:mb-6 md:mt-6"
             >
               Learn more
             </div>
