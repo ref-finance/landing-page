@@ -19,7 +19,7 @@ export const FooterLink: React.FC<FooterLinkProps> = ({ children, href }) => {
     setClicked(false);
   };
 
-  const divClass = `opacity-50 mb-4 cursor-pointer ${
+  const divClass = `opacity-50 mb-4 cursor-pointer whitespace-nowrap ${
     clicked ? '' : 'hover:text-footerHoverColor hover:opacity-100'
   }`;
 

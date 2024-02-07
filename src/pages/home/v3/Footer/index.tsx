@@ -38,19 +38,19 @@ const Footer = () => {
           <FooterLink href="https://coinmarketcap.com/currencies/ref-finance/">CoinMarketCap</FooterLink>
         </div>
         <div className="sm:w-1/2 sm:pl-12 md:w-1/3 md:pl-16">
-          <h1 className="gotham_font_bold  mb-4">Exchanges</h1>
+          <h1 className="gotham_font_bold  mb-4 ">Exchanges</h1>
           <FooterLink href="https://www.gate.io/trade/REF_USDT">Gate.io</FooterLink>
           <FooterLink href="https://www.mexc.com/exchange/REF_USDT?_from=search_spot_trade">MEXC</FooterLink>
         </div>
 
         <div className="sm:w-1/2 sm:mt-6 md:w-1/3 md:pl-10">
-          <h1 className="gotham_font_bold  mb-4">Analytics</h1>
+          <h1 className="gotham_font_bold  mb-4 whitespace-nowrap">Analytics</h1>
           <FooterLink href="https://stats.ref.finance/">Stats.ref.finance</FooterLink>
           <FooterLink href="https://defillama.com/protocol/ref-finance">Defi Llama</FooterLink>
           <FooterLink href="https://dexscreener.com/near/reffinance">DEX Screener</FooterLink>
         </div>
         <div className="sm:w-1/2 sm:mt-6 sm:pl-12 md:w-1/3 md:pl-20">
-          <h1 className="gotham_font_bold  mb-4">Learn More</h1>
+          <h1 className="gotham_font_bold  mb-4 whitespace-nowrap">Learn More</h1>
           <FooterLink href="https://guide.ref.finance/">Docs</FooterLink>
           <FooterLink href="https://github.com/ref-finance">Github</FooterLink>
           <FooterLink href="https://gov.ref.finance/">Forum</FooterLink>

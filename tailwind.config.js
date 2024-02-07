@@ -6,7 +6,7 @@ module.exports = {
       greenLight: '0px 0px 12px rgba(0, 255, 209, 0.6)'
     },
     screens: {
-      sm: { min: '300px', max: '600px' },
+      sm: { min: '278px', max: '600px' },
       md: { min: '600px', max: '1024px' },
       lg: { min: '1025px' },
       xl: { min: '1200px' },
@@ -19,7 +19,7 @@ module.exports = {
         lightWhite: '0px 0px 12px rgba(255, 255, 255, 0.6)'
       },
       screens: {
-        s: { min: '300px', max: '1024px' },
+        s: { min: '280px', max: '1024px' },
         l: { min: '1024px' }
       },
       colors: {

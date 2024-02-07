@@ -50,7 +50,7 @@ const Overview = () => {
           </div>
         </div>
         <div className="text-white ml-7 sm:ml-0 sm:text-center md:mr-7">
-          <h1 className="text-46 gotham_font_bold  whitespace-nowrap mb-2.5 sm:text-4xl sm:mb-3 md:text-4xl md:text-center">Portfolio-Overview</h1>
+          <h1 className="text-46 gotham_font_bold  whitespace-nowrap mb-2.5 sm:text-4xl sm:mb-3 md:text-4xl md:text-center xs:text-2xl">Portfolio-Overview</h1>
           <p className="text-26  mb-16 sm:text-2xl sm:mb-3 md:mb-0 md:text-2xl">Overview of your invests and assets</p>
           <p className="flex items-center text-lg sm:text-base md:hidden">
             Composed by
