@@ -25,7 +25,7 @@ export const IconLink: React.FC<IconLinkProps> = ({ IconComponent, href, classNa
   } ${className || ''}`;
 
   return (
-    <div className={divClass} onClick={handleClick} onMouseLeave={handleMouseLeave}>
+    <div className={divClass} onClick={handleClick} onMouseLeave={handleMouseLeave} style={{minWidth:'40px',minHeight:"40px"}}>
       <IconComponent />
     </div>
   );
