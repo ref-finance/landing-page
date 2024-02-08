@@ -12,7 +12,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ Icon, title, description }) =
     <div className="flex justify-center sm:overflow-hidden md:scale-110 md:transform md:origin-center">
       <Icon />
     </div>
-    <h1 className="mt-16 mb-2.5 text-32 gotham_font_bold text-left sm:mt-10 sm:text-center md:mt-10 md:text-left whitespace-nowrap md:text-26">
+    <h1 className="mt-16 mb-2.5 text-32 gotham_font_bold text-left sm:mt-10 sm:text-center md:mt-10 md:text-left  md:text-26">
       {title}
     </h1>
     <p className="text-lg gotham_font_light md:text-base sm:text-center">{description}</p>
@@ -48,7 +48,7 @@ const Dcl = () => {
         <div className='lg:hidden md:hidden absolute left-0 -top-44 right-0 z-0'>
           <DclIcon19 />
         </div>
-        <div className="relative z-10 flex flex-wrap gap-20 justify-between items-baseline text-white mb-24 grid grid-cols-3 sm:grid-cols-1 sm:pl-4 sm:pr-4 sm:mb-0 md:px-6 md:mb-24">
+        <div className="relative z-10 flex flex-wrap gap-14 justify-between items-baseline text-white mb-24 grid grid-cols-3 sm:grid-cols-1 sm:pl-4 sm:pr-4 sm:mb-0 md:px-6 md:mb-24 md:gap-6">
           <FeatureCard
             Icon={DclIcon3}
             title="Precise & Efficient"

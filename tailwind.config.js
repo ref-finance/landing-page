@@ -6,14 +6,14 @@ module.exports = {
       greenLight: '0px 0px 12px rgba(0, 255, 209, 0.6)'
     },
     screens: {
-      sm: { min: '278px', max: '600px' },
+      sm: { min: '280px', max: '599.98px' },
       md: { min: '600px', max: '1024px' },
       lg: { min: '1025px' },
       xl: { min: '1200px' },
       '2xl': { min: '1536px' },
       '3xl': { min: '1792px' },
       'custom-md': { min: '1314px' }
-    },
+    },    
     extend: {
       dropShadow: {
         lightWhite: '0px 0px 12px rgba(255, 255, 255, 0.6)'
