@@ -161,7 +161,7 @@ export const CodeBlock = () => {
           left: '120px'
         }}
       >
-        npm install @ref-finance/ref-sdk
+        npm install ref-sdk
       </div>
 
       <div
@@ -199,7 +199,7 @@ export const CodeBlockMobile = () => {
           left: '24%'
         }}
       >
-        npm install @ref-finance/ref-sdk
+        npm install ref-sdk
       </div>
 
       <div

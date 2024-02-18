@@ -7,7 +7,8 @@ import {
   FooterIcon1Hover,
   FooterIcon2Hover,
   FooterIcon3Hover,
-  FooterIcon4Hover
+  FooterIcon4Hover,
+  FooterIcon5Hover
 } from '~src/components/layoutIcon/Icon';
 const Link = (props: any) => {
   return (
@@ -16,6 +17,7 @@ const Link = (props: any) => {
       <FooterIconB />
       <FooterIconC />
       <FooterIconD />
+      <FooterIconE />
     </div>
   );
 };
@@ -74,6 +76,22 @@ function FooterIconD() {
   }
   return (
     <FooterIcon4Hover
+      onMouseOver={() => setHoverLogo(true)}
+      onMouseLeave={() => setHoverLogo(false)}
+      onClick={go}
+      hoverLogo={hoverLogo}
+      className="cursor-pointer text-opacity80White drop-shadow-2xl hover:text-hightGreenColor lg:ml-1"
+    />
+  );
+}
+
+function FooterIconE() {
+  const [hoverLogo, setHoverLogo] = useState(false);
+  function go() {
+    window.open('https://form.typeform.com/to/onOPhJ6Y?typeform-source=www.ref.finance');
+  }
+  return (
+    <FooterIcon5Hover
       onMouseOver={() => setHoverLogo(true)}
       onMouseLeave={() => setHoverLogo(false)}
       onClick={go}

@@ -17,7 +17,7 @@ const Goals: FC<GoalsProps> = ({ title, children }) => {
       <div
         className={`
           mb-6
-          font-poppins font-bold italic text-3xl text-white
+          font-poppins gotham_font_bold  italic text-3xl text-white
           flex
         `}
       >

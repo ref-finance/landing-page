@@ -28,11 +28,19 @@
   src: url('./assets/Gotham-Book.ttf');
 }
 @font-face {
+  font-family: 'gothamBold';
+  src: url('./assets/Gotham-Bold.otf');
+}
+@font-face {
   font-family: 'gothamLight';
   src: url('./assets/Gotham-Light.otf');
 }
 .gotham_font {
   font-family: 'gotham';
+}
+
+.gotham_font_bold {
+  font-family: 'gothamBold';
 }
 
 .gotham_font_light {

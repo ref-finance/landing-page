@@ -42,7 +42,7 @@ const FeatureCard: FC<FeatureCardProps> = ({ index, icon, title, description }) 
       >
         <div
           className={`
-          font-poppins font-bold italic text-2xl xl:text-3xl s:text-xl text-white text-left
+          font-poppins gotham_font_bold  italic text-2xl xl:text-3xl s:text-xl text-white text-left
           w-full mb-1 l:mt-4 s:mt-2 px-0
         `}
         >

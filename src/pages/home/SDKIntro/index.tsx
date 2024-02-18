@@ -4,19 +4,19 @@ import { DownArrow, ReadDoc, CodeBlock, CodeBlockMobile } from '../../../compone
 export const SDKIntro = () => {
   return (
     <div className="relative">
-      <div className="relative z-10 flex sm:flex-col md:flex-col  items-center justify-center mx-auto mt-44 sm:mt-20 md:mt-20 lg:w-4/5 sm:w-full md:w-full">
+      <div className="relative z-10 flex sm:flex-col md:flex-col  items-center justify-center mx-auto mt-44 sm:mt-20 md:mt-20 lg:w-4/5 sm:w-full md:w-full md:mb-44 sm:mb-44">
         <div className="w-1/2 sm:w-full md:w-full flex flex-col">
-          <div className="text-white text-2xl sm:text-center md:text-center font-bold">Developers</div>
+          <div className="text-white text-2xl sm:text-center md:text-center gotham_font_bold ">DEVELOPERS</div>
 
-          <div className="text-hightGreenColor text-6xl sm:text-center md:text-center  sm:text-5xl md:text-5xl font-bold mt-12 sm:mt-8 md:mt-8">{`{ REF SDK`}</div>
+          <div className="text-hightGreenColor text-6xl sm:text-center md:text-center  sm:text-42 md:text-46 gotham_font_bold  mt-12 sm:mt-8 md:mt-8">{`{ REF SDK`}</div>
 
-          <div className="font-light text-white lg:max-w-sm text-4xl sm:text-2xl md:text-2xl sm:px-10 md:px-10 sm:text-opacity-50 md:text-opacity-50 mt-4 sm:text-center md:text-center  mb-8">
+          <div className="font-light text-white lg:mr-14 text-42 gotham_font_light sm:text-2xl md:text-2xl sm:px-10 md:px-10  mt-4 sm:text-center md:text-center mb-6">
             The easiest way to build on top of Ref
           </div>
 
           <div className="flex items-center sm:hidden md:hidden">
             <button
-              className="flex mr-5 items-center rounded-lg text-white font-bold text-lg px-6 py-4 h-14"
+              className="flex mr-5 items-center rounded-lg text-white gotham_font_bold  text-lg px-6 py-4 h-14"
               style={{
                 background: 'linear-gradient(270deg, #7331FF 0%, #004FC6 49.79%, #00C6A2 97.06%)'
               }}
@@ -49,12 +49,15 @@ export const SDKIntro = () => {
         <div className="w-1/2 sm:hidden md:hidden relative bottom-44">
           <CodeBlock />
         </div>
-        <div className="lg:hidden ">
+        <div className="lg:hidden md:hidden">
           <CodeBlockMobile />
         </div>
-        <div className="flex whitespace-nowrap flex-col px-10 w-full items-center lg:hidden">
+        <div className="sm:hidden lg:hidden mb-80 absolute md:scale-x-110 top-44 left-1/2 transform -translate-x-1/2 mx-auto" style={{width:'556px'}}>
+          <CodeBlock />
+        </div>
+        <div className="flex flex-col px-10 w-full items-center lg:hidden md:flex-row md:mt-96 md:space-x-4 md:justify-center">
           <button
-            className="flex mt-8 mb-6 w-full justify-center items-center rounded-lg text-white font-bold text-lg px-6 py-4 h-14"
+            className="flex mt-8 w-full md:w-auto md:mt-0 md:mb-0 justify-center items-center rounded-lg text-white gotham_font_bold text-lg px-6 py-4 h-14"
             style={{
               background: 'linear-gradient(270deg, #7331FF 0%, #004FC6 49.79%, #00C6A2 97.06%)'
             }}
@@ -69,7 +72,7 @@ export const SDKIntro = () => {
           </button>
 
           <button
-            className="flex w-full justify-center items-center rounded-lg text-white text-opacity-70 text-lg h-14 px-6 py-4"
+            className="flex mt-8 w-full md:w-auto md:mt-0 md:mb-0 justify-center items-center rounded-lg text-white text-opacity-70 text-lg h-14 px-6 py-4"
             style={{
               background: 'linear-gradient(90deg, rgba(58, 110, 114, 0.64) 0%, rgba(13, 43, 37, 0.64) 100.18%)'
             }}
@@ -79,7 +82,7 @@ export const SDKIntro = () => {
           >
             Read Doc
             <span className="ml-2">
-              <ReadDoc></ReadDoc>
+              <ReadDoc />
             </span>
           </button>
         </div>

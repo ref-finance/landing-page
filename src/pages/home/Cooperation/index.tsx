@@ -7,7 +7,7 @@ const Cooperation = () => {
   return (
     <div className="mt-24 w-full l:mt-44 flex justify-center">
       <div className="flex flex-col CooperateCard_max_width s:items-center">
-        <div className="font-poppins inline-flex flex-col font-bold text-6xl s:text-4xl s:mx-auto s:px-10  text-white">
+        <div className="font-poppins inline-flex flex-col gotham_font_bold  text-6xl s:text-4xl s:mx-auto s:px-10  text-white">
           <div className="italic">
             Partnerships
             <div
