@@ -66,9 +66,9 @@ const Footer = () => {
         </div>
         <div className="sm:w-7/12 sm:-mt-24 md:w-1/3 md:pl-16">
           <h1 className="gotham_font_bold  mb-4">Business</h1>
-          <FooterLink href="https://form.typeform.com/to/onOPhJ6Y?typeform-source=www.ref.finance">
+          {/* <FooterLink href="https://form.typeform.com/to/onOPhJ6Y?typeform-source=www.ref.finance">
             Business Inquiries
-          </FooterLink>
+          </FooterLink> */}
           <FooterLink href="https://form.typeform.com/to/kxb7tTXg">Token Listing</FooterLink>
           <FooterLink href="https://form.typeform.com/to/onOPhJ6Y?typeform-source=www.ref.finance">
             Contact Us
