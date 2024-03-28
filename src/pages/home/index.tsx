@@ -10,6 +10,7 @@ import Dcl from './v3/Dcl';
 import Overview from './v3/Overview';
 import Team from './v3/Team';
 import Footer from './v3/Footer';
+import Partners from './v3/Partners';
 
 const HomePage = () => {
   const mobile = isMobile();
@@ -27,6 +28,7 @@ const HomePage = () => {
           <Data />
           <SDKIntro />
           <Investors />
+          <Partners />
           <Team />
         </section>
       </div>
