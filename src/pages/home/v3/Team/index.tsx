@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { HomeTeamMobile, HomeTeamPc } from '~src/components/icon/Team';
 
 const Team = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -25,10 +26,10 @@ const Team = () => {
           </div>
         </div>
         <div className="sm:hidden md:hidden">
-          <img src="https://assets.ref.finance/images/LandingTeamPc.svg" alt="" />
+          <HomeTeamPc />
         </div>
         <div className="lg:hidden relative overflow-auto px-4 md:pt-6">
-          <img src="https://assets.ref.finance/images/TeamIpad.png" alt="" />
+          <HomeTeamMobile />
         </div>
       </div>
     </div>
