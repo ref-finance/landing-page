@@ -9,7 +9,13 @@ import {
   PartnersIcon5,
   PartnersIcon6,
   PartnersIcon7,
-  PartnersIcon8
+  PartnersIcon8,
+  PartnersIcon9,
+  PartnersIcon10,
+  PartnersIcon11,
+  PartnersIcon12,
+  PartnersIcon13,
+  PartnersIcon14
 } from '~src/components/layoutIcon/Icon';
 import { isMobile } from '~src/utils/device';
 
@@ -28,70 +34,114 @@ const Partners = () => {
       </div>
       <div className="flex flex-col justify-center items-center">
         <div className="relative z-10 grid grid-cols-5 sm:hidden md:hidden gap-x-24 gap-y-16 mt-16 w-full">
-          <PartnersIcon1 className="flex items-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-          <PartnersIcon2 className="ml-8 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-          <PartnersIcon3 className="origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-          <PartnersIcon4 className="origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-          <PartnersIcon5 className="origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <PartnersIcon1 className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <PartnersIcon2 className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <PartnersIcon3 className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <PartnersIcon4 className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <PartnersIcon5 className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
         </div>
         <div className="relative z-10 grid grid-cols-5 sm:hidden md:hidden gap-x-24 gap-y-16 mt-16 w-full">
-          <PartnersIcon6 className="origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-          <PartnersIcon7 className="ml-8 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-          <PartnersIcon8 className="origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <PartnersIcon6 className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <PartnersIcon7 className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <PartnersIcon8 className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <PartnersIcon9 className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <PartnersIcon10 className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+        </div>
+        <div className="relative z-10 grid grid-cols-5 sm:hidden md:hidden gap-x-24 gap-y-16 mt-16 w-full">
+          <PartnersIcon11 className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <PartnersIcon12 className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <PartnersIcon13 className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <PartnersIcon14 className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
         </div>
         <div className="lg:hidden sm:hidden relative z-10 mt-16 w-full flex justify-center pl-8 pr-8">
           <div className="grid grid-cols-3 gap-x-20 gap-y-16">
-            <div className="max-w-xs w-full flex justify-start">
+            <div className="max-w-xs w-full flex justify-start items-center">
               <PartnersIcon1 className="origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
             </div>
-            <div className="max-w-xs w-full flex justify-start">
+            <div className="max-w-xs w-full flex justify-start items-center">
               <PartnersIcon2 className="origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
             </div>
-            <div className="max-w-xs w-full flex justify-start">
+            <div className="max-w-xs w-full flex justify-start items-center">
               <PartnersIcon3 className="origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
             </div>
-            <div className="max-w-xs w-full flex justify-start">
+            <div className="max-w-xs w-full flex justify-start items-center">
               <PartnersIcon4 className="origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
             </div>
-            <div className="max-w-xs w-full flex justify-start">
+            <div className="max-w-xs w-full flex justify-start items-center">
               <PartnersIcon5 className="origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
             </div>
-            <div className="max-w-xs w-full flex justify-start">
+            <div className="max-w-xs w-full flex justify-start items-center">
               <PartnersIcon6 className="origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
             </div>
-            <div className="max-w-xs w-full flex justify-start">
+            <div className="max-w-xs w-full flex justify-start items-center">
               <PartnersIcon7 className="origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
             </div>
-            <div className="max-w-xs w-full flex justify-start">
+            <div className="max-w-xs w-full flex justify-start items-center">
               <PartnersIcon8 className="origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+            </div>
+            <div className="max-w-xs w-full flex justify-start items-center">
+              <PartnersIcon9 className="origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+            </div>
+            <div className="max-w-xs w-full flex justify-start items-center">
+              <PartnersIcon10 className="origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+            </div>
+            <div className="max-w-xs w-full flex justify-start items-center">
+              <PartnersIcon11 className="origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+            </div>
+            <div className="max-w-xs w-full flex justify-start items-center">
+              <PartnersIcon12 className="origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+            </div>
+            <div className="max-w-xs w-full flex justify-start items-center">
+              <PartnersIcon13 className="origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+            </div>
+            <div className="max-w-xs w-full flex justify-start items-center">
+              <PartnersIcon14 className="origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
             </div>
           </div>
         </div>
         <div className="lg:hidden md:hidden relative z-10 mt-16 w-full flex justify-center pl-10 pr-8">
           <div className="grid grid-cols-2 gap-x-4 gap-y-14">
-            <div className="max-w-xs w-full flex justify-start">
-              <PartnersIcon1 className="opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+            <div className="max-w-xs w-full flex justify-start items-center">
+              <PartnersIcon7 className="transform scale-90 -ml-3 opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
             </div>
-            <div className="max-w-xs w-full flex justify-end">
-              <PartnersIcon2 className="transform scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+            <div className="max-w-xs w-full flex justify-end items-center">
+              <PartnersIcon2 className="transform scale-110 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
             </div>
-            <div className="max-w-xs w-full flex justify-start">
-              <PartnersIcon3 className="transform scale-90 -ml-3 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-            </div>
-            <div className="max-w-xs w-full flex justify-end">
-              <PartnersIcon4 className="transform scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-            </div>
-            <div className="max-w-xs w-full flex justify-start">
+            <div className="max-w-xs w-full flex justify-start items-center">
               <PartnersIcon5 className="transform scale-90 -ml-3 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
             </div>
-            <div className="max-w-xs w-full flex justify-end">
+            <div className="max-w-xs w-full flex justify-end items-center">
               <PartnersIcon6 className="transform scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
             </div>
-            <div className="max-w-xs w-full flex justify-start">
-              <PartnersIcon7 className="transform scale-90 -ml-3 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+            <div className="max-w-xs w-full flex justify-start items-center">
+              <PartnersIcon3 className="transform scale-90 -ml-3 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
             </div>
-            <div className="max-w-xs w-full flex justify-end">
-              <PartnersIcon8 className="transform scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+            <div className="max-w-xs w-full flex justify-end items-center">
+              <PartnersIcon8 className="origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+            </div>
+            <div className="max-w-xs w-full flex justify-start items-center">
+              <PartnersIcon14 className="transform scale-90 -ml-3 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+            </div>
+            <div className="max-w-xs w-full flex justify-end items-center">
+              <PartnersIcon9 className="transform scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+            </div>
+            <div className="max-w-xs w-full flex justify-start items-center">
+              <PartnersIcon12 className="transform scale-90 -ml-3 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+            </div>
+            <div className="max-w-xs w-full flex justify-end items-center">
+              <PartnersIcon10 className="transform scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+            </div>
+            <div className="max-w-xs w-full flex justify-start items-center">
+              <PartnersIcon13 className="transform scale-90 -ml-3 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+            </div>
+            <div className="max-w-xs w-full flex justify-end items-center">
+              <PartnersIcon1 className="transform scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+            </div>
+            <div className="max-w-xs w-full flex justify-start items-center">
+              <PartnersIcon4 className="transform scale-90 -ml-3 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+            </div>
+            <div className="max-w-xs w-full flex justify-end items-center">
+              <PartnersIcon11 className="transform scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
             </div>
           </div>
         </div>
