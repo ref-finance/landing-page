@@ -52,7 +52,10 @@ export const SDKIntro = () => {
         <div className="lg:hidden md:hidden">
           <CodeBlockMobile />
         </div>
-        <div className="sm:hidden lg:hidden mb-80 absolute md:scale-x-110 top-44 left-1/2 transform -translate-x-1/2 mx-auto" style={{width:'556px'}}>
+        <div
+          className="sm:hidden lg:hidden mb-80 absolute md:scale-x-110 top-44 left-1/2 transform -translate-x-1/2 mx-auto"
+          style={{ width: '556px' }}
+        >
           <CodeBlock />
         </div>
         <div className="flex flex-col px-10 w-full items-center lg:hidden md:flex-row md:mt-96 md:space-x-4 md:justify-center">

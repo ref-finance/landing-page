@@ -27,9 +27,7 @@ const Partners = () => {
   return (
     <div className="relative mx-auto sm:mt-32 md:mt-28 mt-56 lg:w-4/5 sm:w-full md:w-full md:mb-64">
       <div className="flex justify-center text-white gotham_font_bold  text-2xl">PARTNERS</div>
-      <div
-        className="flex justify-center text-42 text-white mt-3 gotham_font_light  sm:text-center md:text-center text-opacity-50 sm:mt-0 md:mt-0 sm:text-32"
-      >
+      <div className="flex justify-center text-42 text-white mt-3 gotham_font_light  sm:text-center md:text-center text-opacity-50 sm:mt-0 md:mt-0 sm:text-32">
         Get better together
       </div>
       <div className="flex flex-col justify-center items-center">
