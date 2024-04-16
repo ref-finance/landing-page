@@ -34,24 +34,24 @@ const Partners = () => {
       </div>
       <div className="flex flex-col justify-center items-center">
         <div className="relative z-10 grid grid-cols-5 sm:hidden md:hidden gap-x-24 gap-y-16 mt-16 w-full">
-          <PartnersNear className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <PartnersNear className="justify-self-start self-start origin-start opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
           <PartnersBlocksec className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
           <PartnersSlowMist className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
           <PartnersImmunefi className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-          <PartnersBurrow className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <PartnersBurrow className="justify-self-end self-end origin-end opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
         </div>
         <div className="relative z-10 grid grid-cols-5 sm:hidden md:hidden gap-x-24 gap-y-16 mt-16 w-full">
-          <PartnersOKEX className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <PartnersOKEX className="justify-self-start self-start origin-start opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
           <PartnersFrax className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
           <PartnersCoin className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
           <PartnersOrderly className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-          <PartnersSweatEconomy className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <PartnersSweatEconomy className="justify-self-end self-end origin-end opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
         </div>
         <div className="relative z-10 grid grid-cols-5 sm:hidden md:hidden gap-x-24 gap-y-16 mt-16 w-full">
-          <PartnersPikespeak className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <PartnersPikespeak className="justify-self-start self-start origin-start opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
           <PartnersRainbow className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
           <PartnerScedeStore className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-          <PartnerTransak className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+          <PartnerTransak className="justify-self-end self-end origin-end opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
         </div>
         <div className="lg:hidden sm:hidden relative z-10 mt-16 w-full flex justify-center pl-8 pr-8">
           <div className="grid grid-cols-3 gap-x-20 gap-y-16">
