@@ -1,5 +1,13 @@
 import React from 'react';
-import { BannerArrowIcon, DclIcon1, DclIcon19, DclIcon2, DclIcon3, DclIcon4, DclIcon5 } from '~src/components/layoutIcon/Icon';
+import {
+  BannerArrowIcon,
+  DclIcon1,
+  DclIcon19,
+  DclIcon2,
+  DclIcon3,
+  DclIcon4,
+  DclIcon5
+} from '~src/components/layoutIcon/Icon';
 
 type FeatureCardProps = {
   Icon: React.ElementType;
@@ -45,7 +53,7 @@ const Dcl = () => {
         <div className="absolute top-16 transform translate-x-1/2 -translate-y-1/2 md:left-0 md:top-16">
           <DclIcon2 />
         </div>
-        <div className='lg:hidden md:hidden absolute left-0 -top-44 right-0 z-0'>
+        <div className="lg:hidden md:hidden absolute left-0 -top-44 right-0 z-0">
           <DclIcon19 />
         </div>
         <div className="relative z-10 flex flex-wrap gap-14 justify-between items-baseline text-white mb-24 grid grid-cols-3 sm:grid-cols-1 sm:pl-4 sm:pr-4 sm:mb-0 md:px-6 md:mb-24 md:gap-6">

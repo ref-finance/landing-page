@@ -128,7 +128,9 @@ const Banner = () => {
             )}
           </span>
           <span className="text-white text-base md:hidden">Accumulative Trading Volume</span>
-          <span className="text-white text-base text-center sm:hidden lg:hidden">Accumulative <br></br>Trading Volume</span>
+          <span className="text-white text-base text-center sm:hidden lg:hidden">
+            Accumulative <br></br>Trading Volume
+          </span>
         </div>
       </div>
     </div>

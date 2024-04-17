@@ -18,7 +18,7 @@ const Footer = () => {
   function goForum() {
     window.open('https://gov.ref.finance/');
   }
-  function goSecurity(){
+  function goSecurity() {
     window.open('https://guide.ref.finance/developers/audits');
   }
   function goBusinessInquiries() {

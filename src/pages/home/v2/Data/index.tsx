@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useTokenList, Token, useTokenBaeInfoList, TokenBaseInfo } from '~src/hooks/home';
-import { getNearIcon } from '~src/components/layoutIcon/Icon';
+import icons from '~src/utils/metadata';
 
 import { toInternationalCurrencySystem } from '~src/utils/numbers';
 const Data = () => {
@@ -56,8 +56,7 @@ const Data = () => {
 };
 
 function TokenBox({ token, symbolMap }: { token: Token; symbolMap: any }) {
-  const { symbol, icon, amount, tvl } = token;
-  const nearIcon = getNearIcon();
+  const { symbol, icon, amount, tvl } = processToken(token);
   return (
     <>
       <div
@@ -65,10 +64,7 @@ function TokenBox({ token, symbolMap }: { token: Token; symbolMap: any }) {
         style={{ backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)' }}
       >
         <div className="flex items-center">
-          <img
-            src={symbol == 'wNEAR' ? nearIcon : icon || symbolMap[symbol]}
-            className="w-10 h-10 rounded-full border-4 border-darkBorderColor"
-          ></img>
+          <img src={icon || symbolMap[symbol]} className="w-10 h-10 rounded-full border-4 border-darkBorderColor"></img>
           <span className="text-lg ml-2.5 font-extrabold">{symbol == 'wNEAR' ? 'NEAR' : symbol}</span>
         </div>
         <div className="flex items-center justify-between mt-6">
@@ -88,7 +84,7 @@ function TokenBox({ token, symbolMap }: { token: Token; symbolMap: any }) {
       >
         <div className="relative flex flex-col items-start w-36">
           <img
-            src={symbol == 'wNEAR' ? nearIcon : icon || symbolMap[symbol]}
+            src={icon || symbolMap[symbol]}
             className="absolute -top-12 w-10 h-10 rounded-full border-4 border-darkBorderColor transform translate-x-2"
           ></img>
           <span className="text-lg ml-2.5 font-extrabold">{symbol == 'wNEAR' ? 'NEAR' : symbol}</span>
@@ -104,6 +100,10 @@ function TokenBox({ token, symbolMap }: { token: Token; symbolMap: any }) {
       </div>
     </>
   );
+}
+function processToken(token: Token) {
+  token.icon = icons[token.token_id] || token.icon;
+  return token;
 }
 
 export default Data;

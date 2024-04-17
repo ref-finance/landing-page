@@ -111,6 +111,7 @@ export interface Token {
   price: string;
   volume24h: string;
   tvl: string;
+  token_id: string;
 }
 
 export interface TokenBaseInfo {

@@ -24,11 +24,7 @@ export const FooterLink: React.FC<FooterLinkProps> = ({ children, href }) => {
   }`;
 
   return (
-    <div
-      className={divClass}
-      onClick={handleClick}
-      onMouseLeave={handleMouseLeave}
-    >
+    <div className={divClass} onClick={handleClick} onMouseLeave={handleMouseLeave}>
       {children}
     </div>
   );
