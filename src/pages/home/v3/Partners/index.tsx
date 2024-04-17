@@ -83,7 +83,7 @@ const Partners = () => {
           />
           <PartnerScedeStore 
             className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite cursor-pointer"
-            onClick={() => window.open('https://rainbowbridge.app/')}
+            onClick={() => window.open('https://cede.store/')}
           />
           <PartnerTransak 
             className="justify-self-end self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite cursor-pointer"
@@ -167,7 +167,7 @@ const Partners = () => {
             <div className="max-w-xs w-full flex justify-start items-center">
               <PartnerScedeStore 
                 className="origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite cursor-pointer"
-                onClick={() => window.open('https://rainbowbridge.app/')} 
+                onClick={() => window.open('https://cede.store/')} 
               />
             </div>
             <div className="max-w-xs w-full flex justify-start items-center">
@@ -256,7 +256,7 @@ const Partners = () => {
             <div className="max-w-xs w-full flex justify-start items-center ml-0.5">
               <PartnerScedeStore 
                 className="transform scale-90 -ml-3 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite cursor-pointer" 
-                onClick={() => window.open('https://rainbowbridge.app/')}
+                onClick={() => window.open('https://cede.store/')}
               />
             </div>
             <div className="max-w-xs w-full flex justify-start items-center -ml-1.5">
