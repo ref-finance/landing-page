@@ -78,7 +78,7 @@ const Navbar = () => {
     window.open('https://app.ref.finance/');
   }
   useEffect(() => {
-    fetch('https://indexer.ref.finance/get-token-price?token_id=token.v2.ref-finance.near')
+    fetch('https://api.ref.finance/get-token-price?token_id=token.v2.ref-finance.near')
       .then(response => response.json())
       .then(data => {
         const formattedPrice = Number(data.price).toFixed(2);
