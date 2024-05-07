@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { getAuthenticationHeaders } from '../utils/signature';
 
 export interface RefPrice {
   price: string;
@@ -10,7 +11,10 @@ export const useRefPrice = () => {
   const [data, setData] = useState<RefPrice>();
 
   useEffect(() => {
-    axios.get<RefPrice>('https://api.ref.finance/get-token-price?token_id=token.v2.ref-finance.near').then(res => {
+    axios.get<RefPrice>('https://apiself.cclp.finance/get-token-price?token_id=token.v2.ref-finance.near', {
+      method: 'GET',
+      headers: getAuthenticationHeaders('/get-token-price'),
+    }).then(res => {
       if (res.status === 200) {
         setData(res.data);
       } else {
@@ -45,7 +49,10 @@ export const useTokenBaeInfoList = () => {
   const [tokenBaseInfMap, setTokenBaseInfMap] = useState<Record<string, TokenBaseInfo>>({});
 
   useEffect(() => {
-    axios.get<Record<string, TokenBaseInfo>>('https://api.ref.finance/list-token').then(res => {
+    axios.get<Record<string, TokenBaseInfo>>('https://apiself.cclp.finance/list-token', {
+      method: 'GET',
+      headers: getAuthenticationHeaders('/list-token'),
+    }).then(res => {
       if (res.status === 200) {
         setTokenBaseInfMap(res.data);
       } else {

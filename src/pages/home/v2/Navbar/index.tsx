@@ -14,6 +14,7 @@ import Link from '~src/components/common/Link';
 import { toInternationalCurrencySystem } from '~src/utils/numbers';
 import { BigNumber } from 'bignumber.js';
 import { isMobile } from '~src/utils/device';
+import { getAuthenticationHeaders } from '~src/utils/signature';
 const mobile = isMobile();
 const Navbar = () => {
   const dayVolumeVariation = use24hVolumeVariation();
@@ -78,7 +79,10 @@ const Navbar = () => {
     window.open('https://app.ref.finance/');
   }
   useEffect(() => {
-    fetch('https://api.ref.finance/get-token-price?token_id=token.v2.ref-finance.near')
+    fetch('https://apiself.cclp.finance/get-token-price?token_id=token.v2.ref-finance.near', {
+      method: 'GET',
+      headers: getAuthenticationHeaders('/get-token-price'),
+    })
       .then(response => response.json())
       .then(data => {
         const formattedPrice = Number(data.price).toFixed(2);
