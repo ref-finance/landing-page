@@ -57,7 +57,7 @@ function FooterIconB() {
 function FooterIconC() {
   const [hoverLogo, setHoverLogo] = useState(false);
   function go() {
-    window.open('https://discord.com/invite/SJBGcfMxJz');
+    window.open('https://discord.gg/reffinance');
   }
   return (
     <FooterIcon3Hover
