@@ -12,7 +12,6 @@ export const getSignature = (plaintext: string) => {
 };
 
 export const getAuthenticationHeaders = (path: string) => {
-  debugger;
   const time = Math.round(new Date().getTime() / 1000);
   const o = { path, time };
   const str = JSON.stringify(o);
