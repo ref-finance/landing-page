@@ -11,7 +11,7 @@ export const useRefPrice = () => {
   const [data, setData] = useState<RefPrice>();
 
   useEffect(() => {
-    axios.get<RefPrice>('https://apiself.cclp.finance/get-token-price?token_id=token.v2.ref-finance.near', {
+    axios.get<RefPrice>('https://mainnet-indexer.ref-finance.com/get-token-price?token_id=token.v2.ref-finance.near', {
       method: 'GET',
       headers: getAuthenticationHeaders('/get-token-price'),
     }).then(res => {
@@ -49,7 +49,7 @@ export const useTokenBaeInfoList = () => {
   const [tokenBaseInfMap, setTokenBaseInfMap] = useState<Record<string, TokenBaseInfo>>({});
 
   useEffect(() => {
-    axios.get<Record<string, TokenBaseInfo>>('https://apiself.cclp.finance/list-token', {
+    axios.get<Record<string, TokenBaseInfo>>('https://mainnet-indexer.ref-finance.com/list-token', {
       method: 'GET',
       headers: getAuthenticationHeaders('/list-token'),
     }).then(res => {

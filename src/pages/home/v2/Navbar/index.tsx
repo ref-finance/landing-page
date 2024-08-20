@@ -79,7 +79,7 @@ const Navbar = () => {
     window.open('https://app.ref.finance/');
   }
   useEffect(() => {
-    fetch('https://apiself.cclp.finance/get-token-price?token_id=token.v2.ref-finance.near', {
+    fetch('https://mainnet-indexer.ref-finance.com/get-token-price?token_id=token.v2.ref-finance.near', {
       method: 'GET',
       headers: getAuthenticationHeaders('/get-token-price'),
     })
