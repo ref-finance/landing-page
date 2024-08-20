@@ -90,7 +90,7 @@ const Footer = () => {
           <div className="flex justify-center items-center mb-7 sm:px-6 md:mb-4">
             <IconLink className="mr-4" IconComponent={DclIcon18} href="https://twitter.com/finance_ref" />
             <IconLink className="mx-4" IconComponent={FooterIcon2} href="https://t.me/ref_finance" />
-            <IconLink className="mx-4" IconComponent={FooterIcon3} href="https://discord.com/invite/SJBGcfMxJz" />
+            <IconLink className="mx-4" IconComponent={FooterIcon3} href="https://discord.gg/rsMyJfHQx9" />
             <IconLink className="ml-4" IconComponent={FooterIcon4} href="https://ref-finance.medium.com/" />
           </div>
 
