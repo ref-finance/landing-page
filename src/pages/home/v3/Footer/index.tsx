@@ -73,6 +73,15 @@ const Footer = () => {
           <FooterLink href="https://form.typeform.com/to/onOPhJ6Y?typeform-source=www.ref.finance">
             Contact Us
           </FooterLink>
+          <FooterLink href="">
+            Terms Of Service
+          </FooterLink>
+          <FooterLink href="">
+            Privacy Policy
+          </FooterLink>
+          <FooterLink href="">
+            Cookie Polocy
+          </FooterLink>
         </div>
         <div className="w-1/3 flex flex-col mt-10 lg:hidden sm:hidden md:pl-10">
           <div className="block">
