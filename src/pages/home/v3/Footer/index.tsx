@@ -54,6 +54,7 @@ const Footer = () => {
           <FooterLink href="https://guide.ref.finance/">Docs</FooterLink>
           <FooterLink href="https://github.com/ref-finance">Github</FooterLink>
           <FooterLink href="https://gov.ref.finance/">Forum</FooterLink>
+          <FooterLink href="https://iq.wiki/wiki/ref-finance/">IQ.wiki</FooterLink>
           <div className="lg:hidden md:hidden">
             <FooterLink href="https://immunefi.com/bounty/reffinance/">Bug Bounty</FooterLink>
           </div>
