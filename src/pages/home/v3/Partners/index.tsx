@@ -63,10 +63,10 @@ const Partners = () => {
             className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite cursor-pointer"
             onClick={() => window.open('https://coin98.com/')}
           />
-          <PartnersOrderly 
+          {/* <PartnersOrderly 
             className="justify-self-center self-center origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite cursor-pointer"
             onClick={() => window.open('https://orderly.network/')}
-          />
+          /> */}
         </div>
         <div className="relative z-10 grid grid-cols-5 sm:hidden md:hidden gap-x-24 gap-y-16 mt-16 w-full">
           <PartnersSweatEconomy 
@@ -140,12 +140,12 @@ const Partners = () => {
                 onClick={() => window.open('https://coin98.com/')} 
               />
             </div>
-            <div className="max-w-xs w-full flex justify-start items-center">
+            {/* <div className="max-w-xs w-full flex justify-start items-center">
               <PartnersOrderly 
                 className="origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite cursor-pointer"
                 onClick={() => window.open('https://orderly.network/')} 
               />
-            </div>
+            </div> */}
             <div className="max-w-xs w-full flex justify-start items-center">
               <PartnersSweatEconomy 
                 className="origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite cursor-pointer"
@@ -228,13 +228,13 @@ const Partners = () => {
                 onClick={() => window.open('https://coin98.com/')}
               />
             </div>
-            <div className="max-w-xs w-full flex justify-start items-center ml-5">
+            {/* <div className="max-w-xs w-full flex justify-start items-center ml-5">
               <PartnersOrderly 
                 className="transform scale-125 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite cursor-pointer" 
                 onClick={() => window.open('https://orderly.network/')}
               />
-            </div>
-            <br />
+            </div> */}
+            {/* <br /> */}
             <div className="max-w-xs w-full flex justify-start items-center -ml-2">
               <PartnersSweatEconomy 
                 className="transform scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite cursor-pointer" 

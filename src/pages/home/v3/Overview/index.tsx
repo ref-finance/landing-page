@@ -10,14 +10,14 @@ const Overview = () => {
       <div className="relative z-10 flex items-center mx-auto mt-64 sm:mt-24 sm:flex-col-reverse md:flex-col-reverse md:mt-24 sm:px-9 md:px-9 sm:w-full md:w-full">
         <div className="relative w-fit sm:justify-center md:justify-center sm:w-full md:w-full sm:text-center md:text-center sm:mb-11 md:mb-11">
           <div className="sm:hidden md:transform md:scale-110">
-            <img src="https://assets.ref.finance/images/portfolioOverviewPc.svg" alt="" />
+            <img src="https://img.ref.finance/images/portfolioOverviewPcV2.png" alt="" />
           </div>
           <div className="absolute lg:hidden md:hidden">
             <img src="https://assets.ref.finance/images/dclIcon13.svg" alt="" style={{ transform: 'scale(2)' }} />
           </div>
           <div className="lg:hidden md:hidden flex justify-center items-center">
             <img
-              src="https://assets.ref.finance/images/portfolioOverviewMobile.png"
+              src="https://img.ref.finance/images/portfolioOverviewMobileV2.png"
               alt=""
               style={{ transform: 'scale(1.2)' }}
             />
@@ -32,11 +32,11 @@ const Overview = () => {
               <span className="inline-flex ml-3.5 mr-2">
                 <img src="https://assets.ref.finance/images/dclIcon16.svg" alt="" />
               </span>
-              Burrow and
-              <span className="inline-flex ml-3.5 mr-2">
+              Burrow
+              {/* <span className="inline-flex ml-3.5 mr-2">
                 <DclIcon12 />
               </span>
-              Orderly
+              Orderly */}
             </p>
           </div>
           <div className="lg:hidden flex sm:flex-col justify-center items-center relative -mt-4">
@@ -56,7 +56,7 @@ const Overview = () => {
           <p className="text-26  mb-16 sm:text-2xl sm:mb-3 md:mb-0 md:text-2xl">
             Overview of your investments and assets
           </p>
-          <p className="flex items-center text-lg sm:text-base md:hidden">
+          <p className="flex items-center text-lg mb-10 sm:text-base md:hidden">
             Composed by
             <div className="ml-2 mr-2">
               <DclIcon11 />
@@ -67,13 +67,13 @@ const Overview = () => {
             </div>
             Burrow
           </p>
-          <p className="flex items-center text-lg mb-10 sm:justify-center sm:mb-0 sm:text-base md:hidden">
+          {/* <p className="flex items-center text-lg mb-10 sm:justify-center sm:mb-0 sm:text-base md:hidden">
             and
             <div className="ml-3.5 mr-2">
               <DclIcon12 />
             </div>
             Orderly
-          </p>
+          </p> */}
           <div
             onClick={checkYourPortfolio}
             className="sm:hidden md:hidden flex items-center justify-center bg-primary gotham_font_bold px-8 rounded-lg cursor-pointer text-lg text-black h-14 font-extrabold w-max  hover:bg-hightGreenColor sm:text-sm md:text-sm sm:w-full md:w-full"
