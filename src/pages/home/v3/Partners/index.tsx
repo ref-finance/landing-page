@@ -24,7 +24,7 @@ import './index.scss';
 const Partners = () => {
   const mobile = isMobile();
   return (
-    <div className="relative mx-auto">
+    <div className="relative mx-auto overflow-hidden">
       <div className="flex lg:justify-start sm:justify-center sm:font-thin text-white   text-2xl">PARTNERS</div>
       <div className="flex justify-start text-[54px] text-white mt-3 font-bold sm:hidden">
         <span className="text-white opacity-30 mr-4">Get</span>
