@@ -152,7 +152,7 @@ const Navbar = () => {
             >
               {hoverLogo ? <RefAnalytics /> : <RefAnalyticsGary />}
             </div>
-            <div onClick={goPageStats}>
+            <div onClick={goPageStats} className='lg:hidden'>
               <RefMobileLogo />
             </div>
             {/* <div className="lg:hidden md:ml-auto" onClick={goPageStats}>
