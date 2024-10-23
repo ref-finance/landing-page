@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
-
 @tailwind components;
-
 @tailwind utilities;
 
 @layer utilities {
@@ -24,29 +22,35 @@
   }
 }
 @font-face {
-  font-family: 'gotham';
-  src: url('./assets/Gotham-Book.ttf');
+  font-family: 'SpaceGrotesk';
+  src: url('./assets/SpaceGrotesk-Light.ttf');
 }
 @font-face {
-  font-family: 'gothamBold';
-  src: url('./assets/Gotham-Bold.otf');
+  font-family: 'SpaceGroteskBold';
+  src: url('./assets/SpaceGrotesk-Bold.ttf');
 }
 @font-face {
-  font-family: 'gothamLight';
-  src: url('./assets/Gotham-Light.otf');
+  font-family: 'SpaceGroteskRegular';
+  src: url('./assets/SpaceGrotesk-Regular.ttf');
 }
 .gotham_font {
-  font-family: 'gotham';
+  font-family: 'SpaceGroteskRegular';
 }
 
 .gotham_font_bold {
-  font-family: 'gothamBold';
+  font-family: 'SpaceGroteskBold';
 }
 
 .gotham_font_light {
-  font-family: 'gothamLight';
+  font-family: 'SpaceGrotesk';
 }
-
+html {
+  @apply bg-dark-30;
+}
+body {
+  font-family: 'SpaceGrotesk';
+  color-scheme: light !important;
+}
 // tooltip start
 .reactTip {
   border-radius: 0.375rem !important;

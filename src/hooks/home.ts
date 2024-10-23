@@ -11,16 +11,18 @@ export const useRefPrice = () => {
   const [data, setData] = useState<RefPrice>();
 
   useEffect(() => {
-    axios.get<RefPrice>('https://api.ref.finance/get-token-price?token_id=token.v2.ref-finance.near', {
-      method: 'GET',
-      headers: getAuthenticationHeaders('/get-token-price'),
-    }).then(res => {
-      if (res.status === 200) {
-        setData(res.data);
-      } else {
-        console.error(res.statusText);
-      }
-    });
+    axios
+      .get<RefPrice>('https://api.ref.finance/get-token-price?token_id=token.v2.ref-finance.near', {
+        method: 'GET',
+        headers: getAuthenticationHeaders('/get-token-price')
+      })
+      .then(res => {
+        if (res.status === 200) {
+          setData(res.data);
+        } else {
+          console.error(res.statusText);
+        }
+      });
   }, []);
 
   return { data };
@@ -49,16 +51,18 @@ export const useTokenBaeInfoList = () => {
   const [tokenBaseInfMap, setTokenBaseInfMap] = useState<Record<string, TokenBaseInfo>>({});
 
   useEffect(() => {
-    axios.get<Record<string, TokenBaseInfo>>('https://api.ref.finance/list-token', {
-      method: 'GET',
-      headers: getAuthenticationHeaders('/list-token'),
-    }).then(res => {
-      if (res.status === 200) {
-        setTokenBaseInfMap(res.data);
-      } else {
-        console.error(res.statusText);
-      }
-    });
+    axios
+      .get<Record<string, TokenBaseInfo>>('https://api.ref.finance/list-token', {
+        method: 'GET',
+        headers: getAuthenticationHeaders('/list-token')
+      })
+      .then(res => {
+        if (res.status === 200) {
+          setTokenBaseInfMap(res.data);
+        } else {
+          console.error(res.statusText);
+        }
+      });
   }, []);
 
   return tokenBaseInfMap;

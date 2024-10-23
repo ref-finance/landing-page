@@ -1,6 +1,6 @@
 import crypto from 'crypto-browserify';
 
-const key = process.env.PARCEL_PUBLIC_CRYPTO_KEY
+const key = process.env.PARCEL_PUBLIC_CRYPTO_KEY;
 
 export const getSignature = (plaintext: string) => {
   if (!key) return;
@@ -17,6 +17,6 @@ export const getAuthenticationHeaders = (path: string) => {
   const str = JSON.stringify(o);
   const signature = getSignature(str);
   return {
-    Authentication: signature,
+    Authentication: signature
   };
 };

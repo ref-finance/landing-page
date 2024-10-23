@@ -12,9 +12,14 @@ import {
   InvestorsIcon10,
   InvestorsBgIcon,
   InvestorsBgIconBobile,
-  BannerArrowIcon
+  BannerArrowIcon,
+  Hands,
+  MobileHands
 } from '~src/components/layoutIcon/Icon';
+import { MobileGrid } from '~src/components/icon/SDKIntro';
 import { isMobile } from '~src/utils/device';
+import { MobileStar,MobileStarGreen } from '~src/components/icon/SDKIntro';
+import './index.scss';
 
 const Investors = () => {
   function goRefApp() {
@@ -22,98 +27,62 @@ const Investors = () => {
   }
   const mobile = isMobile();
   return (
-    <div className="relative mx-auto sm:mt-20 md:mt-28 mt-56 lg:w-4/5 sm:w-full md:w-full md:mb-64">
-      <div className="flex justify-center text-white gotham_font_bold  text-2xl">INVESTORS</div>
-      <div className="flex justify-center text-42 text-white mt-3 gotham_font_light  sm:text-center md:text-center text-opacity-50 sm:mt-0 md:mt-0 sm:text-32">
-        Trusted by the best
-      </div>
-      <div className="flex flex-col justify-center items-center">
-        <div className="relative z-10 grid grid-cols-5 sm:hidden md:hidden place-items-center gap-y-16 mt-16 w-full">
-          <InvestorsIcon1 className="sm:transform sm:scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-          <InvestorsIcon3 className="sm:transform sm:scale-90  origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-          <InvestorsIcon4 className="sm:transform sm:scale-90  origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-          <InvestorsIcon5 className="sm:transform sm:scale-90  origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-          <InvestorsIcon6 className="sm:transform sm:scale-90  origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
+    <>
+      <div className="relative mx-auto mb-[366px] sm:hidden">
+        <div className="flex justify-end text-white font-medium text-2xl">Investors‍</div>
+        <div className="flex justify-end text-[54px] text-white mt-3 font-bold">
+          <span className="text-green-10 mr-4">Trusted</span> <span className="g-the-best">by the best</span>
         </div>
-        <div className="relative z-10 grid grid-cols-4 sm:hidden md:hidden place-items-center gap-y-16 mt-16 w-full">
-          <InvestorsIcon7 className="sm:transform sm:scale-90  origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-          <InvestorsIcon8 className="sm:transform sm:scale-90  origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-          <InvestorsIcon9 className="sm:transform sm:scale-90  origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-          <InvestorsIcon10 className="sm:transform sm:scale-90  origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-        </div>
-        <div className="lg:hidden sm:hidden relative z-10 mt-16 w-full flex justify-center pl-10 pr-8">
-          <div className="grid grid-cols-3 gap-x-20 gap-y-16">
-            <div className="max-w-xs w-full flex justify-start">
-              <InvestorsIcon1 className="sm:transform sm:scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-            </div>
-            <div className="max-w-xs w-full flex justify-start">
-              <InvestorsIcon3 className="sm:transform sm:scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-            </div>
-            <div className="max-w-xs w-full flex justify-start">
-              <InvestorsIcon4 className="sm:transform sm:scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-            </div>
-            <div className="max-w-xs w-full flex justify-start">
-              <InvestorsIcon5 className="sm:transform sm:scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-            </div>
-            <div className="max-w-xs w-full flex justify-start">
-              <InvestorsIcon6 className="sm:transform sm:scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-            </div>
-            <div className="max-w-xs w-full flex justify-start">
-              <InvestorsIcon7 className="sm:transform sm:scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-            </div>
-            <div className="max-w-xs w-full flex justify-start">
-              <InvestorsIcon8 className="sm:transform sm:scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-            </div>
-            <div className="max-w-xs w-full flex justify-start">
-              <InvestorsIcon9 className="sm:transform sm:scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-            </div>
-            <div className="max-w-xs w-full flex justify-start">
-              <InvestorsIcon10 className="sm:transform sm:scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-            </div>
+        <div className="flex flex-col justify-center items-center bg-green-10 mt-[37px] rounded-[10px] lg:min-h-[428px] relative z-[1]">
+          <div className="relative z-10 grid grid-cols-5 place-items-center gap-y-16 mt-16 w-full">
+            <InvestorsIcon1 className="hover:opacity-85" />
+            <InvestorsIcon3 className="hover:opacity-85" />
+            <InvestorsIcon4 className="hover:opacity-85" />
+            <InvestorsIcon5 className="hover:opacity-85" />
+            <InvestorsIcon6 className="hover:opacity-85" />
           </div>
-        </div>
-        <div className="lg:hidden md:hidden relative z-10 mt-16 w-full flex justify-center pl-10 pr-8">
-          <div className="grid grid-cols-2 gap-x-4 gap-y-16">
-            <div className="max-w-xs w-full flex justify-start">
-              <InvestorsIcon1 className="sm:transform sm:scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-            </div>
-            <div className="max-w-xs w-full flex justify-start">
-              <InvestorsIcon3 className="sm:transform sm:scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-            </div>
-            <div className="max-w-xs w-full flex justify-start">
-              <InvestorsIcon4 className="sm:transform sm:scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-            </div>
-            <div className="max-w-xs w-full flex justify-start">
-              <InvestorsIcon5 className="sm:transform sm:scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-            </div>
-            <div className="max-w-xs w-full flex justify-start">
-              <InvestorsIcon6 className="sm:transform sm:scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-            </div>
-            <div className="max-w-xs w-full flex justify-start">
-              <InvestorsIcon7 className="sm:transform sm:scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-            </div>
-            <div className="max-w-xs w-full flex justify-start">
-              <InvestorsIcon8 className="sm:transform sm:scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-            </div>
-            <div className="max-w-xs w-full flex justify-start">
-              <InvestorsIcon9 className="sm:transform sm:scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-            </div>
-            <div className="max-w-xs w-full flex justify-start">
-              <InvestorsIcon10 className="sm:transform sm:scale-90 origin-center opacity-80 hover:opacity-100 hover:filter hover:drop-shadow-lightWhite" />
-            </div>
+          <div className="relative z-10 grid grid-cols-4 place-items-center gap-y-16 mt-16 w-full">
+            <InvestorsIcon7 className="hover:opacity-85" />
+            <InvestorsIcon8 className="hover:opacity-85" />
+            <InvestorsIcon9 className="hover:opacity-85" />
+            <InvestorsIcon10 className="hover:opacity-85" />
           </div>
-        </div>
-        <InvestorsBgIconBobile className="absolute -bottom-20 lg:hidden md:hidden"></InvestorsBgIconBobile>
-        <InvestorsBgIcon className="absolute sm:hidden md:-bottom-44"></InvestorsBgIcon>
-
-        {/* <div
+          {/* <div
           onClick={goRefApp}
           className="lg:hidden flex font-extrabold items-center justify-center bg-primary rounded-lg cursor-pointer  mt-44 text-sm text-black h-8 w-32 hover:bg-hightGreenColor"
         >
           Launch APP <BannerArrowIcon className="ml-1 transform scale-75" />
         </div> */}
+        </div>
+        <Hands />
       </div>
-    </div>
+      <div className="relative mx-auto lg:hidden overflow-hidden max-h-[1300px]">
+        <div className="fccc text-white font-thin text-2xl relative w-full h-[295px]">
+          <span>Investors‍</span>
+          <MobileGrid className="absolute" />
+          <div className="fccc text-[40px] text-white mt-[40px] font-bold">
+            <span className="text-green-10">Trusted</span> <span className="g-the-best mt-[12px]">by the best</span>
+          </div>
+        </div>
+
+        <div className="flex flex-col justify-center items-center bg-green-10 mt-[-37px] w-full relative z-[1]">
+          <div className="relative z-10 w-full grid grid-cols-2 gap-16 px-[38px] py-[50px]">
+            <InvestorsIcon1 className="hover:opacity-85" />
+            <InvestorsIcon3 className="hover:opacity-85" />
+            <InvestorsIcon4 className="hover:opacity-85" />
+            <InvestorsIcon5 className="hover:opacity-85" />
+            <InvestorsIcon6 className="hover:opacity-85" />
+            <InvestorsIcon7 className="hover:opacity-85" />
+            <InvestorsIcon8 className="hover:opacity-85" />
+            <InvestorsIcon9 className="hover:opacity-85" />
+            <InvestorsIcon10 className="hover:opacity-85" />
+          </div>
+        </div>
+        <MobileStar className="relative top-[40px] left-[30px]"/>
+        <MobileStarGreen className="relative top-[-10px] left-[80vw]"/>
+        <MobileHands className="relative left-[0px] top-[-260px] w-full h-full"/>
+      </div>
+    </>
   );
 };
 

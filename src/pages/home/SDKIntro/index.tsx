@@ -1,69 +1,95 @@
 import React, { useEffect, useState } from 'react';
-import { DownArrow, ReadDoc, CodeBlock, CodeBlockMobile } from '../../../components/icon/SDKIntro';
+import {
+  DownArrow,
+  ReadDoc,
+  CodeBlock,
+  CodeBlockMobile,
+  CodeBlockBg,
+  RefSDKIcon,
+  MobileStar,
+  MobileGrid,
+  RefSDKMobileIcon,
+  CodeBlockBgMobile
+} from '../../../components/icon/SDKIntro';
+import './index.scss';
 
 export const SDKIntro = () => {
   return (
-    <div className="relative">
-      <div className="relative z-10 flex sm:flex-col md:flex-col  items-center justify-center mx-auto mt-44 sm:mt-20 md:mt-20 lg:w-4/5 sm:w-full md:w-full md:mb-44 sm:mb-44">
-        <div className="w-1/2 sm:w-full md:w-full flex flex-col">
-          <div className="text-white text-2xl sm:text-center md:text-center gotham_font_bold ">DEVELOPERS</div>
-
-          <div className="text-hightGreenColor text-6xl sm:text-center md:text-center  sm:text-42 md:text-46 gotham_font_bold  mt-12 sm:mt-8 md:mt-8">{`{ REF SDK`}</div>
-
-          <div className="font-light text-white lg:mr-14 text-42 gotham_font_light sm:text-2xl md:text-2xl sm:px-10 md:px-10  mt-4 sm:text-center md:text-center mb-6">
-            The easiest way to build on top of Ref
+    <>
+      <div className="relative w-full sm:hidden">
+        <CodeBlockBg />
+        <div className="relative z-10 flex items-center justify-center mx-auto mt-[291px] mb-[326px] ">
+          <div className="w-1/2 relative bottom-44">
+            <CodeBlock />
           </div>
 
-          <div className="flex items-center sm:hidden md:hidden">
-            <button
-              className="flex mr-5 items-center rounded-lg text-white gotham_font_bold  text-lg px-6 py-4 h-14"
-              style={{
-                background: 'linear-gradient(270deg, #7331FF 0%, #004FC6 49.79%, #00C6A2 97.06%)'
-              }}
-              onClick={() => {
-                window.open('https://github.com/ref-finance/ref-sdk/releases', '_blank');
-              }}
-            >
-              Download ref-sdk
-              <span className="ml-3">
-                <DownArrow />
-              </span>
-            </button>
+          <div className="w-1/2 flex flex-col">
+            <div className="text-white text-2xl font-light">Developers</div>
 
-            <button
-              className="flex items-center rounded-lg text-white text-opacity-70 text-lg h-14 px-6 py-4"
-              style={{
-                background: 'linear-gradient(90deg, rgba(58, 110, 114, 0.64) 0%, rgba(13, 43, 37, 0.64) 100.18%)'
-              }}
-              onClick={() => {
-                window.open('https://github.com/ref-finance/ref-sdk/blob/main/README.md', '_blank');
-              }}
-            >
-              Read Doc
-              <span className="ml-2">
-                <ReadDoc></ReadDoc>
-              </span>
-            </button>
+            <div className="text-green-10 text-[54px] gotham_font_bold lg:mt-[25px] flex items-center">
+              <span className="mr-4">{`{ REF SDK`}</span>
+              <RefSDKIcon />
+            </div>
+
+            <div className="font-light text-white lg:pr-24 text-[54px]">
+              <span className="g-the-easiest">The easiest way to</span>{' '}
+              <span className="g-the-build">build on top of Ref.</span>
+            </div>
+
+            <div className="flex items-center mt-[60px]">
+              <button
+                className="cursor-pointer hover:opacity-85 text-lg font-bold text-black frcc rounded-lg w-[250px] h-[54px] bg-green-10 lg:mr-[50px]"
+                onClick={() => {
+                  window.open('https://github.com/ref-finance/ref-sdk/releases', '_blank');
+                }}
+              >
+                Download ref-sdk
+                <span className="ml-3">
+                  <DownArrow />
+                </span>
+              </button>
+
+              <button
+                className="flex items-center rounded-lg text-white text-opacity-30 text-lg h-14 px-6 py-4"
+                onClick={() => {
+                  window.open('https://github.com/ref-finance/ref-sdk/blob/main/README.md', '_blank');
+                }}
+              >
+                Read Doc
+                <span className="ml-2">
+                  <ReadDoc></ReadDoc>
+                </span>
+              </button>
+            </div>
           </div>
         </div>
-        <div className="w-1/2 sm:hidden md:hidden relative bottom-44">
-          <CodeBlock />
+      </div>
+      <div className="relative w-full lg:hidden mt-[94px] px-[20px]">
+        <MobileStar />
+        <div className="w-full h-[295px] frcc">
+          <CodeBlockBgMobile className="absolute top-[100px] h-full  w-[100vw]" />
+          <MobileGrid className="absolute top-[40px]" />
+          <div className="pt-[160px]">
+            <div className="text-white text-2xl font-light frcc">
+              <span className="mr-[8px]">Developers</span> <RefSDKMobileIcon />
+            </div>
+
+            <div className="text-green-10 text-[40px] gotham_font_bold mt-[40px] flex items-center justify-center">
+              {`{ REF SDK`}
+            </div>
+
+            <div className="font-light text-white lg:pr-24 text-[40px] fccc">
+              <span className="g-the-easiest">The easiest way</span>{' '}
+              <span className="g-the-build">to build on top</span>
+              <span className="g-the-build"> of Ref.</span>
+            </div>
+          </div>
         </div>
-        <div className="lg:hidden md:hidden">
-          <CodeBlockMobile />
-        </div>
-        <div
-          className="sm:hidden lg:hidden mb-80 absolute md:scale-x-110 top-44 left-1/2 transform -translate-x-1/2 mx-auto"
-          style={{ width: '556px' }}
-        >
-          <CodeBlock />
-        </div>
-        <div className="flex flex-col px-10 w-full items-center lg:hidden md:flex-row md:mt-96 md:space-x-4 md:justify-center">
+        <CodeBlockMobile />
+
+        <div className="flex flex-col items-center my-[60px] px-[20px]">
           <button
-            className="flex mt-8 w-full md:w-auto md:mt-0 md:mb-0 justify-center items-center rounded-lg text-white gotham_font_bold text-lg px-6 py-4 h-14"
-            style={{
-              background: 'linear-gradient(270deg, #7331FF 0%, #004FC6 49.79%, #00C6A2 97.06%)'
-            }}
+            className="cursor-pointer hover:opacity-85 text-lg font-bold text-black frcc rounded-lg w-full h-[60px] bg-green-10"
             onClick={() => {
               window.open('https://github.com/ref-finance/ref-sdk/releases', '_blank');
             }}
@@ -75,21 +101,18 @@ export const SDKIntro = () => {
           </button>
 
           <button
-            className="flex mt-8 w-full md:w-auto md:mt-0 md:mb-0 justify-center items-center rounded-lg text-white text-opacity-70 text-lg h-14 px-6 py-4"
-            style={{
-              background: 'linear-gradient(90deg, rgba(58, 110, 114, 0.64) 0%, rgba(13, 43, 37, 0.64) 100.18%)'
-            }}
+            className="flex items-center rounded-lg text-white text-opacity-50 text-lg h-14 px-6 py-4 mt-[40px]"
             onClick={() => {
               window.open('https://github.com/ref-finance/ref-sdk/blob/main/README.md', '_blank');
             }}
           >
             Read Doc
             <span className="ml-2">
-              <ReadDoc />
+              <ReadDoc></ReadDoc>
             </span>
           </button>
         </div>
       </div>
-    </div>
+    </>
   );
 };
